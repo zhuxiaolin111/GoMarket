@@ -34,7 +34,7 @@ public class zhongcan_Activity extends Activity{
             public void onClick(View v) {
                 Intent intent=new Intent(zhongcan_Activity.this,Index_Activity.class);
                 startActivity(intent);
-             //   Toast.makeText(zhongcan_Activity.this, "已经是首页", Toast.LENGTH_SHORT).show();
+             //    Toast.makeText(zhongcan_Activity.this, "已经是首页", Toast.LENGTH_SHORT).show();
             }
         });
         my.setOnClickListener(new View.OnClickListener() {
