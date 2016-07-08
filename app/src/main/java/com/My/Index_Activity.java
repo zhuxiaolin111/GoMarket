@@ -31,13 +31,21 @@ public class Index_Activity extends Activity {
         ZhongCan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Index_Activity.this, "正在玩命实现中！！！", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(Index_Activity.this,zhongcan_Activity.class);
+                startActivity(intent);
+                //Toast.makeText(Index_Activity.this, "正在玩命实现中！！！", Toast.LENGTH_SHORT).show();
             }
         });
         XiCan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Index_Activity.this, "正在努力实现中", Toast.LENGTH_SHORT).show();
+            }
+        });
+        index.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Index_Activity.this, "已经是首页", Toast.LENGTH_SHORT).show();
             }
         });
         my.setOnClickListener(new View.OnClickListener() {

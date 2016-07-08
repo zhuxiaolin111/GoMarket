@@ -212,6 +212,10 @@
         "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable-hdpi\\cafe6.jpg"
     },
     {
+        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_goback.png",
+        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable-hdpi\\icon_goback.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tao_user_2.png",
         "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable-hdpi\\tao_user_2.png"
     },

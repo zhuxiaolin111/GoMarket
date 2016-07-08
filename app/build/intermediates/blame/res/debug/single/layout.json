@@ -4,6 +4,10 @@
         "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\layout\\cart_all_f.xml"
     },
     {
+        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\zhongcan_layout.xml",
+        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\layout\\zhongcan_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\babydetail_a.xml",
         "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\layout\\babydetail_a.xml"
     },

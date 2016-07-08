@@ -40,6 +40,7 @@
         </activity>
         <activity android:name="com.My.Login_Activity"/>
         <activity android:name="com.My.Register_Avtivity"/>
+        <activity android:name="com.My.zhongcan_Activity"/>
         <activity android:name="com.jarvis.mytaobao.home.BabyActivity" />
         <activity android:name="com.jarvis.mytaobao.home.WareActivity" />
         <activity android:name="com.jarvis.mytaobao.home.ShowBigPictrue" />

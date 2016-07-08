@@ -4,7 +4,7 @@
     api-level="19"
     density="xhdpi"
     format="7"
-    timestamp="22676917406138" >
+    timestamp="29114083125754" >
 
     <task
         name="javac"
@@ -23,12 +23,12 @@
         location="C:\Users\mn\Desktop\MyTaobaoTest1\app\build\intermediates\res\resources-debug.ap_"
         type="RESOURCES" />
 
-    <build timestamp="22564551389154" >
+    <build timestamp="29047657505694" >
         <artifact
             location="C:\Users\mn\Desktop\MyTaobaoTest1\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="22676917406138" >
+    <build timestamp="29114083125754" >
         <artifact
             location="C:\Users\mn\Desktop\MyTaobaoTest1\app\build\intermediates\res\resources-debug.ap_"
             type="RESOURCES" />
