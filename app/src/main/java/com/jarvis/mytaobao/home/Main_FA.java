@@ -112,8 +112,8 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 			}
 
 			break;
-		case R.id.iv_menu_1:
-			// 微淘界面
+	/*	case R.id.iv_menu_1:
+			// 附近
 			if (tao_F == null) {
 				tao_F = new Tao_F();
 				// 判断当前界面是否隐藏，如果隐藏就进行添加显示，false表示显示，true表示当前界面隐藏
@@ -129,7 +129,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 
 			break;
 		case R.id.iv_menu_2:
-			// 发现界面
+			// xxxx
 			if (discover_F == null) {
 				discover_F = new Discover_F();
 				// 判断当前界面是否隐藏，如果隐藏就进行添加显示，false表示显示，true表示当前界面隐藏
@@ -157,7 +157,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 
 			break;
 		case R.id.iv_menu_4:
-			// 我的淘宝界面
+			// 我的
 			if (user_F == null) {
 				user_F = new User_F();
 				// 判断当前界面是否隐藏，如果隐藏就进行添加显示，false表示显示，true表示当前界面隐藏
@@ -171,7 +171,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 				}
 			}
 
-			break;
+			break;*/
 		}
 
 		// 设置按钮的选中和未选中资源

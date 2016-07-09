@@ -1,19 +1,17 @@
 package com.jarvis.mytaobao.user;
 
-import com.jarvis.mytaobaotest.R;
-import com.zdp.aseo.content.AseoZdpAseo;
-
 import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.jarvis.mytaobaotest.R;
+import com.zdp.aseo.content.AseoZdpAseo;
+
 /**
- * Òâ¼û·´À¡½çÃæ
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @author http://yecaoly.taobao.com
  *
  */
@@ -33,7 +31,7 @@ public class User_opinion extends Activity implements OnClickListener {
 	private void initView(){
 		
 		iv_back=(ImageView) findViewById(R.id.iv_opinion_back);
-		tv_goMyShop=(TextView) findViewById(R.id.tv_goMyshop);
+
 		AseoZdpAseo.initType(this, AseoZdpAseo.INSERT_TYPE);
 		iv_back.setOnClickListener(this);
 		tv_goMyShop.setOnClickListener(this);
@@ -46,12 +44,7 @@ public class User_opinion extends Activity implements OnClickListener {
 		case R.id.iv_opinion_back:
 			finish();
 			break;
-		case R.id.tv_goMyshop:
-			//½øÈëÁµÉÏÃ¨Å®ÒÂ·»µÄÍøµê
-			Uri uri = Uri.parse("http://yecaoly.taobao.com"); 
-			Intent intent = new Intent(Intent.ACTION_VIEW, uri); 
-			startActivity(intent);
-			break;
+
 		default:
 			break;
 		}

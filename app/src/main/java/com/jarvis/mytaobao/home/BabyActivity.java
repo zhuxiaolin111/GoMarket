@@ -1,7 +1,5 @@
 package com.jarvis.mytaobao.home;
 
-import java.util.ArrayList;
-
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -11,7 +9,6 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -34,8 +31,10 @@ import com.javis.Adapter.Adapter_ListView_detail;
 import com.lesogo.cu.custom.ScaleView.HackyViewPager;
 import com.zdp.aseo.content.AseoZdpAseo;
 
+import java.util.ArrayList;
+
 /**
- * µ¥¸öÉÌÆ·ÏêÇé½çÃæ
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @author http://yecaoly.taobao.com
  * 
  */
@@ -45,18 +44,18 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 
 	private HackyViewPager viewPager;
 	private ArrayList<View> allListView;
-	private int[] resId = { R.drawable.detail_show_1, R.drawable.detail_show_2, R.drawable.detail_show_3, R.drawable.detail_show_4, R.drawable.detail_show_5, R.drawable.detail_show_6 };
+	private int[] resId = { R.drawable.cafe5, R.drawable.cafe5, R.drawable.cafe5, R.drawable.cafe5, R.drawable.cafe5, R.drawable.cafe5 };
 	private ListView listView;
 	private ImageView iv_baby_collection;
-	/**µ¯³öÉÌÆ·¶©µ¥ĞÅÏ¢ÏêÇé*/
+	/**ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½*/
 	private BabyPopWindow popWindow;
-	/** ÓÃÓÚÉèÖÃ±³¾°°µµ­ */
+	/** ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	private LinearLayout all_choice_layout = null;
-	/**ÅĞ¶ÏÊÇ·ñµã»÷µÄÁ¢¼´¹ºÂò°´Å¥*/
+	/**ï¿½Ğ¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥*/
 	boolean isClickBuy = false;
-	/**ÊÇ·ñÌí¼ÓÊÕ²Ø*/
+	/**ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Õ²ï¿½*/
 	private static boolean isCollection=false; 
-	/**ViewPagerµ±Ç°ÏÔÊ¾Ò³µÄÏÂ±ê*/
+	/**ViewPagerï¿½ï¿½Ç°ï¿½ï¿½Ê¾Ò³ï¿½ï¿½ï¿½Â±ï¿½*/
 	private int position=0;
 	
 	
@@ -64,7 +63,7 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.babydetail_a);
-		//µÃµ½±£´æµÄÊÕ²ØĞÅÏ¢
+		//ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ²ï¿½ï¿½ï¿½Ï¢
 		getSaveCollection();
 		initView();
 		popWindow = new BabyPopWindow(this);
@@ -73,10 +72,10 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 
 	@SuppressLint("NewApi")
 	private void initView() {
-		// »ñÈ¡Ä¬ÈÏµÄNFC¿ØÖÆÆ÷
+		// ï¿½ï¿½È¡Ä¬ï¿½Ïµï¿½NFCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		nfcAdapter = NfcAdapter.getDefaultAdapter(this);
 		if (nfcAdapter == null) {
-			Toast.makeText(this, "¸ÃÉè±¸²»Ö§³ÖNFC", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "æ­¤è®¾å¤‡ä¸æ”¯æŒNFC", Toast.LENGTH_SHORT).show();
 		}
 		AseoZdpAseo.initType(this, AseoZdpAseo.INSERT_TYPE);
 		((ImageView) findViewById(R.id.iv_back)).setOnClickListener(this);
@@ -93,16 +92,16 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				//½øÈëÁµÉÏÃ¨Å®ÒÂ·»µÄÍøµê
-				Uri uri = Uri.parse("http://yecaoly.taobao.com"); 
-				Intent intent = new Intent(Intent.ACTION_VIEW, uri); 
-				startActivity(intent);
+
+				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				//Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+				//startActivity(intent);
 			}
 		});
 		initViewPager();
 		
 		if (isCollection) {
-			//Èç¹ûÒÑ¾­ÊÕ²Ø£¬ÔòÏÔÊ¾ÊÕ²ØºóµÄĞ§¹û
+			//ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½Õ²Ø£ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Õ²Øºï¿½ï¿½Ğ§ï¿½ï¿½
 			iv_baby_collection.setImageResource(R.drawable.second_2_collection);
 		}
 	}
@@ -111,30 +110,30 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 	public void onClick(View view) {
 		switch (view.getId()) {
 		case R.id.iv_back:
-			//·µ»Ø
+			//ï¿½ï¿½ï¿½ï¿½
 			finish();
 			break;
 		case R.id.iv_baby_collection:
-			//ÊÕ²Ø
+			//ï¿½Õ²ï¿½
 			if (isCollection) {
-				//ÌáÊ¾ÊÇ·ñÈ¡ÏûÊÕ²Ø
+				//ï¿½ï¿½Ê¾ï¿½Ç·ï¿½È¡ï¿½ï¿½ï¿½Õ²ï¿½
 				cancelCollection();
 			}else {
 				isCollection=true;
 				setSaveCollection();
-				//Èç¹ûÒÑ¾­ÊÕ²Ø£¬ÔòÏÔÊ¾ÊÕ²ØºóµÄĞ§¹û
+				//ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½Õ²Ø£ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Õ²Øºï¿½ï¿½Ğ§ï¿½ï¿½
 				iv_baby_collection.setImageResource(R.drawable.second_2_collection);
-				Toast.makeText(this, "ÊÕ²Ø³É¹¦", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, "ï¿½Õ²Ø³É¹ï¿½", Toast.LENGTH_SHORT).show();
 			}
 			break;
 		case R.id.put_in:
-			//Ìí¼Ó¹ºÎï³µ
+			//ï¿½ï¿½Ó¹ï¿½ï¿½ï³µ
 			isClickBuy = false;
 			setBackgroundBlack(all_choice_layout, 0);
 			popWindow.showAsDropDown(view);
 			break;
 		case R.id.buy_now:
-			//Á¢¼´¹ºÂò
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			isClickBuy = true;
 			setBackgroundBlack(all_choice_layout, 0);
 			popWindow.showAsDropDown(view);
@@ -159,7 +158,7 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 			imageView.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
-					//ÌôÕ½µ½²é¿´´óÍ¼½çÃæ
+					//ï¿½ï¿½Õ½ï¿½ï¿½ï¿½é¿´ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
 					Intent intent = new Intent(BabyActivity.this, ShowBigPictrue.class);
 					intent.putExtra("position", position);
 					startActivity(intent);
@@ -217,21 +216,21 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 
 	}
 
-	//µã»÷µ¯´°µÄÈ·ÈÏ°´Å¥µÄÏìÓ¦
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½Ï°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Ó¦
 	@Override
 	public void onClickOKPop() {
 		setBackgroundBlack(all_choice_layout, 1);
 
 		if (isClickBuy) {
-			//Èç¹ûÖ®Ç°ÊÇµã»÷µÄÁ¢¼´¹ºÂò£¬ÄÇÃ´¾ÍÌø×ªµ½Á¢¼´¹ºÎï½çÃæ
+			//ï¿½ï¿½ï¿½Ö®Ç°ï¿½Çµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			Intent intent = new Intent(BabyActivity.this, BuynowActivity.class);
 			startActivity(intent);
 		}else {
-			Toast.makeText(this, "Ìí¼Óµ½¹ºÎï³µ³É¹¦", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï³µï¿½É¹ï¿½", Toast.LENGTH_SHORT).show();
 		}
 	}
 
-	/** ¿ØÖÆ±³¾°±ä°µ 0±ä°µ 1±äÁÁ */
+	/** ï¿½ï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ä°µ 0ï¿½ä°µ 1ï¿½ï¿½ï¿½ï¿½ */
 	public void setBackgroundBlack(View view, int what) {
 		switch (what) {
 		case 0:
@@ -243,33 +242,33 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 		}
 	}
 
-	/**±£´æÊÇ·ñÌí¼ÓÊÕ²Ø*/
+	/**ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Õ²ï¿½*/
 	private void setSaveCollection(){
 		SharedPreferences sp=getSharedPreferences("SAVECOLLECTION", Context.MODE_PRIVATE);
 		Editor editor=sp.edit();
 		editor.putBoolean("isCollection", isCollection);
 		editor.commit();
 	}
-	/**µÃµ½±£´æµÄÊÇ·ñÌí¼ÓÊÕ²Ø±ê¼Ç*/
+	/**ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Õ²Ø±ï¿½ï¿½*/
 	private void getSaveCollection(){
 		SharedPreferences sp=getSharedPreferences("SAVECOLLECTION", Context.MODE_PRIVATE);
 		isCollection=sp.getBoolean("isCollection", false);
 		
 	}
-	/**È¡ÏûÊÕ²Ø*/
+	/**È¡ï¿½ï¿½ï¿½Õ²ï¿½*/
 	private  void cancelCollection(){
 		AlertDialog.Builder dialog=new AlertDialog.Builder(this);
-		dialog.setTitle("ÊÇ·ñÈ¡ÏûÊÕ²Ø");
-		dialog.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+		dialog.setTitle("ï¿½Ç·ï¿½È¡ï¿½ï¿½ï¿½Õ²ï¿½");
+		dialog.setPositiveButton("È·ï¿½ï¿½", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface arg0, int arg1) {
 				isCollection=false;
-				//Èç¹ûÈ¡ÏûÊÕ²Ø£¬ÔòÏÔÊ¾È¡ÏûÊÕ²ØºóµÄĞ§¹û
+				//ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Õ²Ø£ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾È¡ï¿½ï¿½ï¿½Õ²Øºï¿½ï¿½Ğ§ï¿½ï¿½
 				iv_baby_collection.setImageResource(R.drawable.second_2);
 				setSaveCollection();
 			}
 		});
-		dialog.setNegativeButton("È¡Ïû", null);
+		dialog.setNegativeButton("È¡ï¿½ï¿½", null);
 		dialog.create().show();
 		
 	}

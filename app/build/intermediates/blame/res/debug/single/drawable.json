@@ -1,46 +1,46 @@
 [
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_2_select.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\bt_menu_2_select.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhijiao.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\zhijiao.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_1_select.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\bt_menu_1_select.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_0_select.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\bt_menu_0_select.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_3_select.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\bt_menu_3_select.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_1_select.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\bt_menu_1_select.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_4_select.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\bt_menu_4_select.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_2_select.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\bt_menu_2_select.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_0_select.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\bt_menu_0_select.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiao.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\yuanjiao.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhijiao.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\zhijiao.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhijiao_gray.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\zhijiao_gray.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhijiao_gray.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\zhijiao_gray.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiao_choice.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\yuanjiao_choice.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\holder_bg.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\holder_bg.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_4_select.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\bt_menu_4_select.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiao_choice.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\yuanjiao_choice.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_3_select.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\bt_menu_3_select.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiao.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\yuanjiao.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\holder_bg.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\holder_bg.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiao_red.xml",
-        "source": "C:\\Users\\mn\\Desktop\\MyTaobaoTest1\\app\\src\\main\\res\\drawable\\yuanjiao_red.xml"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiao_red.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\yuanjiao_red.xml"
     }
 ]

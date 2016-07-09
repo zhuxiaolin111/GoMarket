@@ -20,7 +20,6 @@ import com.javis.Adapter.Adapter_GridView;
 import com.javis.Adapter.Adapter_GridView_hot;
 import com.javis.ab.view.AbOnItemClickListener;
 import com.javis.ab.view.AbSlidingPlayView;
-import com.zxing.activity.CaptureActivity;
 
 import java.util.ArrayList;
 
@@ -42,9 +41,9 @@ public class Home_F extends Fragment {
 	//扫一扫
 	private ImageView iv_shao;
 	// 分类九宫格的资源文件
-	private int[] pic_path_classify = { R.drawable.menu_guide_1, R.drawable.menu_guide_2, R.drawable.menu_guide_3, R.drawable.menu_guide_4, R.drawable.menu_guide_5, R.drawable.menu_guide_6, R.drawable.menu_guide_7, R.drawable.menu_guide_8 };
+	private int[] pic_path_classify = { R.drawable.a, R.drawable.b, R.drawable.c, R.drawable.d, R.drawable.c, R.drawable.e, R.drawable.f, R.drawable.j };
 	// 热门市场的资源文件
-	private int[] pic_path_hot = { R.drawable.menu_1, R.drawable.menu_2, R.drawable.menu_3, R.drawable.menu_4, R.drawable.menu_5, R.drawable.menu_6 };
+	private int[] pic_path_hot = { R.drawable.cafe1, R.drawable.cafe2, R.drawable.cafe3, R.drawable.cafe5, R.drawable.cafe5, R.drawable.cafe5 };
 	/**存储首页轮播的界面*/
 	private ArrayList<View> allListView;
 	/**首页轮播的界面的资源*/
@@ -64,8 +63,8 @@ public class Home_F extends Fragment {
 			@Override
 			public void onClick(View arg0) {
 				//跳转到二维码扫描
-				Intent intent=new Intent(getActivity(),CaptureActivity.class); 
-				startActivity(intent);
+			/*	Intent intent=new Intent(getActivity(),CaptureActivity.class);
+				startActivity(intent);*/
 			}
 		});
 		tv_top_title=(TextView) view.findViewById(R.id.tv_top_title);
@@ -73,8 +72,8 @@ public class Home_F extends Fragment {
 			@Override
 			public void onClick(View arg0) {
 				//挑战到宝贝搜索界面
-				Intent intent=new Intent(getActivity(),WareActivity.class);
-				startActivity(intent);
+			/*	Intent intent=new Intent(getActivity(),WareActivity.class);
+				startActivity(intent);*/
 			}
 		});
 		

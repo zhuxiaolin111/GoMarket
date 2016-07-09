@@ -24,7 +24,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:gravity="center"
-            android:text="搜索宝贝-店铺"
+            android:text="搜索"
             android:textColor="#FFFFFF"
             android:background="@drawable/bg_menu_edit"
             android:textSize="20sp" />

@@ -25,7 +25,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
-            android:text="￥49.00   库存750"
+            android:text="￥49.00   xxxx"
             android:textColor="@color/tv_Red"
             android:textSize="18sp" />
 

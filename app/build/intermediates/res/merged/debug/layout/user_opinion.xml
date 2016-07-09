@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="    至此，仿淘宝项目基本完成，过程中也遇到不少困难，总结出以下几点："
+                android:text="    至此，订餐项目基本完成，过程中也遇到不少困难，总结出以下几点："
                 android:textColor="@color/tv_Black" />
 
             <TextView
@@ -94,19 +94,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="    希望结识更多的朋友，一起学习，一起进步，本人联系方式：QQ:717549357,同时，欢迎大家去我的淘宝店逛逛"
+                android:text="    希望结识更多的朋友，一起学习，一起进步."
                 android:textColor="@color/tv_Black" />
 
-            <TextView
-                android:id="@+id/tv_goMyshop"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@color/turquoise"
-                android:layout_marginTop="10dp"
-                android:textSize="17sp"
-                android:text="（恋上猫女衣坊，http://yecaoly.taobao.com）,点我去看看"
-                android:textColor="@color/tv_Black" />
+
         </LinearLayout>
     </ScrollView>
 
