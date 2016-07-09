@@ -4,29 +4,44 @@
     api-level="19"
     density="xhdpi"
     format="7"
-    timestamp="28379823996386" >
+    timestamp="29217276717540"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="247" />
+        duration="285" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="375" />
     <task
         name="instant-run-transform"
         duration="17" />
     <task
         name="verifier"
-        duration="1" />
+        duration="2" />
 
     <artifact
-        location="C:\Users\mn\AndroidStudioProjects\DingCanApp\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\mn\AndroidStudioProjects\DingCanApp\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build timestamp="28379823996386" >
         <artifact
             location="C:\Users\mn\AndroidStudioProjects\DingCanApp\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="29172541535425"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\mn\AndroidStudioProjects\DingCanApp\app\build\intermediates\builds\debug\29172541535425\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="29217276717540"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\mn\AndroidStudioProjects\DingCanApp\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

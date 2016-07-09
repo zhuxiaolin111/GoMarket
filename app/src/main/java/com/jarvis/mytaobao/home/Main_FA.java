@@ -24,9 +24,7 @@ import java.util.HashMap;
 
 /**
  * 整个程序最底层的框架Activity，所有的Fragment都是依赖于此Activity而存在的
- * 
- * @author http://yecaoly.taobao.com
- * 
+
  */
 public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCallListener {
 

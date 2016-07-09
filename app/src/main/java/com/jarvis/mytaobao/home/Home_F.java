@@ -1,6 +1,5 @@
 package com.jarvis.mytaobao.home;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -25,7 +24,7 @@ import java.util.ArrayList;
 
 /**
  * 首页
- * @author http://yecaoly.taobao.com
+
  */
 public class Home_F extends Fragment {
 	//顶部标题栏
@@ -95,17 +94,17 @@ public class Home_F extends Fragment {
 		gridView_classify.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				//挑战到宝贝搜索界面
-				Intent intent = new Intent(getActivity(), WareActivity.class);
-				startActivity(intent);
+				//特色菜调到菜品列表
+			//	Intent intent = new Intent(getActivity(), WareActivity.class);
+			//	startActivity(intent);
 			}
 		});
 		my_gridView_hot.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				//跳转到宝贝详情界面
-				Intent intent = new Intent(getActivity(), BabyActivity.class);
-				startActivity(intent);
+				//畅销菜调到菜品详情页
+			//	Intent intent = new Intent(getActivity(), BabyActivity.class);
+			//	startActivity(intent);
 			}
 		});
 		
@@ -135,9 +134,10 @@ public class Home_F extends Fragment {
 		viewPager.setOnItemClickListener(new AbOnItemClickListener() {
 			@Override
 			public void onClick(int position) {
-				//跳转到详情界面
-				Intent intent = new Intent(getActivity(), BabyActivity.class);
-				startActivity(intent);
+
+				//  轮播图片跳转到菜品详情界面
+				//Intent intent = new Intent(getActivity(), BabyActivity.class);
+				//startActivity(intent);
 			}
 		});
 	}
