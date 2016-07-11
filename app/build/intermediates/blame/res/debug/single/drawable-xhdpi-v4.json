@@ -112,12 +112,12 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-xhdpi\\find_g_3.png"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\guide_cart_on.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-xhdpi\\guide_cart_on.png"
-    },
-    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\user_life.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-xhdpi\\user_life.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\guide_cart_on.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-xhdpi\\guide_cart_on.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\find_1.png",
@@ -140,16 +140,16 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-xhdpi\\find_5.png"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\menu_guide_7.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-xhdpi\\menu_guide_7.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\menu_guide_6.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-xhdpi\\menu_guide_6.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\menu_guide_3.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-xhdpi\\menu_guide_3.png"
-    },
-    {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\menu_guide_7.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-xhdpi\\menu_guide_7.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\guide_account_nm.png",

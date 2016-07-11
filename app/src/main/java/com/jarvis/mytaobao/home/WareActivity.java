@@ -1,5 +1,11 @@
 package com.jarvis.mytaobao.home;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashMap;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -26,12 +32,6 @@ import com.javis.Adapter.Adapter_ListView_ware;
 import com.lesogo.cu.custom.xListview.XListView;
 import com.lesogo.cu.custom.xListview.XListView.IXListViewListener;
 import com.zdp.aseo.content.AseoZdpAseo;
-
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashMap;
 
 /**
  * 多个商品展示界面

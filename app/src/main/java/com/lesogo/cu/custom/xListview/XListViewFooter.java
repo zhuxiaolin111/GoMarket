@@ -38,18 +38,18 @@ public class XListViewFooter extends LinearLayout {
 	}
 
 	public void setState(int state) {
-		//Õý³£×´Ì¬
+		//ï¿½ï¿½ï¿½ï¿½×´Ì¬
 		mProgressBar.setVisibility(View.INVISIBLE);
 		mHintView.setVisibility(View.INVISIBLE);
 		if (state == STATE_READY) {
-			//ËÉ¿ª²éÑ¯¸ü¶à
+			//ï¿½É¿ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½
 			mHintView.setVisibility(View.VISIBLE);
 			mHintView.setText(R.string.xlistview_footer_hint_ready);
 		} else if (state == STATE_LOADING) {
-			//¼ÓÔØ×´Ì¬
+			//ï¿½ï¿½ï¿½ï¿½×´Ì¬
 			mProgressBar.setVisibility(View.VISIBLE);
 		} else {
-			//²é¿´¸ü¶à
+			//ï¿½é¿´ï¿½ï¿½ï¿½ï¿½
 			mHintView.setVisibility(View.GONE);
 			mHintView.setText(R.string.xlistview_footer_hint_normal);
 		}
@@ -58,13 +58,13 @@ public class XListViewFooter extends LinearLayout {
 	public void setBottomMargin(int height) {
 		if (height < 0)
 			return;
-		LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) mContentView.getLayoutParams();
+		LayoutParams lp = (LayoutParams) mContentView.getLayoutParams();
 		lp.bottomMargin = height;
 		mContentView.setLayoutParams(lp);
 	}
 
 	public int getBottomMargin() {
-		LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) mContentView.getLayoutParams();
+		LayoutParams lp = (LayoutParams) mContentView.getLayoutParams();
 		return lp.bottomMargin;
 	}
 
@@ -88,7 +88,7 @@ public class XListViewFooter extends LinearLayout {
 	 * hide footer when disable pull load more
 	 */
 	public void hide() {
-		LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) mContentView.getLayoutParams();
+		LayoutParams lp = (LayoutParams) mContentView.getLayoutParams();
 		lp.height = 0;
 		mContentView.setLayoutParams(lp);
 	}
@@ -97,7 +97,7 @@ public class XListViewFooter extends LinearLayout {
 	 * show footer
 	 */
 	public void show() {
-		LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) mContentView.getLayoutParams();
+		LayoutParams lp = (LayoutParams) mContentView.getLayoutParams();
 		lp.height = LayoutParams.WRAP_CONTENT;
 		mContentView.setLayoutParams(lp);
 	}
@@ -106,7 +106,7 @@ public class XListViewFooter extends LinearLayout {
 		mContext = context;
 		LinearLayout moreView = (LinearLayout) LayoutInflater.from(mContext).inflate(R.layout.xlistview_footer, null);
 		addView(moreView);
-		moreView.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+		moreView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 
 		mContentView = moreView.findViewById(R.id.xlistview_footer_content);
 		mProgressBar = moreView.findViewById(R.id.xlistview_footer_progressbar);

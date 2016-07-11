@@ -1,15 +1,19 @@
 [
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_reduce.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\icon_reduce.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_2.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_2.png"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_10.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\user_10.png"
-    },
-    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cafe3.jpg",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\cafe3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_10.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\user_10.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_1.png",
@@ -32,8 +36,16 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\d.png"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\main_image_3.jpg",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\main_image_3.jpg"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_7.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_7.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\main_image_2.jpg",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\main_image_2.jpg"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_search.png",
@@ -48,24 +60,16 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_3.png"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_edit_ware.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\bg_edit_ware.png"
-    },
-    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_main.jpg",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\bg_main.jpg"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_edit_ware.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\bg_edit_ware.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\c.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\c.png"
-    },
-    {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_1_1.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_1_1.png"
-    },
-    {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_2_1.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_2_1.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_7.png",
@@ -76,12 +80,24 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\tao_user_2.png"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_1_1.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_1_1.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_2_1.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_2_1.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\f047.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\f047.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_location.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\icon_location.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_cart.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\icon_cart.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_1_3.png",
@@ -96,12 +112,12 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\icon_off.png"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_1_0.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_1_0.png"
-    },
-    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_6.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\user_6.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_1_0.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_1_0.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_3.png",
@@ -116,12 +132,16 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\detail_show_1.png"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_2_2.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_2_2.png"
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_search_group.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\btn_search_group.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cafe2.jpg",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\cafe2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_2_2.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_2_2.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\f009.png",
@@ -140,6 +160,10 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\cafe5.jpg"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\detail_collected_ico.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\detail_collected_ico.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\detail_show_4.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\detail_show_4.png"
     },
@@ -152,8 +176,16 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_2_4.png"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_add.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\icon_add.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_5.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_5.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\top_tab_bg.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\top_tab_bg.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\f020.png",
@@ -168,12 +200,20 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\a.png"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\edit_list_down.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\edit_list_down.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cafe6.jpg",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\cafe6.jpg"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\g.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\g.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\top_bar_right_button_bg.jpg",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\top_bar_right_button_bg.jpg"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\f.png",
@@ -188,6 +228,10 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\buy_now.png"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_action_search.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\ic_action_search.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_4.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\user_4.png"
     },
@@ -200,12 +244,32 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\second_2_collection.png"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_title_navigation_pressed.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\btn_title_navigation_pressed.png"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\e.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\e.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_top_left.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_top_left.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_refresh.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\btn_refresh.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\main_side_shadow.9.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\main_side_shadow.9.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\main_image_4.jpg",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\main_image_4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\main_image_1.jpg",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\main_image_1.jpg"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_6.png",
@@ -228,12 +292,12 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\del_icon_normal.png"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\detail_show_5.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\detail_show_5.png"
-    },
-    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cafe4.jpg",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\cafe4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\detail_show_5.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\detail_show_5.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_menu_edit.png",
@@ -248,12 +312,12 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\cafe1.jpg"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_4.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_4.png"
-    },
-    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_home.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\icon_home.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_4.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_4.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_2.png",
@@ -272,16 +336,20 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\icon_goback.png"
     },
     {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\top_bar_left_button_bg.jpg",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\top_bar_left_button_bg.jpg"
+    },
+    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_1.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_1.png"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_2_3.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_2_3.png"
-    },
-    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_5.png",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\user_5.png"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_2_3.png",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-hdpi\\menu_2_3.png"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_my.png",

@@ -1,24 +1,24 @@
 package com.jarvis.mytaobao.user;
 
-import java.util.Random;
+import android.app.Activity;
+import android.os.Bundle;
 
 import com.jarvis.MyView.ScratchTextView;
 import com.jarvis.mytaobaotest.R;
 import com.zdp.aseo.content.AseoZdpAseo;
 
-import android.app.Activity;
-import android.os.Bundle;
+import java.util.Random;
 
 /**
- * ¹Î¹ÎÀÖ½çÃæ
+ * åˆ®åˆ®ä¹ç•Œé¢
  * @author http://yecaoly.taobao.com
  *
  */
-public class User_life extends Activity { 
+public class User_life extends Activity {
 
-	/**¹Î¹ÎÀÖ×é¼ş*/
+	/**åˆ®åˆ®ä¹ç»„ä»¶*/
 	private ScratchTextView tv_Scratch;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,16 +28,16 @@ public class User_life extends Activity {
 		tv_Scratch.initScratchCard(0xFFCECED1, 3, 1f);
 		tv_Scratch.setText(str_reward[getRandom()]);
 	}
-	
-	
-	private String[] str_reward={"Ğ»Ğ»»İ¹Ë","¹§Ï²£¡½±Àø5Ã«","¹ÄÀø½±£¬¼ÓÓÍ","ÓÅĞã½±","±íÕÃ½±","Srroy£¡ÔÙÀ´°É£¡","¹§Ï²£¡Ò»µÈ½±","ºÜ±§Ç¸","Ã»ÓĞ½±","ÔÙÂòÒ»Æ¿¾ÍÓĞÁË"};
-	
-	
-	/**Ëæ»úÉú³ÉÒ»¸öÊı*/
+
+
+	private String[] str_reward={"è°¢è°¢æƒ é¡¾","æ­å–œï¼å¥–åŠ±5æ¯›","é¼“åŠ±å¥–ï¼ŒåŠ æ²¹","ä¼˜ç§€å¥–","è¡¨å½°å¥–","Srroyï¼å†æ¥å§ï¼","æ­å–œï¼ä¸€ç­‰å¥–","å¾ˆæŠ±æ­‰","æ²¡æœ‰å¥–","å†ä¹°ä¸€ç“¶å°±æœ‰äº†"};
+
+
+	/**éšæœºç”Ÿæˆä¸€ä¸ªæ•°*/
 	private int getRandom(){
 		Random random=new Random();
 		int number=random.nextInt(10);
-		
+
 		return number;
 	}
 

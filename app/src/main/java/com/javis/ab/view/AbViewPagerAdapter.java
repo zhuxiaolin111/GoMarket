@@ -1,29 +1,29 @@
 package com.javis.ab.view;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
- * 
- * Ãû³Æ£ºAbViewPagerAdapter.java 
- * ÃèÊö£ºÒ»¸öÍ¨ÓÃµÄViewPagerÊÊÅäÆ÷
+ *
+ * åç§°ï¼šAbViewPagerAdapter.java
+ * æè¿°ï¼šä¸€ä¸ªé€šç”¨çš„ViewPageré€‚é…å™¨
  */
 @SuppressLint("UseSparseArrays")
 @SuppressWarnings("unused")
 public class AbViewPagerAdapter extends PagerAdapter{
-	
+
 	/** The m context. */
 	private Context mContext;
-	
+
 	/** The m list views. */
 	private ArrayList<View> mListViews = null;
-	
+
 	/** The m views. */
 	private HashMap <Integer,View> mViews = null;
 
@@ -40,7 +40,7 @@ public class AbViewPagerAdapter extends PagerAdapter{
 	}
 
 	/**
-	 * ÃèÊö£º»ñÈ¡ÊıÁ¿.
+	 * æè¿°ï¼šè·å–æ•°é‡.
 	 *
 	 * @return the count
 	 * @see android.support.v4.view.PagerAdapter#getCount()
@@ -51,7 +51,7 @@ public class AbViewPagerAdapter extends PagerAdapter{
 	}
 
 	/**
-	 * ÃèÊö£ºObjectÊÇ·ñ¶ÔÓ¦Õâ¸öView.
+	 * æè¿°ï¼šObjectæ˜¯å¦å¯¹åº”è¿™ä¸ªView.
 	 *
 	 * @param arg0 the arg0
 	 * @param arg1 the arg1
@@ -64,7 +64,7 @@ public class AbViewPagerAdapter extends PagerAdapter{
 	}
 
 	/**
-	 * ÃèÊö£ºÏÔÊ¾View.
+	 * æè¿°ï¼šæ˜¾ç¤ºView.
 	 *
 	 * @param container the container
 	 * @param position the position
@@ -79,7 +79,7 @@ public class AbViewPagerAdapter extends PagerAdapter{
 	}
 
 	/**
-	 * ÃèÊö£ºÒÆ³ıView.
+	 * æè¿°ï¼šç§»é™¤View.
 	 *
 	 * @param container the container
 	 * @param position the position
@@ -90,9 +90,9 @@ public class AbViewPagerAdapter extends PagerAdapter{
 	public void destroyItem(View container, int position, Object object) {
 		((ViewPager) container).removeView((View)object);
 	}
-	
+
 	/**
-	 * ÃèÊö£ººÜÖØÒª£¬·ñÔò²»ÄÜnotifyDataSetChanged.
+	 * æè¿°ï¼šå¾ˆé‡è¦ï¼Œå¦åˆ™ä¸èƒ½notifyDataSetChanged.
 	 *
 	 * @param object the object
 	 * @return the item position
@@ -102,6 +102,6 @@ public class AbViewPagerAdapter extends PagerAdapter{
 	public int getItemPosition(Object object) {
 		return POSITION_NONE;
 	}
-	
+
 
 }

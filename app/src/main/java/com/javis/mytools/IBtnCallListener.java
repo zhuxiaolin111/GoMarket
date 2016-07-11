@@ -1,7 +1,7 @@
 package com.javis.mytools;
 
 /**
- * ´«ËÍFragmentºÍFragmentActivityÖ®¼äµÄ¿Ø¼ş½»»¥ĞÅÏ¢
+ * ä¼ é€Fragmentå’ŒFragmentActivityä¹‹é—´çš„æ§ä»¶äº¤äº’ä¿¡æ¯
  * @author Administrator
  *
  */

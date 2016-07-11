@@ -1,7 +1,5 @@
 package com.jarvis.mytaobao.cart;
 
-import com.jarvis.mytaobao.Data.Data;
-import com.jarvis.mytaobaotest.R;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -11,8 +9,11 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.jarvis.mytaobao.Data.Data;
+import com.jarvis.mytaobaotest.R;
+
 /**
- * ¹ºÎï³µÖ÷½çÃæ
+ * ï¿½ï¿½ï¿½ï³µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 
  * @author http://yecaoly.taobao.com
  */
@@ -34,7 +35,7 @@ public class Cart_F extends Fragment implements OnClickListener {
 	}
 
 	private void initView(View view) {
-		((TextView) view.findViewById(R.id.tv_top_txtTitle)).setText("ÎÒµÄ¹ºÎï³µ");
+		((TextView) view.findViewById(R.id.tv_top_txtTitle)).setText("ï¿½ÒµÄ¹ï¿½ï¿½ï³µ");
 
 		bt_cart_all = (TextView) view.findViewById(R.id.bt_cart_all);
 		bt_cart_low = (TextView) view.findViewById(R.id.bt_cart_low);
@@ -63,11 +64,11 @@ public class Cart_F extends Fragment implements OnClickListener {
 			if (allBaby_F!=null&&isDel) {
 				removeFragment(allBaby_F);
 				allBaby_F=null;
-				allBaby_F=new AllBaby_F("É¾³ý");
+				allBaby_F=new AllBaby_F("É¾ï¿½ï¿½");
 				addFragment(allBaby_F);
 				showFragment(allBaby_F);
 				isDel=false;
-				bt_cart_edit.setText("Íê³É");
+				bt_cart_edit.setText("ï¿½ï¿½ï¿½");
 				Data.Allprice_cart=0;
 				
 			}else if (!isDel&&allBaby_F!=null) {
@@ -78,7 +79,7 @@ public class Cart_F extends Fragment implements OnClickListener {
 				showFragment(allBaby_F);
 				isDel=true;
 				Data.Allprice_cart=0;
-				bt_cart_edit.setText("±à¼­");
+				bt_cart_edit.setText("ï¿½à¼­");
 			}
 			break;
 		case R.id.bt_cart_all:
@@ -125,20 +126,20 @@ public class Cart_F extends Fragment implements OnClickListener {
 		}
 	}
 
-	/** Ìí¼ÓFragment **/
+	/** ï¿½ï¿½ï¿½Fragment **/
 	public void addFragment(Fragment fragment) {
 		FragmentTransaction ft = this.getFragmentManager().beginTransaction();
 		ft.add(R.id.show_cart_view, fragment);
 		ft.commitAllowingStateLoss();
 	}
-	/** É¾³ýFragment **/
+	/** É¾ï¿½ï¿½Fragment **/
 	public void removeFragment(Fragment fragment) {
 		FragmentTransaction ft = this.getFragmentManager().beginTransaction();
 		ft.remove(fragment);
 		ft.commitAllowingStateLoss();
 	}
 
-	/** ÏÔÊ¾Fragment **/
+	/** ï¿½ï¿½Ê¾Fragment **/
 	public void showFragment(Fragment fragment) {
 		FragmentTransaction ft = this.getFragmentManager().beginTransaction();
 		if (allBaby_F != null) {

@@ -15,20 +15,20 @@ import com.jarvis.mytaobaotest.R;
 import com.javis.Adapter.Adapter_ListView_tao;
 
 /**
- * Œ¢Ã‘÷˜ΩÁ√Ê
+ * ÂæÆÊ∑ò‰∏ªÁïåÈù¢
  * @author http://yecaoly.taobao.com
  *
  */
 public class Tao_F extends Fragment {
-	
+
 	private ListView listView_tao;
 
-    @Override
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-    	
-    	View view=LayoutInflater.from(getActivity()).inflate(R.layout.tao_f, null);
-    	initView(view);
+							 Bundle savedInstanceState) {
+
+		View view=LayoutInflater.from(getActivity()).inflate(R.layout.tao_f, null);
+		initView(view);
 		return view;
 	}
 
@@ -36,9 +36,9 @@ public class Tao_F extends Fragment {
 
 
 	private void initView(View view){
-    	listView_tao=(ListView) view.findViewById(R.id.listView_tao);
-    	listView_tao.setAdapter(new Adapter_ListView_tao(getActivity()));
-    	listView_tao.setOnItemClickListener(new OnItemClickListener() {
+		listView_tao=(ListView) view.findViewById(R.id.listView_tao);
+		listView_tao.setAdapter(new Adapter_ListView_tao(getActivity()));
+		listView_tao.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
@@ -46,8 +46,8 @@ public class Tao_F extends Fragment {
 				startActivity(intent);
 			}
 		});
-    	
-    }
 
-    
+	}
+
+
 }

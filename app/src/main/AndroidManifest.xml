@@ -33,10 +33,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity android:name="com.My.Index_Activity">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+
         </activity>
         <activity android:name="com.My.Login_Activity"/>
         <activity android:name="com.My.Register_Avtivity"/>
@@ -57,8 +54,17 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
+        <activity android:name="com.My.Shangjia_Activity" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
 
+        <activity android:name="com.My.TSET_Activity">
+
+        </activity>
     </application>
 
 </manifest>

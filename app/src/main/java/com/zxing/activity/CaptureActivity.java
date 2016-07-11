@@ -1,8 +1,5 @@
 package com.zxing.activity;
 
-import java.io.IOException;
-import java.util.Vector;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
@@ -29,6 +26,9 @@ import com.zxing.camera.CameraManager;
 import com.zxing.decoding.CaptureActivityHandler;
 import com.zxing.decoding.InactivityTimer;
 import com.zxing.view.ViewfinderView;
+
+import java.io.IOException;
+import java.util.Vector;
 /**
  * Initial the camera
  * @author Ryan.Tang

@@ -24,12 +24,12 @@
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\zhijiao_gray.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiao_choice.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\yuanjiao_choice.xml"
-    },
-    {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_4_select.xml",
         "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\bt_menu_4_select.xml"
+    },
+    {
+        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiao_choice.xml",
+        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable\\yuanjiao_choice.xml"
     },
     {
         "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_3_select.xml",

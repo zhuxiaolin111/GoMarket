@@ -61,7 +61,7 @@ public class Adapter_ListView_cart extends BaseAdapter {
 		}
 		if (arrayList.size() != 0) {
 			holderView.tv_num.setText("x" + arrayList.get(position).get("num"));
-			holderView.tv_type_color.setText("ÀàÐÍ:" + arrayList.get(position).get("type").toString() + "    ÑÕÉ«:" + arrayList.get(position).get("color").toString());
+			holderView.tv_type_color.setText("ï¿½ï¿½ï¿½ï¿½:" + arrayList.get(position).get("type").toString() + "    ï¿½ï¿½É«:" + arrayList.get(position).get("color").toString());
 			
 			holderView.cb_choice.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
@@ -85,7 +85,7 @@ public class Adapter_ListView_cart extends BaseAdapter {
 	
 	public interface onCheckedChanged{
 		
-		public void getChoiceData(int position,boolean isChoice);
+		public void getChoiceData(int position, boolean isChoice);
 	}
 	public void setOnCheckedChanged(onCheckedChanged listener){
 		this.listener=listener;

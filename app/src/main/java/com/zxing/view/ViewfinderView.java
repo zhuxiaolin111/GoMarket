@@ -16,9 +16,6 @@
 
 package com.zxing.view;
 
-import java.util.Collection;
-import java.util.HashSet;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
@@ -32,6 +29,9 @@ import android.view.View;
 import com.google.zxing.ResultPoint;
 import com.jarvis.mytaobaotest.R;
 import com.zxing.camera.CameraManager;
+
+import java.util.Collection;
+import java.util.HashSet;
 
 /**
  * This view is overlaid on top of the camera preview. It adds the viewfinder rectangle and partial

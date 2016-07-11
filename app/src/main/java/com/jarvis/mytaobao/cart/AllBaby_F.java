@@ -28,9 +28,9 @@ import com.javis.Adapter.Adapter_ListView_cart.onCheckedChanged;
 import com.javis.mytools.IBtnCallListener;
 
 /**
- * ¹ºÎï³µ½çÃæÖĞµÄÈ«²¿±¦±´½çÃæ
+ * è´­ç‰©è½¦ç•Œé¢ä¸­çš„å…¨éƒ¨å®è´ç•Œé¢
  * @author http://yecaoly.taobao.com
- * 
+ *
  */
 @SuppressLint("ValidFragment")
 public class AllBaby_F extends Fragment implements IBtnCallListener, onCheckedChanged, OnClickListener {
@@ -40,7 +40,7 @@ public class AllBaby_F extends Fragment implements IBtnCallListener, onCheckedCh
 	private ListView listView_cart;
 	private CheckBox cb_cart_all;
 	private Adapter_ListView_cart adapter;
-	private String str_del = "½áËã(0)";
+	private String str_del = "ç»“ç®—(0)";
 	private boolean[] is_choice;
 
 	public AllBaby_F(String del) {
@@ -70,48 +70,48 @@ public class AllBaby_F extends Fragment implements IBtnCallListener, onCheckedCh
 			@Override
 			public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
 				/*
-				 * ÅĞ¶ÏÒ»£º£¨È«Ñ¡°´Å¥Ñ¡ÖĞ£©È«Ñ¡°´Å¥ÊÇ·ñÑ¡Ôñ£¬Èç¹ûÑ¡Ôñ£¬ÄÇÃ´ÁĞ±íÃ¿Ò»ĞĞ¶¼Ñ¡ÖĞ
-				 * ÅĞ¶Ï¶ş£º£¨È«Ñ¡°´Å¥È¡Ïû£©µ±È¡ÏûÈ«Ñ¡°´Å¥Ê±£¬»áÓĞÁ½ÖÖÇé¿ö
-				 * £¬µÚÒ»£ºÖ÷¶¯µã»÷È«Ñ¡°´Å¥£¬´ËÊ±Ö±½ÓÈ¡ÏûÁĞ±íËùÓĞµÄÑ¡ÖĞ×´Ì¬£¬µÚ¶ş£ºÈ¡ÏûÁĞ±íÄ³Ò»ĞĞ£¬µ¼ÖÂÈ«Ñ¡È¡Ïû£¬´ËÊ±ÁĞ±íÆäËûĞĞÈÔÈ»ÊÇÑ¡ÖĞ
-				 * 
-				 * ÅĞ¶Ï¶şµÄ·ÖÎö£º£¨Ö÷¶¯È¡Ïû£©ÅĞ¶ÏÁĞ±íÃ¿Ò»ĞĞµÄÑ¡ÖĞ×´Ì¬£¬Èç¹ûÈ«²¿¶¼ÊÇÑ¡ÖĞ×´Ì¬£¬ÄÇÃ´£¨ÁĞ±íÑ¡ÖĞÊı=ÁĞ±í×ÜÊı£©£¬´ËÊ±ÊôÓÚÖ÷¶¯È¡Ïû£¬
-				 * ÔòÈ¡ÏûËùÓĞĞĞµÄÑ¡ÖĞ×´Ì¬£¬·´Ö®£¨±»¶¯È¡Ïû£©Ôò²»ÏìÓ¦
+				 * åˆ¤æ–­ä¸€ï¼šï¼ˆå…¨é€‰æŒ‰é’®é€‰ä¸­ï¼‰å…¨é€‰æŒ‰é’®æ˜¯å¦é€‰æ‹©ï¼Œå¦‚æœé€‰æ‹©ï¼Œé‚£ä¹ˆåˆ—è¡¨æ¯ä¸€è¡Œéƒ½é€‰ä¸­
+				 * åˆ¤æ–­äºŒï¼šï¼ˆå…¨é€‰æŒ‰é’®å–æ¶ˆï¼‰å½“å–æ¶ˆå…¨é€‰æŒ‰é’®æ—¶ï¼Œä¼šæœ‰ä¸¤ç§æƒ…å†µ
+				 * ï¼Œç¬¬ä¸€ï¼šä¸»åŠ¨ç‚¹å‡»å…¨é€‰æŒ‰é’®ï¼Œæ­¤æ—¶ç›´æ¥å–æ¶ˆåˆ—è¡¨æ‰€æœ‰çš„é€‰ä¸­çŠ¶æ€ï¼Œç¬¬äºŒï¼šå–æ¶ˆåˆ—è¡¨æŸä¸€è¡Œï¼Œå¯¼è‡´å…¨é€‰å–æ¶ˆï¼Œæ­¤æ—¶åˆ—è¡¨å…¶ä»–è¡Œä»ç„¶æ˜¯é€‰ä¸­
+				 *
+				 * åˆ¤æ–­äºŒçš„åˆ†æï¼šï¼ˆä¸»åŠ¨å–æ¶ˆï¼‰åˆ¤æ–­åˆ—è¡¨æ¯ä¸€è¡Œçš„é€‰ä¸­çŠ¶æ€ï¼Œå¦‚æœå…¨éƒ¨éƒ½æ˜¯é€‰ä¸­çŠ¶æ€ï¼Œé‚£ä¹ˆï¼ˆåˆ—è¡¨é€‰ä¸­æ•°=åˆ—è¡¨æ€»æ•°ï¼‰ï¼Œæ­¤æ—¶å±äºä¸»åŠ¨å–æ¶ˆï¼Œ
+				 * åˆ™å–æ¶ˆæ‰€æœ‰è¡Œçš„é€‰ä¸­çŠ¶æ€ï¼Œåä¹‹ï¼ˆè¢«åŠ¨å–æ¶ˆï¼‰åˆ™ä¸å“åº”
 				 */
 
-				// ¼ÇÂ¼ÁĞ±íÃ¿Ò»ĞĞµÄÑ¡ÖĞ×´Ì¬ÊıÁ¿
+				// è®°å½•åˆ—è¡¨æ¯ä¸€è¡Œçš„é€‰ä¸­çŠ¶æ€æ•°é‡
 				int isChoice_all = 0;
 				if (arg1) {
-					// ÉèÖÃÈ«Ñ¡
+					// è®¾ç½®å…¨é€‰
 					for (int i = 0; i < Data.arrayList_cart.size(); i++) {
-						// Èç¹ûÑ¡ÖĞÁËÈ«Ñ¡£¬ÄÇÃ´¾Í½«ÁĞ±íµÄÃ¿Ò»ĞĞ¶¼Ñ¡ÖĞ
+						// å¦‚æœé€‰ä¸­äº†å…¨é€‰ï¼Œé‚£ä¹ˆå°±å°†åˆ—è¡¨çš„æ¯ä¸€è¡Œéƒ½é€‰ä¸­
 						((CheckBox) (listView_cart.getChildAt(i)).findViewById(R.id.cb_choice)).setChecked(true);
 					}
 				} else {
-					// ÉèÖÃÈ«²¿È¡Ïû
+					// è®¾ç½®å…¨éƒ¨å–æ¶ˆ
 					for (int i = 0; i < Data.arrayList_cart.size(); i++) {
-						// ÅĞ¶ÏÁĞ±íÃ¿Ò»ĞĞÊÇ·ñ´¦ÓÚÑ¡ÖĞ×´Ì¬£¬Èç¹û´¦ÓÚÑ¡ÖĞ×´Ì¬£¬Ôò¼ÆÊı+1
+						// åˆ¤æ–­åˆ—è¡¨æ¯ä¸€è¡Œæ˜¯å¦å¤„äºé€‰ä¸­çŠ¶æ€ï¼Œå¦‚æœå¤„äºé€‰ä¸­çŠ¶æ€ï¼Œåˆ™è®¡æ•°+1
 						if (((CheckBox) (listView_cart.getChildAt(i)).findViewById(R.id.cb_choice)).isChecked()) {
-							// ¼ÆËã³öÁĞ±íÑ¡ÖĞ×´Ì¬µÄÊıÁ¿
+							// è®¡ç®—å‡ºåˆ—è¡¨é€‰ä¸­çŠ¶æ€çš„æ•°é‡
 							isChoice_all += 1;
 						}
 					}
-					// ÅĞ¶ÏÁĞ±íÑ¡ÖĞÊıÊÇ·ñµÈÓÚÁĞ±íµÄ×ÜÊı£¬Èç¹ûµÈÓÚ£¬ÄÇÃ´¾ÍĞèÒªÖ´ĞĞÈ«²¿È¡Ïû²Ù×÷
+					// åˆ¤æ–­åˆ—è¡¨é€‰ä¸­æ•°æ˜¯å¦ç­‰äºåˆ—è¡¨çš„æ€»æ•°ï¼Œå¦‚æœç­‰äºï¼Œé‚£ä¹ˆå°±éœ€è¦æ‰§è¡Œå…¨éƒ¨å–æ¶ˆæ“ä½œ
 					if (isChoice_all == Data.arrayList_cart.size()) {
-						// Èç¹ûÃ»ÓĞÑ¡ÖĞÁËÈ«Ñ¡£¬ÄÇÃ´¾Í½«ÁĞ±íµÄÃ¿Ò»ĞĞ¶¼²»Ñ¡
+						// å¦‚æœæ²¡æœ‰é€‰ä¸­äº†å…¨é€‰ï¼Œé‚£ä¹ˆå°±å°†åˆ—è¡¨çš„æ¯ä¸€è¡Œéƒ½ä¸é€‰
 						for (int i = 0; i < Data.arrayList_cart.size(); i++) {
-							// ÁĞ±íÃ¿Ò»ĞĞ¶¼È¡Ïû
+							// åˆ—è¡¨æ¯ä¸€è¡Œéƒ½å–æ¶ˆ
 							((CheckBox) (listView_cart.getChildAt(i)).findViewById(R.id.cb_choice)).setChecked(false);
 						}
 					}
 				}
 			}
 		});
-		
-		
+
+
 
 		ll_cart = (LinearLayout) view.findViewById(R.id.ll_cart);
 		listView_cart = (ListView) view.findViewById(R.id.listView_cart);
-		// Èç¹û¹ºÎï³µÖĞÓĞÊı¾İ£¬ÄÇÃ´¾ÍÏÔÊ¾Êı¾İ£¬·ñÔòÏÔÊ¾Ä¬ÈÏ½çÃæ
+		// å¦‚æœè´­ç‰©è½¦ä¸­æœ‰æ•°æ®ï¼Œé‚£ä¹ˆå°±æ˜¾ç¤ºæ•°æ®ï¼Œå¦åˆ™æ˜¾ç¤ºé»˜è®¤ç•Œé¢
 		if (Data.arrayList_cart != null && Data.arrayList_cart.size() != 0) {
 			adapter = new Adapter_ListView_cart(getActivity(), Data.arrayList_cart);
 			adapter.setOnCheckedChanged(this);
@@ -128,9 +128,9 @@ public class AllBaby_F extends Fragment implements IBtnCallListener, onCheckedCh
 				startActivity(intent);
 			}
 		});
-		
-		
-		
+
+
+
 		tv_cart_buy_Ordel.setOnClickListener(this);
 		tv_goShop.setOnClickListener(this);
 	}
@@ -145,17 +145,17 @@ public class AllBaby_F extends Fragment implements IBtnCallListener, onCheckedCh
 
 	@Override
 	public void transferMsg() {
-		// ÕâÀïÏìÓ¦ÔÚFragmentActivityÖĞµÄ¿Ø¼ş½»»¥
-		System.out.println("ÓÉActivityÖĞ´«ËÍÀ´µÄÏûÏ¢");
+		// è¿™é‡Œå“åº”åœ¨FragmentActivityä¸­çš„æ§ä»¶äº¤äº’
+		System.out.println("ç”±Activityä¸­ä¼ é€æ¥çš„æ¶ˆæ¯");
 	}
 
-	/** adapterµÄ»Øµ÷º¯Êı£¬µ±µã»÷CheckBoxµÄÊ±ºò´«µİµã»÷Î»ÖÃºÍcheckBoxµÄ×´Ì¬ */
+	/** adapterçš„å›è°ƒå‡½æ•°ï¼Œå½“ç‚¹å‡»CheckBoxçš„æ—¶å€™ä¼ é€’ç‚¹å‡»ä½ç½®å’ŒcheckBoxçš„çŠ¶æ€ */
 	@Override
 	public void getChoiceData(int position, boolean isChoice) {
-		//µÃµ½µã»÷µÄÄÄÒ»ĞĞ
+		//å¾—åˆ°ç‚¹å‡»çš„å“ªä¸€è¡Œ
 		if (isChoice) {
 			if (Data.arrayList_cart.size()!=0) {
-				//49±íÊ¾ÉÌÆ·µÄ¼Û¸ñ£¬ÕâÀïÍµÁËÏÂÀÁ£¬Ã»ÓĞÈ¥¶¯Ì¬»ñÈ¡ÉÌÆ·¼Û¸ñ
+				//49è¡¨ç¤ºå•†å“çš„ä»·æ ¼ï¼Œè¿™é‡Œå·äº†ä¸‹æ‡’ï¼Œæ²¡æœ‰å»åŠ¨æ€è·å–å•†å“ä»·æ ¼
 				Data.Allprice_cart += Float.valueOf(Data.arrayList_cart.get(position).get("num").toString())*49;
 			}
 		} else {
@@ -163,83 +163,83 @@ public class AllBaby_F extends Fragment implements IBtnCallListener, onCheckedCh
 				Data.Allprice_cart -= Float.valueOf(Data.arrayList_cart.get(position).get("num").toString())*49;
 			}
 		}
-		// ¼ÇÂ¼ÁĞ±í´¦ÓÚÑ¡ÖĞ×´Ì¬µÄÊıÁ¿
+		// è®°å½•åˆ—è¡¨å¤„äºé€‰ä¸­çŠ¶æ€çš„æ•°é‡
 		int num_choice = 0;
 		for (int i = 0; i < Data.arrayList_cart.size(); i++) {
-			// ÅĞ¶ÏÁĞ±íÖĞÃ¿Ò»ĞĞµÄÑ¡ÖĞ×´Ì¬£¬Èç¹ûÊÇÑ¡ÖĞ£¬¼ÆÊı¼Ó1
+			// åˆ¤æ–­åˆ—è¡¨ä¸­æ¯ä¸€è¡Œçš„é€‰ä¸­çŠ¶æ€ï¼Œå¦‚æœæ˜¯é€‰ä¸­ï¼Œè®¡æ•°åŠ 1
 			if (null!=listView_cart.getChildAt(i)&&((CheckBox) (listView_cart.getChildAt(i)).findViewById(R.id.cb_choice)).isChecked()) {
-				// ÁĞ±í´¦ÓÚÑ¡ÖĞ×´Ì¬µÄÊıÁ¿+1
+				// åˆ—è¡¨å¤„äºé€‰ä¸­çŠ¶æ€çš„æ•°é‡+1
 				num_choice += 1;
 				is_choice[i]=true;
 			}
 		}
-		// ÅĞ¶ÏÁĞ±íÖĞµÄCheckBoxÊÇ·ñÈ«²¿Ñ¡Ôñ
+		// åˆ¤æ–­åˆ—è¡¨ä¸­çš„CheckBoxæ˜¯å¦å…¨éƒ¨é€‰æ‹©
 		if (num_choice == Data.arrayList_cart.size()) {
-			// Èç¹ûÑ¡ÖĞµÄ×´Ì¬ÊıÁ¿=ÁĞ±íµÄ×ÜÊıÁ¿£¬ÄÇÃ´¾Í½«È«Ñ¡ÉèÖÃÎªÑ¡ÖĞ
+			// å¦‚æœé€‰ä¸­çš„çŠ¶æ€æ•°é‡=åˆ—è¡¨çš„æ€»æ•°é‡ï¼Œé‚£ä¹ˆå°±å°†å…¨é€‰è®¾ç½®ä¸ºé€‰ä¸­
 			cb_cart_all.setChecked(true);
 		} else {
-			// Èç¹ûÑ¡ÖĞµÄ×´Ì¬ÊıÁ¿£¡=ÁĞ±íµÄ×ÜÊıÁ¿£¬ÄÇÃ´¾Í½«È«Ñ¡ÉèÖÃÎªÈ¡Ïû
+			// å¦‚æœé€‰ä¸­çš„çŠ¶æ€æ•°é‡ï¼=åˆ—è¡¨çš„æ€»æ•°é‡ï¼Œé‚£ä¹ˆå°±å°†å…¨é€‰è®¾ç½®ä¸ºå–æ¶ˆ
 			cb_cart_all.setChecked(false);
 		}
 
-		tv_cart_Allprice.setText("ºÏ¼Æ£º£¤"+Data.Allprice_cart + "");
+		tv_cart_Allprice.setText("åˆè®¡ï¼šï¿¥"+Data.Allprice_cart + "");
 
-		System.out.println("Ñ¡ÔñµÄÎ»ÖÃ--->"+position);
-		
+		System.out.println("é€‰æ‹©çš„ä½ç½®--->"+position);
+
 	}
 
 	@Override
 	public void onClick(View view) {
 		switch (view.getId()) {
-		case R.id.tv_goShop://µã»÷È¥¹ä¹ä
-			btnCallListener.transferMsg();
-			break;
-		case R.id.tv_cart_buy_or_del://µã»÷½áËã/É¾³ı
-			boolean[] is_choice_copy=is_choice;
-			if (tv_cart_buy_Ordel.getText().toString().equals("É¾³ı")) {
-				//Ö´ĞĞÉ¾³ı²Ù×÷
-				if (Data.arrayList_cart.size()!=0) {
-					for (int i = is_choice_copy.length-1; i >=0; i--) {
-						if (is_choice_copy[i]) {
-							((CheckBox) (listView_cart.getChildAt(i)).findViewById(R.id.cb_choice)).setChecked(false);
-							Data.arrayList_cart.remove(i);
-							is_choice_copy=deleteByIndex(is_choice, i);
+			case R.id.tv_goShop://ç‚¹å‡»å»é€›é€›
+				btnCallListener.transferMsg();
+				break;
+			case R.id.tv_cart_buy_or_del://ç‚¹å‡»ç»“ç®—/åˆ é™¤
+				boolean[] is_choice_copy=is_choice;
+				if (tv_cart_buy_Ordel.getText().toString().equals("åˆ é™¤")) {
+					//æ‰§è¡Œåˆ é™¤æ“ä½œ
+					if (Data.arrayList_cart.size()!=0) {
+						for (int i = is_choice_copy.length-1; i >=0; i--) {
+							if (is_choice_copy[i]) {
+								((CheckBox) (listView_cart.getChildAt(i)).findViewById(R.id.cb_choice)).setChecked(false);
+								Data.arrayList_cart.remove(i);
+								is_choice_copy=deleteByIndex(is_choice, i);
+							}
 						}
 					}
+
+
+					if (Data.arrayList_cart.size()==0) {
+						ll_cart.setVisibility(View.VISIBLE);
+					}
+
+					adapter.notifyDataSetChanged();
+					is_choice=new boolean[Data.arrayList_cart.size()];
+					System.out.println("æ­¤æ—¶çš„é•¿åº¦---->"+is_choice.length);
+				}else {
+					//æ‰§è¡Œç»“ç®—æ“ä½œ
+					Toast.makeText(getActivity(), "æš‚æ—¶æ— æ³•ç»“ç®—", Toast.LENGTH_SHORT).show();
 				}
-				
-				
-				if (Data.arrayList_cart.size()==0) {
-					ll_cart.setVisibility(View.VISIBLE);
-				}
-				
-				adapter.notifyDataSetChanged();
-				is_choice=new boolean[Data.arrayList_cart.size()];
-				System.out.println("´ËÊ±µÄ³¤¶È---->"+is_choice.length);
-			}else {
-				//Ö´ĞĞ½áËã²Ù×÷
-				Toast.makeText(getActivity(), "ÔİÊ±ÎŞ·¨½áËã", Toast.LENGTH_SHORT).show();
-			}
-			
-			break;
-		default:
-			break;
+
+				break;
+			default:
+				break;
 		}
-		
+
 	}
-	
-	
-	/**É¾³ıÊı×éÖĞµÄÒ»¸öÔªËØ*/
-    public static boolean[] deleteByIndex(boolean[] array, int index) {
-    	boolean[] newArray = new boolean[array.length - 1];
-        for (int i = 0; i < newArray.length; i++) {
-            if (i < index) {
-                newArray[i] = array[i];
-            } else {
-                newArray[i] = array[i + 1];
-            }
-        }
-        return newArray;
-    }
+
+
+	/**åˆ é™¤æ•°ç»„ä¸­çš„ä¸€ä¸ªå…ƒç´ */
+	public static boolean[] deleteByIndex(boolean[] array, int index) {
+		boolean[] newArray = new boolean[array.length - 1];
+		for (int i = 0; i < newArray.length; i++) {
+			if (i < index) {
+				newArray[i] = array[i];
+			} else {
+				newArray[i] = array[i + 1];
+			}
+		}
+		return newArray;
+	}
 
 }

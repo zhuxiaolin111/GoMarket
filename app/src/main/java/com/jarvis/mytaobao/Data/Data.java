@@ -5,15 +5,16 @@ import java.util.HashMap;
 
 
 /**
- * ¾²Ì¬Êı¾İÀà
+ * é™æ€æ•°æ®ç±»
  * @author http://yecaoly.taobao.com
  *
  */
 public class Data  {
-	/**±£´æÌí¼Óµ½¹ºÎï³µµÄÊı¾İ*/
+	/**ä¿å­˜æ·»åŠ åˆ°è´­ç‰©è½¦çš„æ•°æ®*/
+
 	public static int arrayList_cart_id=0;
-	/**±£´æÌí¼Óµ½¹ºÎï³µµÄÊı¾İ*/
+	/**ä¿å­˜æ·»åŠ åˆ°è´­ç‰©è½¦çš„æ•°æ®*/
 	public static ArrayList<HashMap<String, Object>> arrayList_cart=new ArrayList<HashMap<String,Object>>();
-	/**±£´æ¹ºÎï³µÖĞÑ¡ÔñµÄÉÌÆ·µÄ×Ü¼ÛÊı¾İ*/
-    public static float Allprice_cart=0;
+	/**ä¿å­˜è´­ç‰©è½¦ä¸­é€‰æ‹©çš„å•†å“çš„æ€»ä»·æ•°æ®*/
+	public static float Allprice_cart=0;
 }

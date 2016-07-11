@@ -30,8 +30,8 @@ import android.widget.ScrollView;
 
 
 /**
- * Ãû³Æ£ºAbPlayView ÃèÊö£º¿É²¥·ÅÏÔÊ¾µÄView.
- * 
+ * åç§°ï¼šAbPlayView æè¿°ï¼šå¯æ’­æ”¾æ˜¾ç¤ºçš„View.
+ *
  * @author tans
  * @date 2014-09-26
  * @version
@@ -91,25 +91,25 @@ public class AbSlidingPlayView extends LinearLayout {
 	/** The m ab view pager adapter. */
 	private AbViewPagerAdapter mAbViewPagerAdapter = null;
 
-	/** µ¼º½µÄµã¸¸View */
+	/** å¯¼èˆªçš„ç‚¹çˆ¶View */
 	private LinearLayout mPageLineLayoutParent = null;
 
 	/** The page line horizontal gravity. */
 	private int pageLineHorizontalGravity = Gravity.RIGHT;
 
-	/** ²¥·ÅµÄ·½Ïò */
+	/** æ’­æ”¾çš„æ–¹å‘ */
 	private int playingDirection = 0;
 
-	/** ²¥·ÅµÄ¿ª¹Ø */
+	/** æ’­æ”¾çš„å¼€å…³ */
 	private boolean play = false;
-	/** ²¥·ÅµÄ¼ä¸ôÊ±¼ä */
+	/** æ’­æ”¾çš„é—´éš”æ—¶é—´ */
 	private int sleepTime = 5000;
-	/** ²¥·Å·½Ïò·½Ê½£¨1Ë³Ğò²¥·ÅºÍ0À´»Ø²¥·Å£© */
+	/** æ’­æ”¾æ–¹å‘æ–¹å¼ï¼ˆ1é¡ºåºæ’­æ”¾å’Œ0æ¥å›æ’­æ”¾ï¼‰ */
 	private int playType = 1;
 
 	/**
-	 * ´´½¨Ò»¸öAbSlidingPlayView
-	 * 
+	 * åˆ›å»ºä¸€ä¸ªAbSlidingPlayView
+	 *
 	 * @param context
 	 */
 	public AbSlidingPlayView(Context context) {
@@ -118,8 +118,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ´Óxml³õÊ¼»¯µÄAbSlidingPlayView
-	 * 
+	 * ä»xmlåˆå§‹åŒ–çš„AbSlidingPlayView
+	 *
 	 * @param context
 	 *            the context
 	 * @param attrs
@@ -129,12 +129,12 @@ public class AbSlidingPlayView extends LinearLayout {
 		super(context, attrs);
 		initView(context);
 	}
-	
+
 
 	/**
-	 * 
-	 * ÃèÊö£º³õÊ¼»¯Õâ¸öView
-	 * 
+	 *
+	 * æè¿°ï¼šåˆå§‹åŒ–è¿™ä¸ªView
+	 *
 	 * @param context
 	 * @throws
 	 */
@@ -150,9 +150,9 @@ public class AbSlidingPlayView extends LinearLayout {
 		RelativeLayout mRelativeLayout = new RelativeLayout(context);
 
 		mViewPager = new AbInnerViewPager(context);
-		// ÊÖ¶¯´´½¨µÄViewPager,Èç¹ûÓÃfragment±ØĞëµ÷ÓÃsetId()·½·¨ÉèÖÃÒ»¸öid
+		// æ‰‹åŠ¨åˆ›å»ºçš„ViewPager,å¦‚æœç”¨fragmentå¿…é¡»è°ƒç”¨setId()æ–¹æ³•è®¾ç½®ä¸€ä¸ªid
 		mViewPager.setId(1985);
-		// µ¼º½µÄµã
+		// å¯¼èˆªçš„ç‚¹
 		mPageLineLayoutParent = new LinearLayout(context);
 		mPageLineLayoutParent.setPadding(0, 5, 0, 5);
 		pageLineLayout = new LinearLayout(context);
@@ -170,8 +170,8 @@ public class AbSlidingPlayView extends LinearLayout {
 		lp2.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE);
 		mRelativeLayout.addView(mPageLineLayoutParent, lp2);
 		addView(mRelativeLayout, layoutParamsFW);
-		
-		//µÃµ½µ¼º½µãµÄÍ¼Æ¬×ÊÔ´ÎÄ¼ş
+
+		//å¾—åˆ°å¯¼èˆªç‚¹çš„å›¾ç‰‡èµ„æºæ–‡ä»¶
 		displayImage =getBitmapFormSrc("play_display.png");
 		hideImage =getBitmapFormSrc("play_hide.png");
 
@@ -199,29 +199,29 @@ public class AbSlidingPlayView extends LinearLayout {
 		});
 
 	}
-	
+
 	/**
-	 * µÃµ½»ñÈ¡Í¼Æ¬
-	 * @param name Í¼Æ¬µÄÃû×Ö
+	 * å¾—åˆ°è·å–å›¾ç‰‡
+	 * @param name å›¾ç‰‡çš„åå­—
 	 * @return
 	 */
 	private Bitmap getBitmapFormSrc(String name){
 		Bitmap bitmap=null;
-		
+
 		try {
 			InputStream is=getResources().getAssets().open(name);
 			bitmap=BitmapFactory.decodeStream(is);
 		} catch (IOException e) {
-			Log.d(TAG, "»ñÈ¡Í¼Æ¬Òì³££º"+e.getMessage());
+			Log.d(TAG, "è·å–å›¾ç‰‡å¼‚å¸¸ï¼š"+e.getMessage());
 		}
 		return bitmap;
 	}
 
 	/**
-	 * ´´½¨µ¼º½µã.
+	 * åˆ›å»ºå¯¼èˆªç‚¹.
 	 */
 	public void creatIndex() {
-		// ÏÔÊ¾ÏÂÃæµÄµã
+		// æ˜¾ç¤ºä¸‹é¢çš„ç‚¹
 		pageLineLayout.removeAllViews();
 		mPageLineLayoutParent.setHorizontalGravity(pageLineHorizontalGravity);
 		pageLineLayout.setGravity(Gravity.CENTER);
@@ -241,7 +241,7 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ¶¨Î»µãµÄÎ»ÖÃ.
+	 * å®šä½ç‚¹çš„ä½ç½®.
 	 */
 	public void makesurePosition() {
 		position = mViewPager.getCurrentItem();
@@ -255,8 +255,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£ºÌí¼Ó¿É²¥·ÅÊÓÍ¼.
-	 * 
+	 * æè¿°ï¼šæ·»åŠ å¯æ’­æ”¾è§†å›¾.
+	 *
 	 * @param view
 	 *            the view
 	 */
@@ -290,8 +290,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£ºÌí¼Ó¿É²¥·ÅÊÓÍ¼ÁĞ±í.
-	 * 
+	 * æè¿°ï¼šæ·»åŠ å¯æ’­æ”¾è§†å›¾åˆ—è¡¨.
+	 *
 	 * @param views
 	 *            the views
 	 */
@@ -324,8 +324,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£ºÉ¾³ı¿É²¥·ÅÊÓÍ¼.
-	 * 
+	 * æè¿°ï¼šåˆ é™¤å¯æ’­æ”¾è§†å›¾.
+	 *
 	 */
 	@Override
 	public void removeAllViews() {
@@ -335,8 +335,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£ºÉèÖÃÒ³ÃæÇĞ»»ÊÂ¼ş.
-	 * 
+	 * æè¿°ï¼šè®¾ç½®é¡µé¢åˆ‡æ¢äº‹ä»¶.
+	 *
 	 * @param position
 	 *            the position
 	 */
@@ -348,8 +348,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£ºÉèÖÃÒ³ÃæÇĞ»»ÊÂ¼ş.
-	 * 
+	 * æè¿°ï¼šè®¾ç½®é¡µé¢åˆ‡æ¢äº‹ä»¶.
+	 *
 	 * @param position
 	 *            the position
 	 */
@@ -360,13 +360,13 @@ public class AbSlidingPlayView extends LinearLayout {
 
 	}
 
-	/** ÓÃÓëÂÖ»»µÄ handler. */
+	/** ç”¨ä¸è½®æ¢çš„ handler. */
 	private Handler handler = new Handler() {
 
 		@Override
 		public void handleMessage(Message msg) {
 			if (msg.what == 0) {
-				//ÏÔÊ¾²¥·ÅµÄÒ³Ãæ
+				//æ˜¾ç¤ºæ’­æ”¾çš„é¡µé¢
 				ShowPlay();
 				if (play) {
 					handler.postDelayed(runnable, sleepTime);
@@ -376,7 +376,7 @@ public class AbSlidingPlayView extends LinearLayout {
 
 	};
 
-	/** ÓÃÓÚÂÖ²¥µÄÏß³Ì. */
+	/** ç”¨äºè½®æ’­çš„çº¿ç¨‹. */
 	private Runnable runnable = new Runnable() {
 		public void run() {
 			if (mViewPager != null) {
@@ -386,7 +386,7 @@ public class AbSlidingPlayView extends LinearLayout {
 	};
 
 	/**
-	 * ÃèÊö£º×Ô¶¯ÂÖ²¥. sleepTime ²¥·ÅµÄ¼ä¸ôÊ±¼ä
+	 * æè¿°ï¼šè‡ªåŠ¨è½®æ’­. sleepTime æ’­æ”¾çš„é—´éš”æ—¶é—´
 	 */
 	public void startPlay() {
 		if (handler != null) {
@@ -396,7 +396,7 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£º×Ô¶¯ÂÖ²¥.
+	 * æè¿°ï¼šè‡ªåŠ¨è½®æ’­.
 	 */
 	public void stopPlay() {
 		if (handler != null) {
@@ -406,8 +406,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÉèÖÃµã»÷ÊÂ¼ş¼àÌı.
-	 * 
+	 * è®¾ç½®ç‚¹å‡»äº‹ä»¶ç›‘å¬.
+	 *
 	 * @param onItemClickListener
 	 *            the new on item click listener
 	 */
@@ -416,8 +416,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£ºÉèÖÃÒ³ÃæÇĞ»»µÄ¼àÌıÆ÷.
-	 * 
+	 * æè¿°ï¼šè®¾ç½®é¡µé¢åˆ‡æ¢çš„ç›‘å¬å™¨.
+	 *
 	 * @param abChangeListener
 	 *            the new on page change listener
 	 */
@@ -426,8 +426,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£ºÉèÖÃÒ³Ãæ»¬¶¯µÄ¼àÌıÆ÷.
-	 * 
+	 * æè¿°ï¼šè®¾ç½®é¡µé¢æ»‘åŠ¨çš„ç›‘å¬å™¨.
+	 *
 	 * @param abScrolledListener
 	 *            the new on page scrolled listener
 	 */
@@ -436,9 +436,9 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * 
-	 * ÃèÊö£ºÉèÖÃÒ³ÃæTouchµÄ¼àÌıÆ÷.
-	 * 
+	 *
+	 * æè¿°ï¼šè®¾ç½®é¡µé¢Touchçš„ç›‘å¬å™¨.
+	 *
 	 * @param abOnTouchListener
 	 * @throws
 	 */
@@ -448,7 +448,7 @@ public class AbSlidingPlayView extends LinearLayout {
 
 	/**
 	 * Sets the page line image.
-	 * 
+	 *
 	 * @param displayImage
 	 *            the display image
 	 * @param hideImage
@@ -462,8 +462,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£º»ñÈ¡Õâ¸ö»¬¶¯µÄViewPagerÀà.
-	 * 
+	 * æè¿°ï¼šè·å–è¿™ä¸ªæ»‘åŠ¨çš„ViewPagerç±».
+	 *
 	 * @return the view pager
 	 */
 	public ViewPager getViewPager() {
@@ -471,8 +471,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£º»ñÈ¡µ±Ç°µÄViewµÄÊıÁ¿.
-	 * 
+	 * æè¿°ï¼šè·å–å½“å‰çš„Viewçš„æ•°é‡.
+	 *
 	 * @return the count
 	 */
 	public int getCount() {
@@ -480,8 +480,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£ºÉèÖÃÒ³ÏÔÊ¾ÌõµÄÎ»ÖÃ,ÔÚAddViewÇ°ÉèÖÃ.
-	 * 
+	 * æè¿°ï¼šè®¾ç½®é¡µæ˜¾ç¤ºæ¡çš„ä½ç½®,åœ¨AddViewå‰è®¾ç½®.
+	 *
 	 * @param horizontalGravity
 	 *            the new page line horizontal gravity
 	 */
@@ -490,8 +490,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * Èç¹ûÍâ²ãÓĞScrollViewĞèÒªÉèÖÃ.
-	 * 
+	 * å¦‚æœå¤–å±‚æœ‰ScrollViewéœ€è¦è®¾ç½®.
+	 *
 	 * @param parentScrollView
 	 *            the new parent scroll view
 	 */
@@ -500,8 +500,8 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * Èç¹ûÍâ²ãÓĞListViewĞèÒªÉèÖÃ.
-	 * 
+	 * å¦‚æœå¤–å±‚æœ‰ListViewéœ€è¦è®¾ç½®.
+	 *
 	 * @param parentListView
 	 *            the new parent list view
 	 */
@@ -510,9 +510,9 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * 
-	 * ÃèÊö£ºÉèÖÃµ¼º½µãµÄ±³¾°
-	 * 
+	 *
+	 * æè¿°ï¼šè®¾ç½®å¯¼èˆªç‚¹çš„èƒŒæ™¯
+	 *
 	 * @param resid
 	 * @throws
 	 */
@@ -521,16 +521,16 @@ public class AbSlidingPlayView extends LinearLayout {
 	}
 
 	/**
-	 * ÃèÊö£ºÉèÖÃ²¥·ÅµÄ¼ä¸ôÊ±¼ä
-	 * @param sleepTime  ¼ä¸ôÊ±¼äµ¥Î»ÊÇºÁÃë
+	 * æè¿°ï¼šè®¾ç½®æ’­æ”¾çš„é—´éš”æ—¶é—´
+	 * @param sleepTime  é—´éš”æ—¶é—´å•ä½æ˜¯æ¯«ç§’
 	 */
 	public void setSleepTime(int sleepTime) {
 		this.sleepTime = sleepTime;
 	}
 
 	/**
-	 *  ÃèÊö£ºÉèÖÃ²¥·Å·½ÏòµÄ·½Ê½£¨1Ë³Ğò²¥·ÅºÍ0À´»Ø²¥·Å£© playType 
-	 * @param playType    Îª0±íÊ¾À´»Ø²¥·Å£¬Îª1±íÊ¾Ë³Ğò²¥·Å
+	 *  æè¿°ï¼šè®¾ç½®æ’­æ”¾æ–¹å‘çš„æ–¹å¼ï¼ˆ1é¡ºåºæ’­æ”¾å’Œ0æ¥å›æ’­æ”¾ï¼‰ playType
+	 * @param playType    ä¸º0è¡¨ç¤ºæ¥å›æ’­æ”¾ï¼Œä¸º1è¡¨ç¤ºé¡ºåºæ’­æ”¾
 	 */
 	public void setPlayType(int playType) {
 		this.playType = playType;
@@ -538,46 +538,46 @@ public class AbSlidingPlayView extends LinearLayout {
 
 
 	/**
-	 * ÃèÊö£º²¥·ÅÏÔÊ¾½çÃæ£¨1Ë³Ğò²¥·ÅºÍ0À´»Ø²¥·Å£© playType Îª0±íÊ¾À´»Ø²¥·Å£¬Îª1±íÊ¾Ë³Ğò²¥·Å
+	 * æè¿°ï¼šæ’­æ”¾æ˜¾ç¤ºç•Œé¢ï¼ˆ1é¡ºåºæ’­æ”¾å’Œ0æ¥å›æ’­æ”¾ï¼‰ playType ä¸º0è¡¨ç¤ºæ¥å›æ’­æ”¾ï¼Œä¸º1è¡¨ç¤ºé¡ºåºæ’­æ”¾
 	 */
 	public void ShowPlay() {
-		//×ÜÒ³Êı
+		//æ€»é¡µæ•°
 		int count = mListViews.size();
-		// µ±Ç°ÏÔÊ¾µÄÒ³Êı
+		// å½“å‰æ˜¾ç¤ºçš„é¡µæ•°
 		int i = mViewPager.getCurrentItem();
 		switch (playType) {
-		case 0:
-			// À´»Ø²¥·Å
-			if (playingDirection == 0) {
+			case 0:
+				// æ¥å›æ’­æ”¾
+				if (playingDirection == 0) {
+					if (i == count - 1) {
+						playingDirection = -1;
+						i--;
+					} else {
+						i++;
+					}
+				} else {
+					if (i == 0) {
+						playingDirection = 0;
+						i++;
+					} else {
+						i--;
+					}
+				}
+				break;
+			case 1:
+				// é¡ºåºæ’­æ”¾
 				if (i == count - 1) {
-					playingDirection = -1;
-					i--;
+					i = 0;
 				} else {
 					i++;
 				}
-			} else {
-				if (i == 0) {
-					playingDirection = 0;
-					i++;
-				} else {
-					i--;
-				}
-			}
-			break;
-		case 1:
-			// Ë³Ğò²¥·Å
-			if (i == count - 1) {
-				i = 0;
-			} else {
-				i++;
-			}
 
-			break;
+				break;
 
-		default:
-			break;
+			default:
+				break;
 		}
-		// ÉèÖÃÏÔÊ¾µÚ¼¸Ò³
+		// è®¾ç½®æ˜¾ç¤ºç¬¬å‡ é¡µ
 		mViewPager.setCurrentItem(i, true);
 	}
 

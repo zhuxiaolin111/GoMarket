@@ -10,28 +10,28 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 
 /**
- * 
- * Ãû³Æ£ºAbInnerViewPager.java 
- * ÃèÊö£ºÕâ¸öViewPager½â¾öÁËÍâ²¿ÊÇ¿É¹ö¶¯View£¨List»òÕßscrollView£©
- * ÓëÄÚ²¿¿É»¬¶¯ViewµÄÊÂ¼ş³åÍ»ÎÊÌâ
+ *
+ * åç§°ï¼šAbInnerViewPager.java
+ * æè¿°ï¼šè¿™ä¸ªViewPagerè§£å†³äº†å¤–éƒ¨æ˜¯å¯æ»šåŠ¨Viewï¼ˆListæˆ–è€…scrollViewï¼‰
+ * ä¸å†…éƒ¨å¯æ»‘åŠ¨Viewçš„äº‹ä»¶å†²çªé—®é¢˜
  */
 @SuppressWarnings("deprecation")
 public class AbInnerViewPager extends ViewPager {
 
 	/** The parent scroll view. */
 	private ScrollView parentScrollView;
-	
+
 	/** The parent list view. */
 	private ListView parentListView;
-	
+
 	private GestureDetector mGestureDetector;
-	
+
 	/**
-	 * ³õÊ¼»¯Õâ¸öÄÚ²¿µÄViewPager.
+	 * åˆå§‹åŒ–è¿™ä¸ªå†…éƒ¨çš„ViewPager.
 	 *
 	 * @param context the context
 	 */
-	
+
 	public AbInnerViewPager(Context context) {
 		super(context);
 		mGestureDetector = new GestureDetector(new YScrollDetector());
@@ -39,7 +39,7 @@ public class AbInnerViewPager extends ViewPager {
 	}
 
 	/**
-	 * ³õÊ¼»¯Õâ¸öÄÚ²¿µÄViewPager.
+	 * åˆå§‹åŒ–è¿™ä¸ªå†…éƒ¨çš„ViewPager.
 	 *
 	 * @param context the context
 	 * @param attrs the attrs
@@ -49,9 +49,9 @@ public class AbInnerViewPager extends ViewPager {
 		mGestureDetector = new GestureDetector(new YScrollDetector());
 		setFadingEdgeLength(0);
 	}
-	
+
 	/**
-	 * ÃèÊö£ºÀ¹½ØÊÂ¼ş.
+	 * æè¿°ï¼šæ‹¦æˆªäº‹ä»¶.
 	 *
 	 * @param ev the ev
 	 * @return true, if successful
@@ -63,48 +63,48 @@ public class AbInnerViewPager extends ViewPager {
 	}
 
 	/**
-	 * ÉèÖÃ¸¸¼¶µÄView.
+	 * è®¾ç½®çˆ¶çº§çš„View.
 	 *
-	 * @param flag ¸¸ÊÇ·ñ¹ö¶¯¿ª¹Ø
+	 * @param flag çˆ¶æ˜¯å¦æ»šåŠ¨å¼€å…³
 	 */
 	private void setParentScrollAble(boolean flag) {
 		if(parentScrollView!=null){
 			parentScrollView.requestDisallowInterceptTouchEvent(!flag);
 		}
-		
+
 		if(parentListView!=null){
 			parentListView.requestDisallowInterceptTouchEvent(!flag);
 		}
-		
+
 	}
 
 	/**
-	 * Èç¹ûÍâ²ãÓĞScrollViewĞèÒªÉèÖÃ.
+	 * å¦‚æœå¤–å±‚æœ‰ScrollViewéœ€è¦è®¾ç½®.
 	 *
 	 * @param parentScrollView the new parent scroll view
 	 */
 	public void setParentScrollView(ScrollView parentScrollView) {
 		this.parentScrollView = parentScrollView;
 	}
-	
+
 	/**
-	 * Èç¹ûÍâ²ãÓĞListViewĞèÒªÉèÖÃ.
+	 * å¦‚æœå¤–å±‚æœ‰ListViewéœ€è¦è®¾ç½®.
 	 *
 	 * @param parentListView the new parent scroll view
 	 */
 	public void setParentListView(ListView parentListView) {
 		this.parentListView = parentListView;
 	}
-	
-	
+
+
 	class YScrollDetector extends SimpleOnGestureListener {
-		
+
 		@Override
 		public boolean onScroll(MotionEvent e1, MotionEvent e2,
-				float distanceX, float distanceY) {
-			
+								float distanceX, float distanceY) {
+
 			if (Math.abs(distanceX) >= Math.abs(distanceY)) {
-				//¸¸Ç×²»»¬¶¯
+				//çˆ¶äº²ä¸æ»‘åŠ¨
 				setParentScrollAble(false);
 				return true;
 			}else{
@@ -114,6 +114,6 @@ public class AbInnerViewPager extends ViewPager {
 		}
 	}
 
-	
+
 
 }

@@ -1,10 +1,5 @@
 package com.jarvis.MyView;
 
-import java.util.HashMap;
-
-import com.jarvis.mytaobao.Data.Data;
-import com.jarvis.mytaobaotest.R;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -18,13 +13,18 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
-import android.widget.Toast;
 import android.widget.PopupWindow.OnDismissListener;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.jarvis.mytaobao.Data.Data;
+import com.jarvis.mytaobaotest.R;
+
+import java.util.HashMap;
 
 
 /**
- * ±¦±´ÏêÇé½çÃæµÄµ¯´°
+ * å®è´è¯¦æƒ…ç•Œé¢çš„å¼¹çª—
  * @author http://yecaoly.taobao.com
  *
  */
@@ -32,17 +32,17 @@ import android.widget.TextView;
 public class BabyPopWindow implements OnDismissListener, OnClickListener {
 	private TextView pop_choice_16g,pop_choice_32g,pop_choice_16m,pop_choice_32m,pop_choice_black,pop_choice_white,pop_add,pop_reduce,pop_num,pop_ok;
 	private ImageView pop_del;
-	
+
 	private PopupWindow popupWindow;
 	private OnItemClickListener listener;
 	private final int ADDORREDUCE=1;
 	private Context context;
-	/**±£´æÑ¡ÔñµÄÑÕÉ«µÄÊı¾İ*/
+	/**ä¿å­˜é€‰æ‹©çš„é¢œè‰²çš„æ•°æ®*/
 	private String str_color="";
-	/**±£´æÑ¡ÔñµÄÀàĞÍµÄÊı¾İ*/
+	/**ä¿å­˜é€‰æ‹©çš„ç±»å‹çš„æ•°æ®*/
 	private String str_type="";
-	
-	
+
+
 	public BabyPopWindow(Context context) {
 		this.context=context;
 		View view=LayoutInflater.from(context).inflate(R.layout.adapter_popwindow, null);
@@ -57,7 +57,7 @@ public class BabyPopWindow implements OnDismissListener, OnClickListener {
 		pop_num=(TextView) view.findViewById(R.id.pop_num);
 		pop_ok=(TextView) view.findViewById(R.id.pop_ok);
 		pop_del=(ImageView) view.findViewById(R.id.pop_del);
-		
+
 		pop_choice_16g.setOnClickListener(this);
 		pop_choice_32g.setOnClickListener(this);
 		pop_choice_16m.setOnClickListener(this);
@@ -68,45 +68,45 @@ public class BabyPopWindow implements OnDismissListener, OnClickListener {
 		pop_reduce.setOnClickListener(this);
 		pop_ok.setOnClickListener(this);
 		pop_del.setOnClickListener(this);
-		
-		
-		
+
+
+
 		popupWindow=new PopupWindow(view, LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-		//ÉèÖÃpopwindowµÄ¶¯»­Ğ§¹û
+		//è®¾ç½®popwindowçš„åŠ¨ç”»æ•ˆæœ
 		popupWindow.setAnimationStyle(R.style.popWindow_anim_style);
 		popupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-		popupWindow.setOnDismissListener(this);// µ±popWindowÏûÊ§Ê±µÄ¼àÌı
+		popupWindow.setOnDismissListener(this);// å½“popWindowæ¶ˆå¤±æ—¶çš„ç›‘å¬
 	}
-	
-	
-	
-	
+
+
+
+
 	public interface OnItemClickListener{
-		/** ÉèÖÃµã»÷È·ÈÏ°´Å¥Ê±¼àÌı½Ó¿Ú */
+		/** è®¾ç½®ç‚¹å‡»ç¡®è®¤æŒ‰é’®æ—¶ç›‘å¬æ¥å£ */
 		public void onClickOKPop();
 	}
 
-	/**ÉèÖÃ¼àÌı*/
+	/**è®¾ç½®ç›‘å¬*/
 	public void setOnItemClickListener(OnItemClickListener listener){
 		this.listener=listener;
 	}
-	
-	
-	// µ±popWindowÏûÊ§Ê±ÏìÓ¦
+
+
+	// å½“popWindowæ¶ˆå¤±æ—¶å“åº”
 	@Override
 	public void onDismiss() {
-		
+
 	}
-	
-	/**µ¯´°ÏÔÊ¾µÄÎ»ÖÃ*/  
+
+	/**å¼¹çª—æ˜¾ç¤ºçš„ä½ç½®*/
 	public void showAsDropDown(View parent){
 		popupWindow.showAtLocation(parent, Gravity.BOTTOM, 0, 0);
 		popupWindow.setFocusable(true);
 		popupWindow.setOutsideTouchable(true);
 		popupWindow.update();
 	}
-	
-	/**Ïû³ıµ¯´°*/
+
+	/**æ¶ˆé™¤å¼¹çª—*/
 	public void dissmiss(){
 		popupWindow.dismiss();
 	}
@@ -115,103 +115,103 @@ public class BabyPopWindow implements OnDismissListener, OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.pop_choice_16g:
-			
-			pop_choice_16g.setBackgroundResource(R.drawable.yuanjiao_choice);
-			pop_choice_32g.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_16m.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_32m.setBackgroundResource(R.drawable.yuanjiao);
-			str_type=pop_choice_16g.getText().toString();
-			break;
-		case R.id.pop_choice_32g:
-			pop_choice_16g.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_32g.setBackgroundResource(R.drawable.yuanjiao_choice);
-			pop_choice_16m.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_32m.setBackgroundResource(R.drawable.yuanjiao);
-			
-			str_type=pop_choice_32g.getText().toString();
-			break;
-		case R.id.pop_choice_16m:
-			
-			pop_choice_16g.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_32g.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_16m.setBackgroundResource(R.drawable.yuanjiao_choice);
-			pop_choice_32m.setBackgroundResource(R.drawable.yuanjiao);
-			str_type=pop_choice_16m.getText().toString();
-			break;
-		case R.id.pop_choice_32m:
-			
-			pop_choice_16g.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_32g.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_16m.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_32m.setBackgroundResource(R.drawable.yuanjiao_choice);
-			
-			str_type=pop_choice_32m.getText().toString();
-			
-			break;
-		case R.id.pop_choice_black:
-			
-			pop_choice_black.setBackgroundResource(R.drawable.yuanjiao_choice);
-			pop_choice_white.setBackgroundResource(R.drawable.yuanjiao);
-			
-			str_color=pop_choice_black.getText().toString();
-			break;
-		case R.id.pop_choice_white:
-			
-			pop_choice_black.setBackgroundResource(R.drawable.yuanjiao);
-			pop_choice_white.setBackgroundResource(R.drawable.yuanjiao_choice);
-			
-			str_color=pop_choice_white.getText().toString();
-			break;
-		case R.id.pop_add:
-			if (!pop_num.getText().toString().equals("750")) {
-				
-				String num_add=Integer.valueOf(pop_num.getText().toString())+ADDORREDUCE+"";
-				pop_num.setText(num_add);
-			}else {
-				Toast.makeText(context, "²»ÄÜ³¬¹ı×î´ó²úÆ·ÊıÁ¿", Toast.LENGTH_SHORT).show();
-			}
-			
-			break;
-		case R.id.pop_reduce:
-			if (!pop_num.getText().toString().equals("1")) {
-				String num_reduce=Integer.valueOf(pop_num.getText().toString())-ADDORREDUCE+"";
-				pop_num.setText(num_reduce);
-			}else {
-				Toast.makeText(context, "¹ºÂòÊıÁ¿²»ÄÜµÍÓÚ1¼ş", Toast.LENGTH_SHORT).show();
-			}
-			break;
-		case R.id.pop_del:
-			listener.onClickOKPop();
-			dissmiss();
-			
-			break;
-		case R.id.pop_ok:
-			listener.onClickOKPop();
-			if (str_color.equals("")) {
-				Toast.makeText(context, "Ç×£¬Äã»¹Ã»ÓĞÑ¡ÔñÑÕÉ«Ó´~", Toast.LENGTH_SHORT).show();
-			}else if (str_type.equals("")) {
-				Toast.makeText(context, "Ç×£¬Äã»¹Ã»ÓĞÑ¡ÔñÀàĞÍÓ´~",Toast.LENGTH_SHORT).show();
-			}else {
-				HashMap<String, Object> allHashMap=new HashMap<String,Object>();
-				
-				allHashMap.put("color",str_color);
-				allHashMap.put("type",str_type);
-				allHashMap.put("num",pop_num.getText().toString());
-				allHashMap.put("id",Data.arrayList_cart_id+=1);
-				
-				Data.arrayList_cart.add(allHashMap);
-				setSaveData();
-				dissmiss();
-				
-			}
-			break;
+			case R.id.pop_choice_16g:
 
-		default:
-			break;
+				pop_choice_16g.setBackgroundResource(R.drawable.yuanjiao_choice);
+				pop_choice_32g.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_16m.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_32m.setBackgroundResource(R.drawable.yuanjiao);
+				str_type=pop_choice_16g.getText().toString();
+				break;
+			case R.id.pop_choice_32g:
+				pop_choice_16g.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_32g.setBackgroundResource(R.drawable.yuanjiao_choice);
+				pop_choice_16m.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_32m.setBackgroundResource(R.drawable.yuanjiao);
+
+				str_type=pop_choice_32g.getText().toString();
+				break;
+			case R.id.pop_choice_16m:
+
+				pop_choice_16g.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_32g.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_16m.setBackgroundResource(R.drawable.yuanjiao_choice);
+				pop_choice_32m.setBackgroundResource(R.drawable.yuanjiao);
+				str_type=pop_choice_16m.getText().toString();
+				break;
+			case R.id.pop_choice_32m:
+
+				pop_choice_16g.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_32g.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_16m.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_32m.setBackgroundResource(R.drawable.yuanjiao_choice);
+
+				str_type=pop_choice_32m.getText().toString();
+
+				break;
+			case R.id.pop_choice_black:
+
+				pop_choice_black.setBackgroundResource(R.drawable.yuanjiao_choice);
+				pop_choice_white.setBackgroundResource(R.drawable.yuanjiao);
+
+				str_color=pop_choice_black.getText().toString();
+				break;
+			case R.id.pop_choice_white:
+
+				pop_choice_black.setBackgroundResource(R.drawable.yuanjiao);
+				pop_choice_white.setBackgroundResource(R.drawable.yuanjiao_choice);
+
+				str_color=pop_choice_white.getText().toString();
+				break;
+			case R.id.pop_add:
+				if (!pop_num.getText().toString().equals("750")) {
+
+					String num_add=Integer.valueOf(pop_num.getText().toString())+ADDORREDUCE+"";
+					pop_num.setText(num_add);
+				}else {
+					Toast.makeText(context, "ä¸èƒ½è¶…è¿‡æœ€å¤§äº§å“æ•°é‡", Toast.LENGTH_SHORT).show();
+				}
+
+				break;
+			case R.id.pop_reduce:
+				if (!pop_num.getText().toString().equals("1")) {
+					String num_reduce=Integer.valueOf(pop_num.getText().toString())-ADDORREDUCE+"";
+					pop_num.setText(num_reduce);
+				}else {
+					Toast.makeText(context, "è´­ä¹°æ•°é‡ä¸èƒ½ä½äº1ä»¶", Toast.LENGTH_SHORT).show();
+				}
+				break;
+			case R.id.pop_del:
+				listener.onClickOKPop();
+				dissmiss();
+
+				break;
+			case R.id.pop_ok:
+				listener.onClickOKPop();
+				if (str_color.equals("")) {
+					Toast.makeText(context, "äº²ï¼Œä½ è¿˜æ²¡æœ‰é€‰æ‹©é¢œè‰²å“Ÿ~", Toast.LENGTH_SHORT).show();
+				}else if (str_type.equals("")) {
+					Toast.makeText(context, "äº²ï¼Œä½ è¿˜æ²¡æœ‰é€‰æ‹©ç±»å‹å“Ÿ~",Toast.LENGTH_SHORT).show();
+				}else {
+					HashMap<String, Object> allHashMap=new HashMap<String,Object>();
+
+					allHashMap.put("color",str_color);
+					allHashMap.put("type",str_type);
+					allHashMap.put("num",pop_num.getText().toString());
+					allHashMap.put("id",Data.arrayList_cart_id+=1);
+
+					Data.arrayList_cart.add(allHashMap);
+					setSaveData();
+					dissmiss();
+
+				}
+				break;
+
+			default:
+				break;
 		}
 	}
-	/**±£´æ¹ºÎï³µµÄÊı¾İ*/
+	/**ä¿å­˜è´­ç‰©è½¦çš„æ•°æ®*/
 	private void setSaveData(){
 		SharedPreferences sp=context.getSharedPreferences("SAVE_CART", Context.MODE_PRIVATE);
 		Editor editor=sp.edit();
@@ -223,11 +223,11 @@ public class BabyPopWindow implements OnDismissListener, OnClickListener {
 			editor.putString("ArrayCart_type_"+i, Data.arrayList_cart.get(i).get("type").toString());
 			editor.putString("ArrayCart_color_"+i, Data.arrayList_cart.get(i).get("color").toString());
 			editor.putString("ArrayCart_num_"+i, Data.arrayList_cart.get(i).get("num").toString());
-			
+
 		}
-		
-		
-		
+
+
+
 	}
-	
+
 }

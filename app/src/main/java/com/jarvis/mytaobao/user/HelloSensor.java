@@ -1,7 +1,5 @@
 package com.jarvis.mytaobao.user;
 
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Context;
 import android.hardware.Sensor;
@@ -14,95 +12,97 @@ import android.widget.TextView;
 import com.jarvis.mytaobaotest.R;
 import com.zdp.aseo.content.AseoZdpAseo;
 
+import java.util.List;
+
 /**
- * ±¾»úÓµÓĞµÄ´«¸ĞÆ÷ÊıÁ¿½çÃæ
+ * æœ¬æœºæ‹¥æœ‰çš„ä¼ æ„Ÿå™¨æ•°é‡ç•Œé¢
  * @author http://yecaoly.taobao.com
  *
  */
-public class HelloSensor extends Activity {       
-    Sensor sensor ;       
-    private float x, y, z;       
-    /** Called when the activity is first created. */       
+public class HelloSensor extends Activity {
+    Sensor sensor ;
+    private float x, y, z;
+    /** Called when the activity is first created. */
     @SuppressWarnings("deprecation")
-	@Override       
-    public void onCreate(Bundle savedInstanceState) {       
-        super.onCreate(savedInstanceState);       
-        setContentView(R.layout.hellosener);       
-       
-        //×¼±¸ÏÔÊ¾ĞÅÏ¢µÄUI×é½¨       
-        final TextView tx1 = (TextView) findViewById(R.id.textView1);       
-       
-        //´ÓÏµÍ³·şÎñÖĞ»ñµÃ´«¸ĞÆ÷¹ÜÀíÆ÷       
-        SensorManager sm = (SensorManager) getSystemService(Context.SENSOR_SERVICE);       
-       
-        //´Ó´«¸ĞÆ÷¹ÜÀíÆ÷ÖĞ»ñµÃÈ«²¿µÄ´«¸ĞÆ÷ÁĞ±í       
-        List<Sensor> allSensors = sm.getSensorList(Sensor.TYPE_ALL);       
-		AseoZdpAseo.initType(this, AseoZdpAseo.INSERT_TYPE);
-        //ÏÔÊ¾ÓĞ¶àÉÙ¸ö´«¸ĞÆ÷       
-        tx1.setText("¾­¼ì²â¸ÃÊÖ»úÓĞ" + allSensors.size() + "¸ö´«¸ĞÆ÷£¬ËûÃÇ·Ö±ğÊÇ£º\n");       
-       
-        //ÏÔÊ¾Ã¿¸ö´«¸ĞÆ÷µÄ¾ßÌåĞÅÏ¢       
-        for (Sensor s : allSensors) {       
-       
-            String tempString = "\n" + "  Éè±¸Ãû³Æ£º" + s.getName() + "\n" + "  Éè±¸°æ±¾£º" + s.getVersion() + "\n" + "  ¹©Ó¦ÉÌ£º"       
-                    + s.getVendor() + "\n";       
-       
-            switch (s.getType()) {       
-            case Sensor.TYPE_ACCELEROMETER:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " ¼ÓËÙ¶È´«¸ĞÆ÷accelerometer" + tempString);       
-                break;       
-            case Sensor.TYPE_GRAVITY:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " ÖØÁ¦´«¸ĞÆ÷gravity API 9" + tempString);       
-                break;       
-            case Sensor.TYPE_GYROSCOPE:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " ÍÓÂİÒÇ´«¸ĞÆ÷gyroscope" + tempString);       
-                break;       
-            case Sensor.TYPE_LIGHT:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " »·¾³¹âÏß´«¸ĞÆ÷light" + tempString);       
-                break;       
-            case Sensor.TYPE_LINEAR_ACCELERATION:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " ÏßĞÔ¼ÓËÙÆ÷LINEAR_ACCELERATION API 9" + tempString);       
-                break;       
-            case Sensor.TYPE_MAGNETIC_FIELD:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " µç´Å³¡´«¸ĞÆ÷magnetic field" + tempString);       
-                break;       
-            case Sensor.TYPE_ORIENTATION:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " ·½Ïò´«¸ĞÆ÷orientation" + tempString);       
-                break;       
-            case Sensor.TYPE_PRESSURE:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " Ñ¹Á¦´«¸ĞÆ÷pressure" + tempString);       
-                break;       
-            case Sensor.TYPE_PROXIMITY:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " ¾àÀë´«¸ĞÆ÷proximity" + tempString);       
-                break;       
-            case Sensor.TYPE_ROTATION_VECTOR:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " Ğı×ªÏòÁ¿ROTATION" + tempString);       
-                break;       
-            case Sensor.TYPE_TEMPERATURE:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " ÎÂ¶È´«¸ĞÆ÷temperature" + tempString);       
-                break;       
-            default:       
-                tx1.setText(tx1.getText().toString() + s.getType() + " Î´Öª´«¸ĞÆ÷" + tempString);       
-                break;       
-            }       
-        }       
-               
-        //ÔÚtitleÉÏÏÔÊ¾ÖØÁ¦´«¸ĞÆ÷µÄ±ä»¯       
-        sensor = sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);       
-        SensorEventListener lsn = new SensorEventListener() {       
-           
-			public void onSensorChanged(SensorEvent e) {       
-                x = e.values[SensorManager.DATA_X];       
-                y = e.values[SensorManager.DATA_Y];       
-                z = e.values[SensorManager.DATA_Z];       
-                setTitle("x=" + (int) x + "," + "y=" + (int) y + "," + "z="+ (int) z);       
-            }       
-       
-            public void onAccuracyChanged(Sensor s, int accuracy) {       
-            }       
-        };       
-        // ×¢²álistener£¬µÚÈı¸ö²ÎÊıÊÇ¼ì²âµÄ¾«È·¶È       
-        sm.registerListener(lsn, sensor, SensorManager.SENSOR_DELAY_GAME);       
-       
-    }       
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.hellosener);
+
+        //å‡†å¤‡æ˜¾ç¤ºä¿¡æ¯çš„UIç»„å»º
+        final TextView tx1 = (TextView) findViewById(R.id.textView1);
+
+        //ä»ç³»ç»ŸæœåŠ¡ä¸­è·å¾—ä¼ æ„Ÿå™¨ç®¡ç†å™¨
+        SensorManager sm = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+
+        //ä»ä¼ æ„Ÿå™¨ç®¡ç†å™¨ä¸­è·å¾—å…¨éƒ¨çš„ä¼ æ„Ÿå™¨åˆ—è¡¨
+        List<Sensor> allSensors = sm.getSensorList(Sensor.TYPE_ALL);
+        AseoZdpAseo.initType(this, AseoZdpAseo.INSERT_TYPE);
+        //æ˜¾ç¤ºæœ‰å¤šå°‘ä¸ªä¼ æ„Ÿå™¨
+        tx1.setText("ç»æ£€æµ‹è¯¥æ‰‹æœºæœ‰" + allSensors.size() + "ä¸ªä¼ æ„Ÿå™¨ï¼Œä»–ä»¬åˆ†åˆ«æ˜¯ï¼š\n");
+
+        //æ˜¾ç¤ºæ¯ä¸ªä¼ æ„Ÿå™¨çš„å…·ä½“ä¿¡æ¯
+        for (Sensor s : allSensors) {
+
+            String tempString = "\n" + "  è®¾å¤‡åç§°ï¼š" + s.getName() + "\n" + "  è®¾å¤‡ç‰ˆæœ¬ï¼š" + s.getVersion() + "\n" + "  ä¾›åº”å•†ï¼š"
+                    + s.getVendor() + "\n";
+
+            switch (s.getType()) {
+                case Sensor.TYPE_ACCELEROMETER:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " åŠ é€Ÿåº¦ä¼ æ„Ÿå™¨accelerometer" + tempString);
+                    break;
+                case Sensor.TYPE_GRAVITY:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " é‡åŠ›ä¼ æ„Ÿå™¨gravity API 9" + tempString);
+                    break;
+                case Sensor.TYPE_GYROSCOPE:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " é™€èºä»ªä¼ æ„Ÿå™¨gyroscope" + tempString);
+                    break;
+                case Sensor.TYPE_LIGHT:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " ç¯å¢ƒå…‰çº¿ä¼ æ„Ÿå™¨light" + tempString);
+                    break;
+                case Sensor.TYPE_LINEAR_ACCELERATION:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " çº¿æ€§åŠ é€Ÿå™¨LINEAR_ACCELERATION API 9" + tempString);
+                    break;
+                case Sensor.TYPE_MAGNETIC_FIELD:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " ç”µç£åœºä¼ æ„Ÿå™¨magnetic field" + tempString);
+                    break;
+                case Sensor.TYPE_ORIENTATION:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " æ–¹å‘ä¼ æ„Ÿå™¨orientation" + tempString);
+                    break;
+                case Sensor.TYPE_PRESSURE:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " å‹åŠ›ä¼ æ„Ÿå™¨pressure" + tempString);
+                    break;
+                case Sensor.TYPE_PROXIMITY:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " è·ç¦»ä¼ æ„Ÿå™¨proximity" + tempString);
+                    break;
+                case Sensor.TYPE_ROTATION_VECTOR:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " æ—‹è½¬å‘é‡ROTATION" + tempString);
+                    break;
+                case Sensor.TYPE_TEMPERATURE:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " æ¸©åº¦ä¼ æ„Ÿå™¨temperature" + tempString);
+                    break;
+                default:
+                    tx1.setText(tx1.getText().toString() + s.getType() + " æœªçŸ¥ä¼ æ„Ÿå™¨" + tempString);
+                    break;
+            }
+        }
+
+        //åœ¨titleä¸Šæ˜¾ç¤ºé‡åŠ›ä¼ æ„Ÿå™¨çš„å˜åŒ–
+        sensor = sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        SensorEventListener lsn = new SensorEventListener() {
+
+            public void onSensorChanged(SensorEvent e) {
+                x = e.values[SensorManager.DATA_X];
+                y = e.values[SensorManager.DATA_Y];
+                z = e.values[SensorManager.DATA_Z];
+                setTitle("x=" + (int) x + "," + "y=" + (int) y + "," + "z="+ (int) z);
+            }
+
+            public void onAccuracyChanged(Sensor s, int accuracy) {
+            }
+        };
+        // æ³¨å†Œlistenerï¼Œç¬¬ä¸‰ä¸ªå‚æ•°æ˜¯æ£€æµ‹çš„ç²¾ç¡®åº¦
+        sm.registerListener(lsn, sensor, SensorManager.SENSOR_DELAY_GAME);
+
+    }
 }  

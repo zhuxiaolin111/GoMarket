@@ -1,10 +1,10 @@
 package com.javis.Adapter;
 
-import java.util.ArrayList;
-
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 
 public class myViewPager extends PagerAdapter {

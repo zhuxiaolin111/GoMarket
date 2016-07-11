@@ -1,12 +1,13 @@
 package com.jarvis.http;
-import java.util.ArrayList;
-import java.util.HashMap;
+
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.util.Log;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * @author Common Use JSON Resolve

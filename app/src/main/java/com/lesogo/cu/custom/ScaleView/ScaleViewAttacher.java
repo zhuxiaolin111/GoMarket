@@ -179,14 +179,14 @@ public class ScaleViewAttacher implements IScaleView, View.OnTouchListener, Vers
 	/**
 	 * Clean-up the resources attached to this object. This needs to be called
 	 * when the ImageView is no longer used. A good example is from
-	 * {@link android.view.View#onDetachedFromWindow()} or from
+	 * {@link View#onDetachedFromWindow()} or from
 	 * {@link android.app.Activity#onDestroy()}. This is automatically called if
 	 * you are using {@link ScaleView.co.senab.Scaleview.ScaleView}.
 	 */
 	@SuppressWarnings("deprecation")
 	public final void cleanup() {
 		if (null != mImageView) {
-			android.view.ViewTreeObserver obs = mImageView.get().getViewTreeObserver();
+			ViewTreeObserver obs = mImageView.get().getViewTreeObserver();
 			if (obs != null) {
 				obs.removeGlobalOnLayoutListener(this);
 			}

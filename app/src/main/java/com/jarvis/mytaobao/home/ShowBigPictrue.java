@@ -1,9 +1,5 @@
 package com.jarvis.mytaobao.home;
 
-import com.jarvis.mytaobaotest.R;
-import com.lesogo.cu.custom.ScaleView.HackyViewPager;
-import com.zdp.aseo.content.AseoZdpAseo;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,8 +7,12 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.jarvis.mytaobaotest.R;
+import com.lesogo.cu.custom.ScaleView.HackyViewPager;
+import com.zdp.aseo.content.AseoZdpAseo;
+
 /**
- * 显示大图界面
+ * 鏄剧ず澶у浘鐣岄潰
  * @author http://yecaoly.taobao.com
  *
  */
@@ -20,9 +20,9 @@ public class ShowBigPictrue extends FragmentActivity {
 
 	private HackyViewPager viewPager;
 	private int[] resId={R.drawable.detail_show_1,R.drawable.detail_show_2,R.drawable.detail_show_3,R.drawable.detail_show_4,R.drawable.detail_show_5,R.drawable.detail_show_6};
-	/**得到上一个界面点击图片的位置*/
+	/**寰楀埌涓婁竴涓晫闈㈢偣鍑诲浘鐗囩殑浣嶇疆*/
 	private int position=0;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,17 +32,17 @@ public class ShowBigPictrue extends FragmentActivity {
 		AseoZdpAseo.initType(this, AseoZdpAseo.INSERT_TYPE);
 		initViewPager();
 	}
-	
-private void initViewPager(){
-		
+
+	private void initViewPager(){
+
 		viewPager = (HackyViewPager) findViewById(R.id.viewPager_show_bigPic);
 		ViewPagerAdapter adapter=new ViewPagerAdapter(getSupportFragmentManager());
 		viewPager.setAdapter(adapter);
-		//跳转到第几个界面
+		//璺宠浆鍒扮鍑犱釜鐣岄潰
 		viewPager.setCurrentItem(position);
-		
+
 	}
-	
+
 	private class ViewPagerAdapter extends FragmentStatePagerAdapter{
 
 		public ViewPagerAdapter(FragmentManager fm) {
@@ -60,7 +60,7 @@ private void initViewPager(){
 			return resId.length;
 		}
 
-		
+
 	}
 
 }

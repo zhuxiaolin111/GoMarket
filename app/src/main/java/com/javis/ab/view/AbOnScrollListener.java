@@ -2,30 +2,30 @@ package com.javis.ab.view;
 
 
 /**
- * 名称：AbOnScrollListener.java 
- * 描述：滚动监听器
+ * 鍚嶇О锛欰bOnScrollListener.java
+ * 鎻忚堪锛氭粴鍔ㄧ洃鍚櫒
  */
 public interface AbOnScrollListener {
-    
-    /**
-     * 滚动.
-     * @param arg1 返回参数
-     */
-    public void onScroll(int arg1); 
-    
-    /**
-	 * 滚动停止.
-	 */
-    public void onScrollStoped();
 
 	/**
-	 * 滚到了最左边.
+	 * 婊氬姩.
+	 * @param arg1 杩斿洖鍙傛暟
 	 */
-    public void onScrollToLeft();
+	public void onScroll(int arg1);
 
 	/**
-	 * 滚到了最右边.
+	 * 婊氬姩鍋滄.
 	 */
-    public void onScrollToRight();
+	public void onScrollStoped();
+
+	/**
+	 * 婊氬埌浜嗘渶宸﹁竟.
+	 */
+	public void onScrollToLeft();
+
+	/**
+	 * 婊氬埌浜嗘渶鍙宠竟.
+	 */
+	public void onScrollToRight();
 
 }

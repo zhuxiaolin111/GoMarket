@@ -12,22 +12,22 @@ import com.zdp.aseo.content.AseoZdpAseo;
 
 
 /**
- * »∑»œ∂©µ•ΩÁ√Ê
+ * Á°ÆËÆ§ËÆ¢ÂçïÁïåÈù¢
  * @author http://yecaoly.taobao.com
  *
  */
 public class BuynowActivity extends Activity {
 
 	private TextView bt_ok,bt_back;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.buy_now_a);
 		initView();
-		
+
 	}
-	
+
 	private void initView(){
 		bt_back=(TextView) findViewById(R.id.bt_buy_back);
 		bt_back.setOnClickListener(new OnClickListener() {
@@ -41,11 +41,11 @@ public class BuynowActivity extends Activity {
 		bt_ok.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Toast.makeText(BuynowActivity.this, "‘›Œﬁ∑®÷ß∏∂", Toast.LENGTH_SHORT).show();
+				Toast.makeText(BuynowActivity.this, "ÊöÇÊó†Ê≥ïÊîØ‰ªò", Toast.LENGTH_SHORT).show();
 			}
 		});
-		
-		
+
+
 	}
 
 }

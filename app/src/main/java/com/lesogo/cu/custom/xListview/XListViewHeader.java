@@ -51,8 +51,8 @@ public class XListViewHeader extends LinearLayout {
 	}
 
 	private void initView(Context context) {
-		// ³õÊ¼Çé¿ö£¬ÉèÖÃÏÂÀ­Ë¢ÐÂview¸ß¶ÈÎª0
-		LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, 40);
+		// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½viewï¿½ß¶ï¿½Îª0
+		LayoutParams lp = new LayoutParams(LayoutParams.MATCH_PARENT, 40);
 		mContainer = (LinearLayout) LayoutInflater.from(context).inflate(R.layout.xlistview_header, null);
 		addView(mContainer, lp);
 		setGravity(Gravity.BOTTOM);
@@ -73,11 +73,11 @@ public class XListViewHeader extends LinearLayout {
 		if (state == mState)
 			return;
 
-		if (state == STATE_REFRESHING) { // ÏÔÊ¾½ø¶È
+		if (state == STATE_REFRESHING) { // ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
 			mArrowImageView.clearAnimation();
 			mArrowImageView.setVisibility(View.INVISIBLE);
 			mProgressBar.setVisibility(View.VISIBLE);
-		} else { // ÏÔÊ¾¼ýÍ·Í¼Æ¬
+		} else { // ï¿½ï¿½Ê¾ï¿½ï¿½Í·Í¼Æ¬
 			mArrowImageView.setVisibility(View.VISIBLE);
 			mProgressBar.setVisibility(View.INVISIBLE);
 		}
@@ -112,7 +112,7 @@ public class XListViewHeader extends LinearLayout {
 		if (height <= 0){
 		height = 40;
 		}
-		LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) mContainer.getLayoutParams();
+		LayoutParams lp = (LayoutParams) mContainer.getLayoutParams();
 		lp.height = height;
 		mContainer.setLayoutParams(lp);
 	}

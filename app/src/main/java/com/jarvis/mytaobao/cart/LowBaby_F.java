@@ -1,15 +1,15 @@
 package com.jarvis.mytaobao.cart;
 
-import com.jarvis.mytaobaotest.R;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.jarvis.mytaobaotest.R;
+
 /**
- * ¹ºÎï³µ½çÃæÖĞµÄ½µ¼Û±¦±´½çÃæ
+ * è´­ç‰©è½¦ç•Œé¢ä¸­çš„é™ä»·å®è´ç•Œé¢
  * @author http://yecaoly.taobao.com
  *
  */
@@ -21,11 +21,11 @@ public class LowBaby_F extends Fragment {
 		initView(view);
 		return view;
 	}
-	
+
 	private void initView(View view){
-		
-		
-		
+
+
+
 	}
 
 }

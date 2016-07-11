@@ -1,7 +1,5 @@
 package com.jarvis.mytaobao.home;
 
-import com.jarvis.mytaobaotest.R;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,9 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.jarvis.mytaobaotest.R;
+
 
 /**
- * 显示大图的实现，并且可以放大缩小
+ * 锟斤拷示锟斤拷图锟斤拷实锟街ｏ拷锟斤拷锟揭匡拷锟皆放达拷锟斤拷小
  * @author http://yecaoly.taobao.com
  *
  */
