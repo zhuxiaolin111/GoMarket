@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\realm_properties",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\raw\\realm_properties"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beep.ogg",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\raw\\beep.ogg"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beep.ogg",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\raw\\beep.ogg"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\raw\\realm_properties",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\raw\\realm_properties"
     }
 ]

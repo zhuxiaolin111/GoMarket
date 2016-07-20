@@ -7,18 +7,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#FF5000"
+        android:background="#55ff55"
         android:orientation="horizontal" >
-
-        <ImageView
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:hint="@string/logo"/>
+      <!--  <ImageView
             android:id="@+id/iv_shao"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="8dp"
-            android:src="@drawable/menu_top_left" />
-
-        <TextView
+            android:src="@drawable/menu_top_left" />-->
+          <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:background="@drawable/search_bg"
+              android:hint="@string/sousuo"
+              android:layout_weight="0.88" />
+       <!-- <TextView
             android:id="@+id/tv_top_title"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -27,13 +35,12 @@
             android:text="搜索"
             android:textColor="#FFFFFF"
             android:background="@drawable/bg_menu_edit"
-            android:textSize="20sp" />
+            android:textSize="20sp" />-->
 
         <ImageView
             android:id="@+id/iv_refresh"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:padding="8dp"
             android:src="@drawable/menu_top_right" />
     </LinearLayout>

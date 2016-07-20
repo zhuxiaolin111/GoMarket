@@ -1,24 +1,23 @@
 package com.jarvis.http;
-
-import android.util.Log;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import android.util.Log;
 
 /**
  * @author Common Use JSON Resolve
- * @author Í¨ÓÃJSON½âÎöÀà
- * @author ÏŞÖÆ×îÉî½âÎö²ãÊıÎª3²ã
- * @author ½÷É÷´«Èë½âÎö²ÎÊı
+ * @author é€šç”¨JSONè§£æç±»
+ * @author é™åˆ¶æœ€æ·±è§£æå±‚æ•°ä¸º3å±‚
+ * @author è°¨æ…ä¼ å…¥è§£æå‚æ•°
  */
 public class CU_JSONResolve {
 	/**
-	 * ÌáÈ¡JSONObjectµÄkeyµÄStringÀàĞÍµÄvalue
-	 * 
+	 * æå–JSONObjectçš„keyçš„Stringç±»å‹çš„value
+	 *
 	 * @param jO
 	 * @param key
 	 * @return String_value
@@ -41,8 +40,8 @@ public class CU_JSONResolve {
 	}
 
 	/**
-	 * ÄÚ²¿½âÎö1²ãJSON¶ÔÏó
-	 * 
+	 * å†…éƒ¨è§£æ1å±‚JSONå¯¹è±¡
+	 *
 	 * @param jO
 	 * @param STR_field
 	 * @return hashMap
@@ -62,8 +61,8 @@ public class CU_JSONResolve {
 	}
 
 	/**
-	 * ÄÚ²¿½âÎö2²ãJSON¶ÔÏó
-	 * 
+	 * å†…éƒ¨è§£æ2å±‚JSONå¯¹è±¡
+	 *
 	 * @param jO
 	 * @param STR1_field
 	 * @param LIST1_field
@@ -90,8 +89,8 @@ public class CU_JSONResolve {
 	}
 
 	/**
-	 * ÌáÈ¡JSONObjectµÄkeyµÄ1²ãLISTÀàĞÍµÄvalue
-	 * 
+	 * æå–JSONObjectçš„keyçš„1å±‚LISTç±»å‹çš„value
+	 *
 	 * @param jO
 	 * @param key
 	 * @param STR_field
@@ -128,8 +127,8 @@ public class CU_JSONResolve {
 	}
 
 	/**
-	 * ÌáÈ¡JSONObjectµÄkeyµÄ2²ãLISTÀàĞÍµÄvalue
-	 * 
+	 * æå–JSONObjectçš„keyçš„2å±‚LISTç±»å‹çš„value
+	 *
 	 * @param jO
 	 * @param key
 	 * @param STR1_field
@@ -161,19 +160,19 @@ public class CU_JSONResolve {
 	}
 
 	/**
-	 * ½âÎöÍêÕûµÄ1²ãJSON¶ÔÏó
-	 * 
+	 * è§£æå®Œæ•´çš„1å±‚JSONå¯¹è±¡
+	 *
 	 * @param jsonStr
-	 *            Î´½âÎöµÄJSON×Ö·û´®
+	 *            æœªè§£æçš„JSONå­—ç¬¦ä¸²
 	 * @param STR1_field
-	 *            µÚÒ»²ãStringÀàĞÍµÄkeyÊı×é
+	 *            ç¬¬ä¸€å±‚Stringç±»å‹çš„keyæ•°ç»„
 	 * @return HashMap
-	 * @param ÒÔÏÂÊÇ´«²ÎÊ¾Àı
-	 *            ¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı
-	 * @param ¡ú String STR1_field[] =
+	 * @param ä»¥ä¸‹æ˜¯ä¼ å‚ç¤ºä¾‹
+	 *            â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“
+	 * @param â†’ String STR1_field[] =
 	 *        {"field0","field1","field2","field3","field4"};
-	 * @param ÒÔÉÏÊÇ´«²ÎÊ¾Àı
-	 *            ¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü
+	 * @param ä»¥ä¸Šæ˜¯ä¼ å‚ç¤ºä¾‹
+	 *            â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘
 	 */
 
 	public static HashMap<String, Object> parseHashMap1(String jsonStr, String STR1_field[]) {
@@ -201,31 +200,31 @@ public class CU_JSONResolve {
 	}
 
 	/**
-	 * ½âÎöÍêÕûµÄ2²ãJSON¶ÔÏó£ºLIST1_fieldµÄlength±ØĞëºÍaL_STR2_fieldµÄsizeÏàµÈ
-	 * 
+	 * è§£æå®Œæ•´çš„2å±‚JSONå¯¹è±¡ï¼šLIST1_fieldçš„lengthå¿…é¡»å’ŒaL_STR2_fieldçš„sizeç›¸ç­‰
+	 *
 	 * @param jsonStr
-	 *            Î´½âÎöµÄJSON×Ö·û´®
+	 *            æœªè§£æçš„JSONå­—ç¬¦ä¸²
 	 * @param STR1_field
-	 *            µÚÒ»²ãStringÀàĞÍµÄkeyÊı×é
+	 *            ç¬¬ä¸€å±‚Stringç±»å‹çš„keyæ•°ç»„
 	 * @param LIST1_field
-	 *            µÚÒ»²ãListÀàĞÍµÄkeyÊı×é
+	 *            ç¬¬ä¸€å±‚Listç±»å‹çš„keyæ•°ç»„
 	 * @param aL_STR2_field
-	 *            µÚ¶ş²ãStringÀàĞÍµÄkeyÁĞ±í(ÁĞ±íÏîÎªString[]:Ò»²ãLIST1_field¶ÔÓ¦µÄStringÀàĞÍµÄkeyÊı×é)
-	 * @param ÒÔÏÂÊÇ´«²ÎÊ¾Àı
-	 *            ¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı
-	 * @param //Ò»²ã5¸öString2¸ölist,2²ã·Ö±ğÎª3¸öStringºÍ4¸öString(´«²ÎÎñ±ØÏà»¥¶ÔÓ¦)
-	 * @param ¡ú String STR1_field[] =
+	 *            ç¬¬äºŒå±‚Stringç±»å‹çš„keyåˆ—è¡¨(åˆ—è¡¨é¡¹ä¸ºString[]:ä¸€å±‚LIST1_fieldå¯¹åº”çš„Stringç±»å‹çš„keyæ•°ç»„)
+	 * @param ä»¥ä¸‹æ˜¯ä¼ å‚ç¤ºä¾‹
+	 *            â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“
+	 * @param //ä¸€å±‚5ä¸ªString2ä¸ªlist,2å±‚åˆ†åˆ«ä¸º3ä¸ªStringå’Œ4ä¸ªString(ä¼ å‚åŠ¡å¿…ç›¸äº’å¯¹åº”)
+	 * @param â†’ String STR1_field[] =
 	 *        {"str1_0","str1_1","str1_2","str1_3","str1_4"};
-	 * @param ¡ú String LIST1_field[] = {"list1_0","list1_1"};
-	 * @param ¡ú ArrayList$String[]% aL_STR2_field = new
-	 *        ArrayList$String[]%();//$ºÍ%»»¼âÀ©ºÅ
-	 * @param ¡ú String STR2_field0[] = { "str2_0_0", "str2_0_1", "str2_0_2"};
-	 * @param ¡ú String STR2_field1[] = { "str2_1_0", "str2_1_1", "str2_1_2",
+	 * @param â†’ String LIST1_field[] = {"list1_0","list1_1"};
+	 * @param â†’ ArrayList$String[]% aL_STR2_field = new
+	 *        ArrayList$String[]%();//$å’Œ%æ¢å°–æ‰©å·
+	 * @param â†’ String STR2_field0[] = { "str2_0_0", "str2_0_1", "str2_0_2"};
+	 * @param â†’ String STR2_field1[] = { "str2_1_0", "str2_1_1", "str2_1_2",
 	 *        "str2_1_3"};
-	 * @param ¡ú aL_STR2_field.add(STR2_field0);
-	 * @param ¡ú aL_STR2_field.add(STR2_field1);
-	 * @param ÒÔÉÏÊÇ´«²ÎÊ¾Àı
-	 *            ¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü
+	 * @param â†’ aL_STR2_field.add(STR2_field0);
+	 * @param â†’ aL_STR2_field.add(STR2_field1);
+	 * @param ä»¥ä¸Šæ˜¯ä¼ å‚ç¤ºä¾‹
+	 *            â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘
 	 * @return HashMap
 	 */
 	public static HashMap<String, Object> parseHashMap2(String jsonStr, String STR1_field[], String LIST1_field[], ArrayList<String[]> aL_STR2_field) {
@@ -261,52 +260,52 @@ public class CU_JSONResolve {
 	}
 
 	/**
-	 * ½âÎöÍêÕûµÄ3²ãJSON¶ÔÏó£º½÷É÷Ê¹ÓÃ
-	 * 
+	 * è§£æå®Œæ•´çš„3å±‚JSONå¯¹è±¡ï¼šè°¨æ…ä½¿ç”¨
+	 *
 	 * @param jsonStr
-	 *            Î´½âÎöµÄJSON×Ö·û´®
+	 *            æœªè§£æçš„JSONå­—ç¬¦ä¸²
 	 * @param STR1_field
-	 *            µÚÒ»²ãStringÀàĞÍµÄkeyÊı×é
+	 *            ç¬¬ä¸€å±‚Stringç±»å‹çš„keyæ•°ç»„
 	 * @param LIST1_field
-	 *            µÚÒ»²ãListÀàĞÍµÄkeyÊı×é
+	 *            ç¬¬ä¸€å±‚Listç±»å‹çš„keyæ•°ç»„
 	 * @param aL_STR2_field
-	 *            µÚ¶ş²ãStringÀàĞÍµÄkeyÁĞ±í(ÁĞ±íÏîÎªString[]:Ò»²ãLIST1_field¶ÔÓ¦µÄStringÀàĞÍµÄkeyÊı×é)
+	 *            ç¬¬äºŒå±‚Stringç±»å‹çš„keyåˆ—è¡¨(åˆ—è¡¨é¡¹ä¸ºString[]:ä¸€å±‚LIST1_fieldå¯¹åº”çš„Stringç±»å‹çš„keyæ•°ç»„)
 	 * @param aL_LIST2_field
-	 *            µÚ¶ş²ãListÀàĞÍkeyÁĞ±í,Í¬aL_STR2_field
+	 *            ç¬¬äºŒå±‚Listç±»å‹keyåˆ—è¡¨,åŒaL_STR2_field
 	 * @param aL_STR3_field
-	 *            µÚÈı²ãStringÀàĞÍµÄkeyÁĞ±íÌ×ÁĞ±í(ArrayList$ArrayList$String[]%%)//$ºÍ%»»¼âÀ©ºÅ
-	 * @param ÒÔÏÂÊÇ´«²ÎÊ¾Àı
-	 *            ¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı¡ı
-	 * @param 
-	 *        //Ò»²ã2¸öString1¸ölist,2²ã·Ö±ğÎª4¸öStringºÍ2¸öList,3²ã·Ö±ğÎª(·Ö±ğÎª6¸öStringºÍ5¸öString)
-	 *        ºÍ()ºÍ()...
-	 * @param ¡ú String STR1_field[] = {"str1_0","str1_1"};
-	 * @param ¡ú String LIST1_field[] = {"list1_0"};
-	 * @param ¡ú ArrayList$String[]% aL_STR2_field = new
-	 *        ArrayList$String[]%();//$ºÍ%»»¼âÀ©ºÅ
-	 * @param ¡ú String STR2_field0[] = { "str2_0_0", "str2_0_1",
+	 *            ç¬¬ä¸‰å±‚Stringç±»å‹çš„keyåˆ—è¡¨å¥—åˆ—è¡¨(ArrayList$ArrayList$String[]%%)//$å’Œ%æ¢å°–æ‰©å·
+	 * @param ä»¥ä¸‹æ˜¯ä¼ å‚ç¤ºä¾‹
+	 *            â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“
+	 * @param
+	 *        //ä¸€å±‚2ä¸ªString1ä¸ªlist,2å±‚åˆ†åˆ«ä¸º4ä¸ªStringå’Œ2ä¸ªList,3å±‚åˆ†åˆ«ä¸º(åˆ†åˆ«ä¸º6ä¸ªStringå’Œ5ä¸ªString)
+	 *        å’Œ()å’Œ()...
+	 * @param â†’ String STR1_field[] = {"str1_0","str1_1"};
+	 * @param â†’ String LIST1_field[] = {"list1_0"};
+	 * @param â†’ ArrayList$String[]% aL_STR2_field = new
+	 *        ArrayList$String[]%();//$å’Œ%æ¢å°–æ‰©å·
+	 * @param â†’ String STR2_field0[] = { "str2_0_0", "str2_0_1",
 	 *        "str2_0_2","str2_0_3"};
-	 * @param ¡ú aL_STR2_field.add(STR2_field0);
-	 * @param ¡ú ArrayList$String[]% aL_LIST2_field = new
-	 *        ArrayList$String[]%();//$ºÍ%»»¼âÀ©ºÅ
-	 * @param ¡ú String LIST2_field0[] = { "list2_0_0", "list2_0_1"};
-	 * @param ¡ú aL_LIST2_field.add(LIST2_field0);
-	 * @param ¡ú ArrayList$ArrayList$String[]%% aLL_STR3_field = new
-	 *        ArrayList$ArrayList$String[]%%();//$ºÍ%»»¼âÀ©ºÅ
-	 * @param ¡ú ArrayList$String[]% aL_STR3_0_field0 = new
-	 *        ArrayList$String[]%();//$ºÍ%»»¼âÀ©ºÅ
-	 * @param ¡ú String STR3_0_field0[] = { "str3_0_0_0", "str3_0_0_1",
+	 * @param â†’ aL_STR2_field.add(STR2_field0);
+	 * @param â†’ ArrayList$String[]% aL_LIST2_field = new
+	 *        ArrayList$String[]%();//$å’Œ%æ¢å°–æ‰©å·
+	 * @param â†’ String LIST2_field0[] = { "list2_0_0", "list2_0_1"};
+	 * @param â†’ aL_LIST2_field.add(LIST2_field0);
+	 * @param â†’ ArrayList$ArrayList$String[]%% aLL_STR3_field = new
+	 *        ArrayList$ArrayList$String[]%%();//$å’Œ%æ¢å°–æ‰©å·
+	 * @param â†’ ArrayList$String[]% aL_STR3_0_field0 = new
+	 *        ArrayList$String[]%();//$å’Œ%æ¢å°–æ‰©å·
+	 * @param â†’ String STR3_0_field0[] = { "str3_0_0_0", "str3_0_0_1",
 	 *        "str3_0_0_2", "str3_0_0_3", "str3_0_0_4", "str3_0_0_5"};
-	 * @param ¡ú aL_STR3_0_field0.add(STR3_0_field0);
-	 * @param ¡ú ArrayList$String[]% aL_STR3_1_field0 = new
-	 *        ArrayList$String[]%();//$ºÍ%»»¼âÀ©ºÅ
-	 * @param ¡ú String STR3_1_field0[] = { "str3_1_0_0", "str3_1_0_1",
+	 * @param â†’ aL_STR3_0_field0.add(STR3_0_field0);
+	 * @param â†’ ArrayList$String[]% aL_STR3_1_field0 = new
+	 *        ArrayList$String[]%();//$å’Œ%æ¢å°–æ‰©å·
+	 * @param â†’ String STR3_1_field0[] = { "str3_1_0_0", "str3_1_0_1",
 	 *        "str3_1_0_2", "str3_1_0_3", "str3_1_0_4"};
-	 * @param ¡ú aL_STR3_1_field0.add(STR3_1_field0);
-	 * @param ¡ú aLL_STR3_field.add(aL_STR3_0_field0);
-	 * @param ¡ú aLL_STR3_field.add(aL_STR3_1_field0);
-	 * @param ÒÔÉÏÊÇ´«²ÎÊ¾Àı
-	 *            ¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü¡ü
+	 * @param â†’ aL_STR3_1_field0.add(STR3_1_field0);
+	 * @param â†’ aLL_STR3_field.add(aL_STR3_0_field0);
+	 * @param â†’ aLL_STR3_field.add(aL_STR3_1_field0);
+	 * @param ä»¥ä¸Šæ˜¯ä¼ å‚ç¤ºä¾‹
+	 *            â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘
 	 * @return HashMap
 	 */
 	public static HashMap<String, Object> parseHashMap3(String jsonStr, String STR1_field[], String LIST1_field[], ArrayList<String[]> aL_STR2_field, ArrayList<String[]> aL_LIST2_field, ArrayList<ArrayList<String[]>> aLL_STR3_field) {

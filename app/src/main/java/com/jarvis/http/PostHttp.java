@@ -17,7 +17,7 @@ public class PostHttp {
 		try {
 			url = new URL(strUrl);
 			HttpURLConnection urlconn = (HttpURLConnection) url.openConnection();
-			urlconn.setDoInput(true);// ÉèÖÃÊäÈëÁ÷²ÉÓÃ×Ö½ÚÁ÷Ä£Ê½
+			urlconn.setDoInput(true);// è®¾ç½®è¾“å…¥æµé‡‡ç”¨å­—èŠ‚æµæ¨¡å¼
 			urlconn.setDoOutput(true);
 			urlconn.setRequestMethod("POST");
 			urlconn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
@@ -25,23 +25,23 @@ public class PostHttp {
 			urlconn.setConnectTimeout(10000);
 			urlconn.setReadTimeout(15000);
 
-			urlconn.connect();// Á´½Ó·şÎñÆ÷²¢·¢ËÍÏûÏ¢
+			urlconn.connect();// é“¾æ¥æœåŠ¡å™¨å¹¶å‘é€æ¶ˆæ¯
 
 			OutputStream outStream = urlconn.getOutputStream();
-			outStream.flush();// ·¢ËÍ£¬Çå³ı»º´æ
-			outStream.close();// ¹Ø±Õ
+			outStream.flush();// å‘é€ï¼Œæ¸…é™¤ç¼“å­˜
+			outStream.close();// å…³é—­
 
-			// ¿ªÊ¼½ÓÊÕ·µ»ØµÄÊı¾İ
+			// å¼€å§‹æ¥æ”¶è¿”å›çš„æ•°æ®
 			InputStream is = urlconn.getInputStream();
 			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
 			String readLine = "";
 			while ((readLine = bufferedReader.readLine()) != null) {
 				result += readLine;
 			}
-			
+
 			bufferedReader.close();
 			urlconn.disconnect();
-			
+
 
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -49,7 +49,7 @@ public class PostHttp {
 			e.printStackTrace();
 		}
 
-		
+
 		return result;
 	}
 

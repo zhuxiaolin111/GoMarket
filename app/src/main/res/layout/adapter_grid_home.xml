@@ -2,10 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".Tao_F" >
 
     <ImageView 
         android:id="@+id/iv_adapter_grid_pic"
+        android:padding="35dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="center"

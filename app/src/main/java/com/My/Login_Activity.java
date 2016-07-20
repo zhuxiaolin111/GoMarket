@@ -25,7 +25,7 @@ public class Login_Activity extends Activity{
             public void onClick(View v) {
                 Intent intent=new Intent(Login_Activity.this, Main_FA.class);
                 startActivity(intent);
-              //  Toast.makeText(Login_Activity.this,"还没有这个功能·",Toast.LENGTH_SHORT).show();
+
             }
         });
         register.setOnClickListener(new View.OnClickListener() {

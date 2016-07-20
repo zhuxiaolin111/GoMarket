@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\mn\AndroidStudioProjects\DingCanApp\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\mn\AndroidStudioProjects\DingCanApp\app\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\GouMarket_Dome\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\GouMarket_Dome\app\src\debug\shaders"/></dataSet></merger>

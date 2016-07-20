@@ -44,7 +44,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="首页"
+                android:text="聊天"
                 android:textSize="11sp" />
         </LinearLayout>
 
@@ -64,7 +64,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="附近"
+                android:text="钱包"
                 android:textSize="11sp" />
         </LinearLayout>
 
@@ -84,7 +84,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="xxxx"
+                android:text="收藏夹"
                 android:textSize="11sp" />
         </LinearLayout>
 
@@ -104,7 +104,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="订餐清单"
+                android:text="订单"
                 android:textSize="11sp" />
         </LinearLayout>
 

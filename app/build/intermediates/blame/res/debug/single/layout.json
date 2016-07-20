@@ -1,202 +1,202 @@
 [
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_big_pictrue_a.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\show_big_pictrue_a.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\babydetail_a.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\babydetail_a.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login_lyaout.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\login_lyaout.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_footer.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\xlistview_footer.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_grid_home.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\adapter_grid_home.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\slide_view_merge.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\slide_view_merge.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_popwindow.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\adapter_popwindow.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\left_menu_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\left_menu_layout.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_listview_detail.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\adapter_listview_detail.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_life.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\user_life.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_f.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\cart_f.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ware_a.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\ware_a.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_all_f.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\cart_all_f.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_listview_ware.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_listview_ware.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_fa.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\main_fa.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shangjia1_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\shangjia1_layout.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\index_layout.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\index_layout.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\main.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_stock_f.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\cart_stock_f.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_listview_cart.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_listview_cart.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\local_media_fragment.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\local_media_fragment.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_all_f.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\cart_all_f.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_f.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\home_f.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\hellosener.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\hellosener.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_layout_below.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\main_layout_below.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\upload_a.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\upload_a.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_header.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\xlistview_header.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_fa.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\main_fa.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_layout.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\dialog_layout.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\zuce_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\zuce_layout.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shangjia_layout.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\shangjia_layout.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tao_f.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\tao_f.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\zuce_layout.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\zuce_layout.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_big_pictrue_a.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\show_big_pictrue_a.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_f.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\user_f.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_listview_tao.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_listview_tao.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_tab.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\top_tab.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_layout_below.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\main_layout_below.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shangjia1_layout.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\shangjia1_layout.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dicover_f.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\dicover_f.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\main.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_menu.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\top_menu.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sc_gridview_item.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\sc_gridview_item.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shangjia_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\shangjia_layout.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\upload_a.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\upload_a.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_grid_home.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_grid_home.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_menu_txt.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\top_menu_txt.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_opinion.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\user_opinion.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\left_menu_layout.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\left_menu_layout.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\local_media_fragment.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\local_media_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_listview_tao.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\adapter_listview_tao.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\capture.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\capture.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\local_media.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\local_media.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\dialog_layout.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\babydetail_a.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\babydetail_a.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_f.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\user_f.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\buy_now_a.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\buy_now_a.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_f.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\home_f.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_opinion.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\user_opinion.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login_lyaout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\login_lyaout.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shangjia_img_lyaout.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\shangjia_img_lyaout.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_stock_f.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\cart_stock_f.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_low_f.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\cart_low_f.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_menu_back.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\top_menu_back.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_grid_hot_home.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\adapter_grid_hot_home.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_grid_hot_home.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_grid_hot_home.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_footer.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\xlistview_footer.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\local_media.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\local_media.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ware_a.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\ware_a.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\buy_now_a.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\buy_now_a.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_menu.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\top_menu.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_header.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\xlistview_header.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_layout_above.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\main_layout_above.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_low_f.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\cart_low_f.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\hellosener.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\hellosener.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_listview_detail.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_listview_detail.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\capture.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\capture.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_f.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\cart_f.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_listview_ware.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\adapter_listview_ware.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\list_item.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\scale_pic_item.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\scale_pic_item.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_layout_above.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\main_layout_above.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dicover_f.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\dicover_f.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shangjia_img_lyaout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\shangjia_img_lyaout.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_listview_cart.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\adapter_listview_cart.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\index_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\index_layout.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\list_item.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_menu_txt.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\top_menu_txt.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pic_item.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\pic_item.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sc_gridview_item.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\sc_gridview_item.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tao_f.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\tao_f.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_popwindow.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_popwindow.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_life.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\user_life.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\scale_pic_item.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\scale_pic_item.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_menu_back.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\top_menu_back.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_tab.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\top_tab.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\zhongcan_layout.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\zhongcan_layout.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pic_item.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\pic_item.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\slide_view_merge.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\layout\\slide_view_merge.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\zhongcan_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\zhongcan_layout.xml"
     }
 ]

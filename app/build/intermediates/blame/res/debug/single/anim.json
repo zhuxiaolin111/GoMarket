@@ -1,34 +1,34 @@
 [
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\down_in.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\anim\\down_in.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\anim\\down_in.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\anim\\down_in.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_up_in.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\anim\\pop_up_in.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_down_out.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\anim\\pop_down_out.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cu_push_left_in.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\anim\\cu_push_left_in.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_up_in.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\anim\\pop_up_in.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_down_out.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\anim\\pop_down_out.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\anim\\up_out.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\anim\\up_out.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\up_out.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\anim\\up_out.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cu_push_right_out.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\anim\\cu_push_right_out.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cu_push_right_in.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\anim\\cu_push_right_in.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cu_push_left_in.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\anim\\cu_push_left_in.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cu_push_left_out.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\anim\\cu_push_left_out.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cu_push_left_out.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\anim\\cu_push_left_out.xml"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cu_push_right_out.xml",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\anim\\cu_push_right_out.xml"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\anim\\cu_push_right_in.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\anim\\cu_push_right_in.xml"
     }
 ]

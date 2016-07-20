@@ -23,30 +23,33 @@ import com.zdp.aseo.content.AseoZdpAseo;
 import java.util.HashMap;
 
 /**
- * Õû¸ö³ÌĞò×îµ×²ãµÄ¿ò¼ÜActivity£¬ËùÓĞµÄFragment¶¼ÊÇÒÀÀµÓÚ´ËActivity¶ø´æÔÚµÄ
-
+ * æ•´ä¸ªç¨‹åºæœ€åº•å±‚çš„æ¡†æ¶Activityï¼Œæ‰€æœ‰çš„Fragmentéƒ½æ˜¯ä¾èµ–äºæ­¤Activityè€Œå­˜åœ¨çš„
+ *
+ * @author http://yecaoly.taobao.com
+ *
  */
 public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCallListener {
 
-	// ½çÃæµ×²¿µÄ²Ëµ¥°´Å¥
+	// ç•Œé¢åº•éƒ¨çš„èœå•æŒ‰é’®
 	private ImageView[] bt_menu = new ImageView[5];
-	// ½çÃæµ×²¿µÄ²Ëµ¥°´Å¥id
+	// ç•Œé¢åº•éƒ¨çš„èœå•æŒ‰é’®id
 	private int[] bt_menu_id = { R.id.iv_menu_0, R.id.iv_menu_1, R.id.iv_menu_2, R.id.iv_menu_3, R.id.iv_menu_4 };
 
-	// ½çÃæµ×²¿µÄÑ¡ÖĞ²Ëµ¥°´Å¥×ÊÔ´
-	private int[] select_on = { R.drawable.guide_home_on, R.drawable.guide_tfaccount_on, R.drawable.guide_discover_on, R.drawable.guide_cart_on, R.drawable.guide_account_on };
-	// ½çÃæµ×²¿µÄÎ´Ñ¡ÖĞ²Ëµ¥°´Å¥×ÊÔ´
+	// ç•Œé¢åº•éƒ¨çš„é€‰ä¸­èœå•æŒ‰é’®èµ„æº
+//	private int[] select_on = { R.drawable.img_foot1sel, R.drawable.img_foot2sel, R.drawable.img_foot3sel, R.drawable.img_foot4sel, R.drawable.img_foot5sel };
+	private int[] select_on = { R.drawable.img_foot1sel, R.drawable.img_foot2sel, R.drawable.img_foot3sel, R.drawable.img_foot4sel, R.drawable.img_foot5sel };
+	// ç•Œé¢åº•éƒ¨çš„æœªé€‰ä¸­èœå•æŒ‰é’®èµ„æº
 	private int[] select_off = { R.drawable.bt_menu_0_select, R.drawable.bt_menu_1_select, R.drawable.bt_menu_2_select, R.drawable.bt_menu_3_select, R.drawable.bt_menu_4_select };
 
-	/** Ö÷½çÃæ */
+	/** ä¸»ç•Œé¢ */
 	private Home_F home_F;
-	/** Î¢ÌÔ½çÃæ */
+	/** å¾®æ·˜ç•Œé¢ */
 	private Tao_F tao_F;
-	/** ·¢ÏÖ½çÃæ */
+	/** å‘ç°ç•Œé¢ */
 	private Discover_F discover_F;
-	/** ¹ºÎï³µ½çÃæ */
+	/** è´­ç‰©è½¦ç•Œé¢ */
 	private Cart_F cart_F;
-	/** ÎÒµÄÌÔ±¦½çÃæ */
+	/** æˆ‘çš„æ·˜å®ç•Œé¢ */
 	private User_F user_F;
 
 	public void onCreate(Bundle savedInstanceState) {
@@ -56,7 +59,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 		initView();
 	}
 
-	/** µÃµ½±£´æµÄ¹ºÎï³µÊı¾İ */
+	/** å¾—åˆ°ä¿å­˜çš„è´­ç‰©è½¦æ•°æ® */
 	private void getSaveData() {
 		HashMap<String, Object> hashMap = new HashMap<String, Object>();
 		AseoZdpAseo.initTimer(this);
@@ -71,15 +74,15 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 
 	}
 
-	// ³õÊ¼»¯×é¼ş
+	// åˆå§‹åŒ–ç»„ä»¶
 	private void initView() {
-		// ÕÒµ½µ×²¿²Ëµ¥µÄ°´Å¥²¢ÉèÖÃ¼àÌı
+		// æ‰¾åˆ°åº•éƒ¨èœå•çš„æŒ‰é’®å¹¶è®¾ç½®ç›‘å¬
 		for (int i = 0; i < bt_menu.length; i++) {
 			bt_menu[i] = (ImageView) findViewById(bt_menu_id[i]);
 			bt_menu[i].setOnClickListener(this);
 		}
 
-		// ³õÊ¼»¯Ä¬ÈÏÏÔÊ¾µÄ½çÃæ
+		// åˆå§‹åŒ–é»˜è®¤æ˜¾ç¤ºçš„ç•Œé¢
 		if (home_F == null) {
 			home_F = new Home_F();
 			addFragment(home_F);
@@ -87,7 +90,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 		} else {
 			showFragment(home_F);
 		}
-		// ÉèÖÃÄ¬ÈÏÊ×Ò³Îªµã»÷Ê±µÄÍ¼Æ¬
+		// è®¾ç½®é»˜è®¤é¦–é¡µä¸ºç‚¹å‡»æ—¶çš„å›¾ç‰‡
 		bt_menu[0].setImageResource(select_on[0]);
 		AseoZdpAseo.init(this,AseoZdpAseo.SCREEN_TYPE);
 
@@ -96,83 +99,83 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.iv_menu_0:
-			// Ö÷½çÃæ
-			if (home_F == null) {
-				home_F = new Home_F();
-				// ÅĞ¶Ïµ±Ç°½çÃæÊÇ·ñÒş²Ø£¬Èç¹ûÒş²Ø¾Í½øĞĞÌí¼ÓÏÔÊ¾£¬false±íÊ¾ÏÔÊ¾£¬true±íÊ¾µ±Ç°½çÃæÒş²Ø
-				addFragment(home_F);
-				showFragment(home_F);
-			} else {
-				if (home_F.isHidden()) {
+			case R.id.iv_menu_0:
+				// ä¸»ç•Œé¢
+				if (home_F == null) {
+					home_F = new Home_F();
+					// åˆ¤æ–­å½“å‰ç•Œé¢æ˜¯å¦éšè—ï¼Œå¦‚æœéšè—å°±è¿›è¡Œæ·»åŠ æ˜¾ç¤ºï¼Œfalseè¡¨ç¤ºæ˜¾ç¤ºï¼Œtrueè¡¨ç¤ºå½“å‰ç•Œé¢éšè—
+					addFragment(home_F);
 					showFragment(home_F);
+				} else {
+					if (home_F.isHidden()) {
+						showFragment(home_F);
+					}
 				}
-			}
 
-			break;
-	/*	case R.id.iv_menu_1:
-			// ¸½½ü
-			if (tao_F == null) {
-				tao_F = new Tao_F();
-				// ÅĞ¶Ïµ±Ç°½çÃæÊÇ·ñÒş²Ø£¬Èç¹ûÒş²Ø¾Í½øĞĞÌí¼ÓÏÔÊ¾£¬false±íÊ¾ÏÔÊ¾£¬true±íÊ¾µ±Ç°½çÃæÒş²Ø
-				if (!tao_F.isHidden()) {
-					addFragment(tao_F);
-					showFragment(tao_F);
+				break;
+			case R.id.iv_menu_1:
+				// å¾®æ·˜ç•Œé¢
+				if (tao_F == null) {
+					tao_F = new Tao_F();
+					// åˆ¤æ–­å½“å‰ç•Œé¢æ˜¯å¦éšè—ï¼Œå¦‚æœéšè—å°±è¿›è¡Œæ·»åŠ æ˜¾ç¤ºï¼Œfalseè¡¨ç¤ºæ˜¾ç¤ºï¼Œtrueè¡¨ç¤ºå½“å‰ç•Œé¢éšè—
+					if (!tao_F.isHidden()) {
+						addFragment(tao_F);
+						showFragment(tao_F);
+					}
+				} else {
+					if (tao_F.isHidden()) {
+						showFragment(tao_F);
+					}
 				}
-			} else {
-				if (tao_F.isHidden()) {
-					showFragment(tao_F);
-				}
-			}
 
-			break;
-		case R.id.iv_menu_2:
-			// xxxx
-			if (discover_F == null) {
-				discover_F = new Discover_F();
-				// ÅĞ¶Ïµ±Ç°½çÃæÊÇ·ñÒş²Ø£¬Èç¹ûÒş²Ø¾Í½øĞĞÌí¼ÓÏÔÊ¾£¬false±íÊ¾ÏÔÊ¾£¬true±íÊ¾µ±Ç°½çÃæÒş²Ø
-				if (!discover_F.isHidden()) {
-					addFragment(discover_F);
-					showFragment(discover_F);
+				break;
+			case R.id.iv_menu_2:
+				// å‘ç°ç•Œé¢
+				if (discover_F == null) {
+					discover_F = new Discover_F();
+					// åˆ¤æ–­å½“å‰ç•Œé¢æ˜¯å¦éšè—ï¼Œå¦‚æœéšè—å°±è¿›è¡Œæ·»åŠ æ˜¾ç¤ºï¼Œfalseè¡¨ç¤ºæ˜¾ç¤ºï¼Œtrueè¡¨ç¤ºå½“å‰ç•Œé¢éšè—
+					if (!discover_F.isHidden()) {
+						addFragment(discover_F);
+						showFragment(discover_F);
+					}
+				} else {
+					if (discover_F.isHidden()) {
+						showFragment(discover_F);
+					}
 				}
-			} else {
-				if (discover_F.isHidden()) {
-					showFragment(discover_F);
-				}
-			}
 
-			break;
-		case R.id.iv_menu_3:
-			// ¹ºÎï³µ½çÃæ
-			if (cart_F != null) {
-				removeFragment(cart_F);
-				cart_F = null;
-			}
-			cart_F = new Cart_F();
-			// ÅĞ¶Ïµ±Ç°½çÃæÊÇ·ñÒş²Ø£¬Èç¹ûÒş²Ø¾Í½øĞĞÌí¼ÓÏÔÊ¾£¬false±íÊ¾ÏÔÊ¾£¬true±íÊ¾µ±Ç°½çÃæÒş²Ø
-			addFragment(cart_F);
-			showFragment(cart_F);
-
-			break;
-		case R.id.iv_menu_4:
-			// ÎÒµÄ
-			if (user_F == null) {
-				user_F = new User_F();
-				// ÅĞ¶Ïµ±Ç°½çÃæÊÇ·ñÒş²Ø£¬Èç¹ûÒş²Ø¾Í½øĞĞÌí¼ÓÏÔÊ¾£¬false±íÊ¾ÏÔÊ¾£¬true±íÊ¾µ±Ç°½çÃæÒş²Ø
-				if (!user_F.isHidden()) {
-					addFragment(user_F);
-					showFragment(user_F);
+				break;
+			case R.id.iv_menu_3:
+				// è´­ç‰©è½¦ç•Œé¢
+				if (cart_F != null) {
+					removeFragment(cart_F);
+					cart_F = null;
 				}
-			} else {
-				if (user_F.isHidden()) {
-					showFragment(user_F);
-				}
-			}
+				cart_F = new Cart_F();
+				// åˆ¤æ–­å½“å‰ç•Œé¢æ˜¯å¦éšè—ï¼Œå¦‚æœéšè—å°±è¿›è¡Œæ·»åŠ æ˜¾ç¤ºï¼Œfalseè¡¨ç¤ºæ˜¾ç¤ºï¼Œtrueè¡¨ç¤ºå½“å‰ç•Œé¢éšè—
+				addFragment(cart_F);
+				showFragment(cart_F);
 
-			break;*/
+				break;
+			case R.id.iv_menu_4:
+				// æˆ‘çš„æ·˜å®ç•Œé¢
+				if (user_F == null) {
+					user_F = new User_F();
+					// åˆ¤æ–­å½“å‰ç•Œé¢æ˜¯å¦éšè—ï¼Œå¦‚æœéšè—å°±è¿›è¡Œæ·»åŠ æ˜¾ç¤ºï¼Œfalseè¡¨ç¤ºæ˜¾ç¤ºï¼Œtrueè¡¨ç¤ºå½“å‰ç•Œé¢éšè—
+					if (!user_F.isHidden()) {
+						addFragment(user_F);
+						showFragment(user_F);
+					}
+				} else {
+					if (user_F.isHidden()) {
+						showFragment(user_F);
+					}
+				}
+
+				break;
 		}
 
-		// ÉèÖÃ°´Å¥µÄÑ¡ÖĞºÍÎ´Ñ¡ÖĞ×ÊÔ´
+		// è®¾ç½®æŒ‰é’®çš„é€‰ä¸­å’Œæœªé€‰ä¸­èµ„æº
 		for (int i = 0; i < bt_menu.length; i++) {
 			bt_menu[i].setImageResource(select_off[i]);
 			if (v.getId() == bt_menu_id[i]) {
@@ -181,27 +184,27 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 		}
 	}
 
-	/** Ìí¼ÓFragment **/
+	/** æ·»åŠ Fragment **/
 	public void addFragment(Fragment fragment) {
 		FragmentTransaction ft = this.getSupportFragmentManager().beginTransaction();
 		ft.add(R.id.show_layout, fragment);
 		ft.commit();
 	}
 
-	/** É¾³ıFragment **/
+	/** åˆ é™¤Fragment **/
 	public void removeFragment(Fragment fragment) {
 		FragmentTransaction ft = this.getSupportFragmentManager().beginTransaction();
 		ft.remove(fragment);
 		ft.commit();
 	}
 
-	/** ÏÔÊ¾Fragment **/
+	/** æ˜¾ç¤ºFragment **/
 	public void showFragment(Fragment fragment) {
 		FragmentTransaction ft = this.getSupportFragmentManager().beginTransaction();
-		// ÉèÖÃFragmentµÄÇĞ»»¶¯»­
+		// è®¾ç½®Fragmentçš„åˆ‡æ¢åŠ¨ç”»
 		ft.setCustomAnimations(R.anim.cu_push_right_in, R.anim.cu_push_left_out);
 
-		// ÅĞ¶ÏÒ³ÃæÊÇ·ñÒÑ¾­´´½¨£¬Èç¹ûÒÑ¾­´´½¨£¬ÄÇÃ´¾ÍÒş²Øµô
+		// åˆ¤æ–­é¡µé¢æ˜¯å¦å·²ç»åˆ›å»ºï¼Œå¦‚æœå·²ç»åˆ›å»ºï¼Œé‚£ä¹ˆå°±éšè—æ‰
 		if (home_F != null) {
 			ft.hide(home_F);
 		}
@@ -223,9 +226,9 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 
 	}
 
-	/** ·µ»Ø°´Å¥µÄ¼àÌı */
+	/** è¿”å›æŒ‰é’®çš„ç›‘å¬ */
 	@Override
-	public void onBackPressed() 
+	public void onBackPressed()
 	{
 		Intent intent = new Intent(Intent.ACTION_MAIN);
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -233,7 +236,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 		startActivity(intent);
 	}
 
-	/** FragmentµÄ»Øµ÷º¯Êı */
+	/** Fragmentçš„å›è°ƒå‡½æ•° */
 	@SuppressWarnings("unused")
 	private IBtnCallListener btnCallListener;
 
@@ -248,7 +251,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 	}
 
 	/**
-	 * ÏìÓ¦´ÓFragmentÖĞ´«¹ıÀ´µÄÏûÏ¢
+	 * å“åº”ä»Fragmentä¸­ä¼ è¿‡æ¥çš„æ¶ˆæ¯
 	 */
 	@Override
 	public void transferMsg() {
@@ -262,7 +265,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 		bt_menu[3].setImageResource(select_off[3]);
 		bt_menu[0].setImageResource(select_on[0]);
 
-
+		System.out.println("ç”±Fragmentä¸­ä¼ é€æ¥çš„æ¶ˆæ¯");
 	}
 
 }

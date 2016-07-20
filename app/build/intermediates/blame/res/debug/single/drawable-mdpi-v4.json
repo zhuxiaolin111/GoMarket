@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\second_2.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-mdpi\\second_2.png"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\second_2.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-mdpi\\second_2.png"
     },
     {
-        "merged": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\second_2_collection.png",
-        "source": "C:\\Users\\mn\\AndroidStudioProjects\\DingCanApp\\app\\src\\main\\res\\drawable-mdpi\\second_2_collection.png"
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\second_2_collection.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-mdpi\\second_2_collection.png"
     }
 ]

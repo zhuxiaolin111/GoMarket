@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class GetHttp {
-	
+
 	public static String RequstGetHttp(String strUrl) {
 		URL url = null;
 		String result="";
@@ -18,20 +18,20 @@ public class GetHttp {
 			urlconn.setConnectTimeout(1000);
 			urlconn.setReadTimeout(15000);
 
-			urlconn.connect();// Á´½Ó·şÎñÆ÷²¢·¢ËÍÏûÏ¢
+			urlconn.connect();// é“¾æ¥æœåŠ¡å™¨å¹¶å‘é€æ¶ˆæ¯
 
 
-			// ¿ªÊ¼½ÓÊÕ·µ»ØµÄÊı¾İ
+			// å¼€å§‹æ¥æ”¶è¿”å›çš„æ•°æ®
 			InputStreamReader is = new InputStreamReader(urlconn.getInputStream());
 			BufferedReader bufferedReader = new BufferedReader(is);
 			String readLine = "";
 			while ((readLine = bufferedReader.readLine()) != null) {
 				result += readLine;
 			}
-			
+
 			is.close();
 			urlconn.disconnect();
-			
+
 
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -39,7 +39,7 @@ public class GetHttp {
 			e.printStackTrace();
 		}
 
-		
+
 		return result;
 	}
 

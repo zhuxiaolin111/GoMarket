@@ -1,12 +1,12 @@
 package com.jarvis.mytaobao.home;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -23,30 +23,30 @@ import com.javis.ab.view.AbSlidingPlayView;
 import java.util.ArrayList;
 
 /**
- * Ê×Ò³
-
+ * é¦–é¡µ
+ * @author http://yecaoly.taobao.com
  */
 public class Home_F extends Fragment {
-	//¶¥²¿±êÌâÀ¸
+	//é¡¶éƒ¨æ ‡é¢˜æ 
 	private TextView tv_top_title;
-	//·ÖÀàµÄ¾Å¹¬¸ñ
+	//åˆ†ç±»çš„ä¹å®«æ ¼
 	private GridView gridView_classify;
-	//ÈÈÃÅÊĞ³¡µÄ¾Å¹¬¸ñ
+	//çƒ­é—¨å¸‚åœºçš„ä¹å®«æ ¼
 	private GridView my_gridView_hot;
 	private Adapter_GridView adapter_GridView_classify;
 	private Adapter_GridView_hot adapter_GridView_hot;
-	//Ê×Ò³ÂÖ²¥
+	//é¦–é¡µè½®æ’­
 	private AbSlidingPlayView viewPager;
-	//É¨Ò»É¨
+	//æ‰«ä¸€æ‰«
 	private ImageView iv_shao;
-	// ·ÖÀà¾Å¹¬¸ñµÄ×ÊÔ´ÎÄ¼ş
-	private int[] pic_path_classify = { R.drawable.a, R.drawable.b, R.drawable.c, R.drawable.d, R.drawable.c, R.drawable.e, R.drawable.f, R.drawable.j };
-	// ÈÈÃÅÊĞ³¡µÄ×ÊÔ´ÎÄ¼ş
-	private int[] pic_path_hot = { R.drawable.cafe1, R.drawable.cafe2, R.drawable.cafe3, R.drawable.cafe5, R.drawable.cafe5, R.drawable.cafe5 };
-	/**´æ´¢Ê×Ò³ÂÖ²¥µÄ½çÃæ*/
+	// åˆ†ç±»ä¹å®«æ ¼çš„èµ„æºæ–‡ä»¶
+	private int[] pic_path_classify = { R.drawable.menu_index_1, R.drawable.menu_index_2, R.drawable.menu_index_3, R.drawable.menu_index_4, R.drawable.menu_index_5, R.drawable.menu_index_6, R.drawable.menu_index_7, R.drawable.menu_index_8 ,R.drawable.menu_index_9 ,R.drawable.menu_index_10 };
+	// çƒ­é—¨å¸‚åœºçš„èµ„æºæ–‡ä»¶
+	private int[] pic_path_hot = { R.drawable.menu_1, R.drawable.menu_2, R.drawable.menu_3, R.drawable.menu_4, R.drawable.menu_5, R.drawable.menu_6 };
+	/**å­˜å‚¨é¦–é¡µè½®æ’­çš„ç•Œé¢*/
 	private ArrayList<View> allListView;
-	/**Ê×Ò³ÂÖ²¥µÄ½çÃæµÄ×ÊÔ´*/
-	private int[] resId = { R.drawable.cafe1, R.drawable.cafe2, R.drawable.cafe3, R.drawable.cafe4, R.drawable.cafe5, R.drawable.cafe6 };
+	/**é¦–é¡µè½®æ’­çš„ç•Œé¢çš„èµ„æº*/
+	private int[] resId = { R.drawable.show_m1, R.drawable.menu_viewpager_1, R.drawable.menu_viewpager_2, R.drawable.menu_viewpager_3, R.drawable.menu_viewpager_4, R.drawable.menu_viewpager_5 };
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -57,25 +57,25 @@ public class Home_F extends Fragment {
 	}
 
 	private void initView(View view) {
-		iv_shao=(ImageView) view.findViewById(R.id.iv_shao);
+	/*	iv_shao=(ImageView) view.findViewById(R.id.iv_shao);
 		iv_shao.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				//Ìø×ªµ½¶şÎ¬ÂëÉ¨Ãè
-			/*	Intent intent=new Intent(getActivity(),CaptureActivity.class);
-				startActivity(intent);*/
+				//è·³è½¬åˆ°äºŒç»´ç æ‰«æ
+				Intent intent=new Intent(getActivity(),CaptureActivity.class);
+				startActivity(intent);
 			}
-		});
-		tv_top_title=(TextView) view.findViewById(R.id.tv_top_title);
+		});*/
+	/*	tv_top_title=(TextView) view.findViewById(R.id.tv_top_title);
 		tv_top_title.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				//ÌôÕ½µ½±¦±´ËÑË÷½çÃæ
-			/*	Intent intent=new Intent(getActivity(),WareActivity.class);
-				startActivity(intent);*/
+				//æŒ‘æˆ˜åˆ°å®è´æœç´¢ç•Œé¢
+				Intent intent=new Intent(getActivity(),WareActivity.class);
+				startActivity(intent);
 			}
-		});
-		
+		});*/
+
 		gridView_classify = (GridView) view.findViewById(R.id.my_gridview);
 		my_gridView_hot = (GridView) view.findViewById(R.id.my_gridview_hot);
 		gridView_classify.setSelector(new ColorDrawable(Color.TRANSPARENT));
@@ -86,28 +86,28 @@ public class Home_F extends Fragment {
 		my_gridView_hot.setAdapter(adapter_GridView_hot);
 
 		viewPager = (AbSlidingPlayView) view.findViewById(R.id.viewPager_menu);
-		//ÉèÖÃ²¥·Å·½Ê½ÎªË³Ğò²¥·Å
+		//è®¾ç½®æ’­æ”¾æ–¹å¼ä¸ºé¡ºåºæ’­æ”¾
 		viewPager.setPlayType(1);
-		//ÉèÖÃ²¥·Å¼ä¸ôÊ±¼ä
+		//è®¾ç½®æ’­æ”¾é—´éš”æ—¶é—´
 		viewPager.setSleepTime(3000);
 
 		gridView_classify.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				//ÌØÉ«²Ëµ÷µ½²ËÆ·ÁĞ±í
-			//	Intent intent = new Intent(getActivity(), WareActivity.class);
-			//	startActivity(intent);
+				//æŒ‘æˆ˜åˆ°å®è´æœç´¢ç•Œé¢
+				Intent intent = new Intent(getActivity(), WareActivity.class);
+				startActivity(intent);
 			}
 		});
 		my_gridView_hot.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				//³©Ïú²Ëµ÷µ½²ËÆ·ÏêÇéÒ³
-			//	Intent intent = new Intent(getActivity(), BabyActivity.class);
-			//	startActivity(intent);
+				//è·³è½¬åˆ°å®è´è¯¦æƒ…ç•Œé¢
+				Intent intent = new Intent(getActivity(), BabyActivity.class);
+				startActivity(intent);
 			}
 		});
-		
+
 		initViewPager();
 	}
 
@@ -120,24 +120,23 @@ public class Home_F extends Fragment {
 		allListView = new ArrayList<View>();
 
 		for (int i = 0; i < resId.length; i++) {
-			//µ¼ÈëViewPagerµÄ²¼¾Ö
+			//å¯¼å…¥ViewPagerçš„å¸ƒå±€
 			View view = LayoutInflater.from(getActivity()).inflate(R.layout.pic_item, null);
 			ImageView imageView = (ImageView) view.findViewById(R.id.pic_item);
 			imageView.setImageResource(resId[i]);
 			allListView.add(view);
 		}
-		
-		
+
+
 		viewPager.addViews(allListView);
-		//¿ªÊ¼ÂÖ²¥
+		//å¼€å§‹è½®æ’­
 		viewPager.startPlay();
 		viewPager.setOnItemClickListener(new AbOnItemClickListener() {
 			@Override
 			public void onClick(int position) {
-
-				//  ÂÖ²¥Í¼Æ¬Ìø×ªµ½²ËÆ·ÏêÇé½çÃæ
-				//Intent intent = new Intent(getActivity(), BabyActivity.class);
-				//startActivity(intent);
+				//è·³è½¬åˆ°è¯¦æƒ…ç•Œé¢
+				Intent intent = new Intent(getActivity(), BabyActivity.class);
+				startActivity(intent);
 			}
 		});
 	}
