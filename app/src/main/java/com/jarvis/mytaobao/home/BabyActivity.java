@@ -35,9 +35,9 @@ import com.zdp.aseo.content.AseoZdpAseo;
 import java.util.ArrayList;
 
 /**
- * ������Ʒ�������
+ * 单个商品详情界面
  * @author http://yecaoly.taobao.com
- * 
+ *
  */
 public class BabyActivity extends FragmentActivity implements OnItemClickListener, OnClickListener {
 
@@ -48,23 +48,23 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 	private int[] resId = { R.drawable.detail_show_1, R.drawable.detail_show_2, R.drawable.detail_show_3, R.drawable.detail_show_4, R.drawable.detail_show_5, R.drawable.detail_show_6 };
 	private ListView listView;
 	private ImageView iv_baby_collection;
-	/**������Ʒ������Ϣ����*/
+	/**弹出商品订单信息详情*/
 	private BabyPopWindow popWindow;
-	/** �������ñ������� */
+	/** 用于设置背景暗淡 */
 	private LinearLayout all_choice_layout = null;
-	/**�ж��Ƿ�������������ť*/
+	/**判断是否点击的立即购买按钮*/
 	boolean isClickBuy = false;
-	/**�Ƿ�����ղ�*/
-	private static boolean isCollection=false; 
-	/**ViewPager��ǰ��ʾҳ���±�*/
+	/**是否添加收藏*/
+	private static boolean isCollection=false;
+	/**ViewPager当前显示页的下标*/
 	private int position=0;
-	
-	
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.babydetail_a);
-		//�õ�������ղ���Ϣ
+		//得到保存的收藏信息
 		getSaveCollection();
 		initView();
 		popWindow = new BabyPopWindow(this);
@@ -73,10 +73,10 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 
 	@SuppressLint("NewApi")
 	private void initView() {
-		// ��ȡĬ�ϵ�NFC������
+		// 获取默认的NFC控制器
 		nfcAdapter = NfcAdapter.getDefaultAdapter(this);
 		if (nfcAdapter == null) {
-			Toast.makeText(this, "���豸��֧��NFC", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "该设备不支持NFC", Toast.LENGTH_SHORT).show();
 		}
 		AseoZdpAseo.initType(this, AseoZdpAseo.INSERT_TYPE);
 		((ImageView) findViewById(R.id.iv_back)).setOnClickListener(this);
@@ -89,60 +89,60 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 		listView.setFocusable(false);
 		listView.setSelector(new ColorDrawable(Color.TRANSPARENT));
 		listView.setAdapter(new Adapter_ListView_detail(this));
-		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+		listView.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				//��������èŮ�·�������
-				Uri uri = Uri.parse("http://yecaoly.taobao.com"); 
-				Intent intent = new Intent(Intent.ACTION_VIEW, uri); 
+				//进入恋上猫女衣坊的网店
+				Uri uri = Uri.parse("http://yecaoly.taobao.com");
+				Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 				startActivity(intent);
 			}
 		});
 		initViewPager();
-		
+
 		if (isCollection) {
-			//����Ѿ��ղأ�����ʾ�ղغ��Ч��
+			//如果已经收藏，则显示收藏后的效果
 			iv_baby_collection.setImageResource(R.drawable.second_2_collection);
 		}
 	}
-	
+
 	@Override
 	public void onClick(View view) {
 		switch (view.getId()) {
-		case R.id.iv_back:
-			//����
-			finish();
-			break;
-		case R.id.iv_baby_collection:
-			//�ղ�
-			if (isCollection) {
-				//��ʾ�Ƿ�ȡ���ղ�
-				cancelCollection();
-			}else {
-				isCollection=true;
-				setSaveCollection();
-				//����Ѿ��ղأ�����ʾ�ղغ��Ч��
-				iv_baby_collection.setImageResource(R.drawable.second_2_collection);
-				Toast.makeText(this, "�ղسɹ�", Toast.LENGTH_SHORT).show();
-			}
-			break;
-		case R.id.put_in:
-			//��ӹ��ﳵ
-			isClickBuy = false;
-			setBackgroundBlack(all_choice_layout, 0);
-			popWindow.showAsDropDown(view);
-			break;
-		case R.id.buy_now:
-			//��������
-			isClickBuy = true;
-			setBackgroundBlack(all_choice_layout, 0);
-			popWindow.showAsDropDown(view);
-			break;
+			case R.id.iv_back:
+				//返回
+				finish();
+				break;
+			case R.id.iv_baby_collection:
+				//收藏
+				if (isCollection) {
+					//提示是否取消收藏
+					cancelCollection();
+				}else {
+					isCollection=true;
+					setSaveCollection();
+					//如果已经收藏，则显示收藏后的效果
+					iv_baby_collection.setImageResource(R.drawable.second_2_collection);
+					Toast.makeText(this, "收藏成功", Toast.LENGTH_SHORT).show();
+				}
+				break;
+			case R.id.put_in:
+				//添加购物车
+				isClickBuy = false;
+				setBackgroundBlack(all_choice_layout, 0);
+				popWindow.showAsDropDown(view);
+				break;
+			case R.id.buy_now:
+				//立即购买
+				isClickBuy = true;
+				setBackgroundBlack(all_choice_layout, 0);
+				popWindow.showAsDropDown(view);
+				break;
 		}
 	}
-	
-	
+
+
 
 	private void initViewPager() {
 
@@ -159,7 +159,7 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 			imageView.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
-					//��ս���鿴��ͼ����
+					//挑战到查看大图界面
 					Intent intent = new Intent(BabyActivity.this, ShowBigPictrue.class);
 					intent.putExtra("position", position);
 					startActivity(intent);
@@ -171,20 +171,20 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 		viewPager = (HackyViewPager) findViewById(R.id.iv_baby);
 		ViewPagerAdapter adapter = new ViewPagerAdapter();
 		viewPager.setOnPageChangeListener(new OnPageChangeListener() {
-			
+
 			@Override
 			public void onPageSelected(int arg0) {
 				position=arg0;
 			}
-			
+
 			@Override
 			public void onPageScrolled(int arg0, float arg1, int arg2) {
-				
+
 			}
-			
+
 			@Override
 			public void onPageScrollStateChanged(int arg0) {
-				
+
 			}
 		});
 		viewPager.setAdapter(adapter);
@@ -217,61 +217,61 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 
 	}
 
-	//���������ȷ�ϰ�ť����Ӧ
+	//点击弹窗的确认按钮的响应
 	@Override
 	public void onClickOKPop() {
 		setBackgroundBlack(all_choice_layout, 1);
 
 		if (isClickBuy) {
-			//���֮ǰ�ǵ��������������ô����ת�������������
+			//如果之前是点击的立即购买，那么就跳转到立即购物界面
 			Intent intent = new Intent(BabyActivity.this, BuynowActivity.class);
 			startActivity(intent);
 		}else {
-			Toast.makeText(this, "��ӵ����ﳵ�ɹ�", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "添加到购物车成功", Toast.LENGTH_SHORT).show();
 		}
 	}
 
-	/** ���Ʊ����䰵 0�䰵 1���� */
+	/** 控制背景变暗 0变暗 1变亮 */
 	public void setBackgroundBlack(View view, int what) {
 		switch (what) {
-		case 0:
-			view.setVisibility(View.VISIBLE);
-			break;
-		case 1:
-			view.setVisibility(View.GONE);
-			break;
+			case 0:
+				view.setVisibility(View.VISIBLE);
+				break;
+			case 1:
+				view.setVisibility(View.GONE);
+				break;
 		}
 	}
 
-	/**�����Ƿ�����ղ�*/
+	/**保存是否添加收藏*/
 	private void setSaveCollection(){
 		SharedPreferences sp=getSharedPreferences("SAVECOLLECTION", Context.MODE_PRIVATE);
 		Editor editor=sp.edit();
 		editor.putBoolean("isCollection", isCollection);
 		editor.commit();
 	}
-	/**�õ�������Ƿ�����ղر��*/
+	/**得到保存的是否添加收藏标记*/
 	private void getSaveCollection(){
 		SharedPreferences sp=getSharedPreferences("SAVECOLLECTION", Context.MODE_PRIVATE);
 		isCollection=sp.getBoolean("isCollection", false);
-		
+
 	}
-	/**ȡ���ղ�*/
+	/**取消收藏*/
 	private  void cancelCollection(){
 		AlertDialog.Builder dialog=new AlertDialog.Builder(this);
-		dialog.setTitle("�Ƿ�ȡ���ղ�");
-		dialog.setPositiveButton("ȷ��", new DialogInterface.OnClickListener() {
+		dialog.setTitle("是否取消收藏");
+		dialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface arg0, int arg1) {
 				isCollection=false;
-				//���ȡ���ղأ�����ʾȡ���ղغ��Ч��
+				//如果取消收藏，则显示取消收藏后的效果
 				iv_baby_collection.setImageResource(R.drawable.second_2);
 				setSaveCollection();
 			}
 		});
-		dialog.setNegativeButton("ȡ��", null);
+		dialog.setNegativeButton("取消", null);
 		dialog.create().show();
-		
+
 	}
 
 }

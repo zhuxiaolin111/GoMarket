@@ -4,6 +4,10 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\yuanjiao_red.xml"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_popupwindow_list_bg.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\shape_popupwindow_list_bg.xml"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_0_select.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\bt_menu_0_select.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yuanjiao_choice.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\yuanjiao_choice.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_help_category_tv_bg.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\shape_help_category_tv_bg.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_4_select.xml",

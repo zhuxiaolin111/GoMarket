@@ -1,13 +1,5 @@
 package com.javis.Adapter;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.ImageLoader.ImageListener;
-import com.jarvis.http.CU_VolleyTool;
-import com.jarvis.mytaobaotest.R;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +7,14 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.ImageLoader.ImageListener;
+import com.jarvis.http.CU_VolleyTool;
+import com.jarvis.mytaobaotest.R;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Adapter_ListView_ware extends BaseAdapter {
 	private Context context;
@@ -68,8 +68,8 @@ public class Adapter_ListView_ware extends BaseAdapter {
 			CU_VolleyTool.getInstance(context).getmImageLoader().get("http://192.168.0.111:3000/taoBao/img/" + arrayList.get(position).get("pic"), listener);
 
 			holderView.tv_name.setText(arrayList.get(position).get("name").toString());
-			holderView.tv_price.setText("£¤" + arrayList.get(position).get("price").toString() + "Ôª");
-			holderView.tv_sale_num.setText("ÔÂÏúÁ¿:" + arrayList.get(position).get("sale_num").toString() + "¼ş     " + arrayList.get(position).get("address").toString());
+			holderView.tv_price.setText("ï¿¥" + arrayList.get(position).get("price").toString() + "å…ƒ");
+			holderView.tv_sale_num.setText("æœˆé”€é‡:" + arrayList.get(position).get("sale_num").toString() + "ä»¶     " + arrayList.get(position).get("address").toString());
 		}
 		return currentView;
 	}
@@ -82,5 +82,4 @@ public class Adapter_ListView_ware extends BaseAdapter {
 		private TextView tv_price;
 
 	}
-
 }

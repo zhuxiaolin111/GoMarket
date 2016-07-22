@@ -3,6 +3,7 @@ package com.jarvis.mytaobao.home;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,8 +13,11 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.MySpinner.view.SpinerPopWindow;
 import com.jarvis.mytaobaotest.R;
 import com.javis.Adapter.Adapter_GridView;
 import com.javis.Adapter.Adapter_GridView_hot;
@@ -21,12 +25,16 @@ import com.javis.ab.view.AbOnItemClickListener;
 import com.javis.ab.view.AbSlidingPlayView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 首页
  * @author http://yecaoly.taobao.com
  */
 public class Home_F extends Fragment {
+	private SpinerPopWindow<String> mSpinerPopWindow,mSpinerPopWindow1;
+	private List<String> list;
+	private TextView tvValue,tvValue1;
 	//顶部标题栏
 	private TextView tv_top_title;
 	//分类的九宫格
@@ -48,34 +56,25 @@ public class Home_F extends Fragment {
 	/**首页轮播的界面的资源*/
 	private int[] resId = { R.drawable.show_m1, R.drawable.menu_viewpager_1, R.drawable.menu_viewpager_2, R.drawable.menu_viewpager_3, R.drawable.menu_viewpager_4, R.drawable.menu_viewpager_5 };
 
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 		View view = LayoutInflater.from(getActivity()).inflate(R.layout.home_f, null);
+		initData();
+		tvValue1= (TextView) view.findViewById(R.id.tv_value1);
+		tvValue = (TextView) view.findViewById(R.id.tv_value);
+		tvValue.setOnClickListener(clickListener);
+		tvValue1.setOnClickListener(clickListener);
+		mSpinerPopWindow = new SpinerPopWindow<String>(getActivity(), list,itemClickListener);
+		mSpinerPopWindow.setOnDismissListener(dismissListener);
+		mSpinerPopWindow1 = new SpinerPopWindow<String>(getActivity(), list,itemClickListener1);
+		mSpinerPopWindow1.setOnDismissListener(dismissListener);
 		initView(view);
 		return view;
 	}
 
 	private void initView(View view) {
-	/*	iv_shao=(ImageView) view.findViewById(R.id.iv_shao);
-		iv_shao.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				//跳转到二维码扫描
-				Intent intent=new Intent(getActivity(),CaptureActivity.class);
-				startActivity(intent);
-			}
-		});*/
-	/*	tv_top_title=(TextView) view.findViewById(R.id.tv_top_title);
-		tv_top_title.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				//挑战到宝贝搜索界面
-				Intent intent=new Intent(getActivity(),WareActivity.class);
-				startActivity(intent);
-			}
-		});*/
-
 		gridView_classify = (GridView) view.findViewById(R.id.my_gridview);
 		my_gridView_hot = (GridView) view.findViewById(R.id.my_gridview_hot);
 		gridView_classify.setSelector(new ColorDrawable(Color.TRANSPARENT));
@@ -139,6 +138,78 @@ public class Home_F extends Fragment {
 				startActivity(intent);
 			}
 		});
+	}
+	/**
+	 * 监听popupwindow取消
+	 */
+	private PopupWindow.OnDismissListener dismissListener=new PopupWindow.OnDismissListener() {
+		@Override
+		public void onDismiss() {
+			setTextImage(R.drawable.icon_down);
+		}
+	};
+
+	/**
+	 * popupwindow显示的ListView的item点击事件
+	 */
+	private OnItemClickListener itemClickListener = new OnItemClickListener() {
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
+			mSpinerPopWindow.dismiss();
+
+			tvValue.setText(list.get(position));
+
+			Toast.makeText(getActivity(), "点击了:" + list.get(position),Toast.LENGTH_LONG).show();
+		}
+	};
+	private OnItemClickListener itemClickListener1 = new OnItemClickListener() {
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
+			mSpinerPopWindow1.dismiss();
+			tvValue1.setText(list.get(position));
+			Toast.makeText(getActivity(), "点击了:" + list.get(position),Toast.LENGTH_LONG).show();
+		}
+	};
+
+	/**
+	 * 显示PopupWindow
+	 */
+	private View.OnClickListener clickListener = new View.OnClickListener() {
+		@Override
+		public void onClick(View v) {
+			switch (v.getId()) {
+				case R.id.tv_value:
+					mSpinerPopWindow.setWidth(tvValue.getWidth());
+					mSpinerPopWindow.showAsDropDown(tvValue);
+					setTextImage(R.drawable.icon_up);
+					break;
+				case R.id.tv_value1:
+					mSpinerPopWindow1.setWidth(tvValue1.getWidth());
+					mSpinerPopWindow1.showAsDropDown(tvValue1);
+					setTextImage(R.drawable.icon_up);
+					break;
+			}
+		}
+	};
+
+	/**
+	 * 初始化数据
+	 */
+	private void initData() {
+		list = new ArrayList<String>();
+		for (int i = 0; i < 5; i++) {
+			list.add("test:" + i);
+		}
+	}
+
+	/**
+	 * 给TextView右边设置图片
+	 * @param resId
+	 */
+	private void setTextImage(int resId) {
+		Drawable drawable = getResources().getDrawable(resId);
+		drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());// 必须设置图片大小，否则不显示
+		tvValue.setCompoundDrawables(null, null, drawable, null);
 	}
 
 }

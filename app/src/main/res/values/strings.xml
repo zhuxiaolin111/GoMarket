@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="spingarr">
+    <item>北京</item>
+    <item>上海</item>
+    <item>广州</item>
+    <item>深圳</item>
+</string-array>
     <string name="jiu">酒</string>
     <string name="drink">饮料</string>
     <string name="jiucai">酒菜</string>
      <string name="fan">饭</string>
     <string name="meat">肉</string>meat
     <string name="shuangrentaocan">双人套餐</string>
-
+    <string name="baihuo">百货/购物</string>
+    <string name="diannao">电脑/笔记本</string>
+    <string name="shouji">手机/通讯</string>
+    <string name="shenghuo">生活/厨房家电</string>
+    <string name="xiangji">相机/数码</string>
+    <string name="nanxingshishang">男性时尚</string>
+    <string name="nvxingshishang">女性时尚</string>
+    <string name="zhubao">珠宝/饰品</string>
+    <string name="jishen">机身/分手/浴室</string>
+    <string name="huazhuangpin">化妆品/香水</string>
+    <string name="zhenjiu">针灸/窗帘/照明</string>
+    <string name="jiaju">家具/收纳</string>
+    <string name="wenju">文具办公用品</string>
     <string name="app_name">GouMarket_Dome</string>cai
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>

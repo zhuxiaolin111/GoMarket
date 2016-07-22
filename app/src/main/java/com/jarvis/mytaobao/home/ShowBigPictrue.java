@@ -12,17 +12,17 @@ import com.lesogo.cu.custom.ScaleView.HackyViewPager;
 import com.zdp.aseo.content.AseoZdpAseo;
 
 /**
- * ��ʾ��ͼ����
+ * 显示大图界面
  * @author http://yecaoly.taobao.com
  *
  */
 public class ShowBigPictrue extends FragmentActivity {
 
 	private HackyViewPager viewPager;
-	private int[] resId={R.drawable.detail_show_1, R.drawable.detail_show_2, R.drawable.detail_show_3, R.drawable.detail_show_4, R.drawable.detail_show_5, R.drawable.detail_show_6};
-	/**�õ���һ��������ͼƬ��λ��*/
+	private int[] resId={R.drawable.detail_show_1,R.drawable.detail_show_2,R.drawable.detail_show_3,R.drawable.detail_show_4,R.drawable.detail_show_5,R.drawable.detail_show_6};
+	/**得到上一个界面点击图片的位置*/
 	private int position=0;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,17 +32,17 @@ public class ShowBigPictrue extends FragmentActivity {
 		AseoZdpAseo.initType(this, AseoZdpAseo.INSERT_TYPE);
 		initViewPager();
 	}
-	
-private void initViewPager(){
-		
+
+	private void initViewPager(){
+
 		viewPager = (HackyViewPager) findViewById(R.id.viewPager_show_bigPic);
 		ViewPagerAdapter adapter=new ViewPagerAdapter(getSupportFragmentManager());
 		viewPager.setAdapter(adapter);
-		//��ת���ڼ�������
+		//跳转到第几个界面
 		viewPager.setCurrentItem(position);
-		
+
 	}
-	
+
 	private class ViewPagerAdapter extends FragmentStatePagerAdapter{
 
 		public ViewPagerAdapter(FragmentManager fm) {
@@ -60,7 +60,7 @@ private void initViewPager(){
 			return resId.length;
 		}
 
-		
+
 	}
 
 }

@@ -12,7 +12,7 @@ import com.jarvis.mytaobaotest.R;
 
 
 /**
- * ��ʾ��ͼ��ʵ�֣����ҿ��ԷŴ���С
+ * 显示大图的实现，并且可以放大缩小
  * @author http://yecaoly.taobao.com
  *
  */
@@ -20,28 +20,28 @@ import com.jarvis.mytaobaotest.R;
 public class PictrueFragment extends Fragment {
 
 	private int resId;
-	
+
 	@SuppressLint("ValidFragment")
 	public PictrueFragment(int resId){
-		
+
 		this.resId=resId;
 	}
-	 
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		
+							 Bundle savedInstanceState) {
+
 		View view=LayoutInflater.from(getActivity()).inflate(R.layout.scale_pic_item, null);
 		initView(view);
 		return view;
 	}
-	
+
 	private void initView(View view){
 		ImageView imageView=(ImageView) view.findViewById(R.id.scale_pic_item);
 		imageView.setImageResource(resId);
-		
+
 	}
 
-	
-	
+
+
 }

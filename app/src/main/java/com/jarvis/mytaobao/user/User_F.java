@@ -19,29 +19,29 @@ import com.jarvis.mytaobaotest.R;
 import com.javis.Adapter.Adapter_GridView;
 
 /**
- * ÎÒµÄÌÔ±¦Ö÷½çÃæ
+ * æˆ‘çš„æ·˜å®ä¸»ç•Œé¢
  * @author http://yecaoly.taobao.com
  *
  */
 public class User_F extends Fragment implements OnClickListener {
 	private GridView my_gridView_user;
 	private Adapter_GridView adapter_GridView;
-	//×ÊÔ´ÎÄ¼ş
+	//èµ„æºæ–‡ä»¶
 	private int[] pic_path={R.drawable.user_3,R.drawable.user_4,R.drawable.user_5,R.drawable.user_6,R.drawable.user_7};
-    
+
 	private LinearLayout ll_user_life;
 	private LinearLayout ll_user_members;
 	private LinearLayout ll_user_store;
 	private LinearLayout ll_user_opinion;
-    
-    
 
-    @Override
+
+
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-    	
-    	View view=LayoutInflater.from(getActivity()).inflate(R.layout.user_f, null);
-    	initView(view);
+							 Bundle savedInstanceState) {
+
+		View view=LayoutInflater.from(getActivity()).inflate(R.layout.user_f, null);
+		initView(view);
 		return view;
 	}
 
@@ -49,8 +49,8 @@ public class User_F extends Fragment implements OnClickListener {
 
 
 	private void initView(View view){
-    	
-		((TextView)view.findViewById(R.id.tv_top_txtTitle)).setText("ÎÒµÄÌÔ±¦");
+
+		((TextView)view.findViewById(R.id.tv_top_txtTitle)).setText("æˆ‘çš„æ·˜å®");
 		ll_user_life=(LinearLayout) view.findViewById(R.id.ll_user_life);
 		ll_user_members=(LinearLayout) view.findViewById(R.id.ll_user_members);
 		ll_user_store=(LinearLayout) view.findViewById(R.id.ll_user_store);
@@ -59,26 +59,26 @@ public class User_F extends Fragment implements OnClickListener {
 		ll_user_members.setOnClickListener(this);
 		ll_user_store.setOnClickListener(this);
 		ll_user_opinion.setOnClickListener(this);
-		
-		
-    	my_gridView_user=(GridView)view.findViewById(R.id.gridView_user);
-    	my_gridView_user.setSelector(new ColorDrawable(Color.TRANSPARENT));
-    	adapter_GridView=new Adapter_GridView(getActivity(), pic_path);
-    	my_gridView_user.setAdapter(adapter_GridView);
-    	my_gridView_user.setOnItemClickListener(new OnItemClickListener() {
+
+
+		my_gridView_user=(GridView)view.findViewById(R.id.gridView_user);
+		my_gridView_user.setSelector(new ColorDrawable(Color.TRANSPARENT));
+		adapter_GridView=new Adapter_GridView(getActivity(), pic_path);
+		my_gridView_user.setAdapter(adapter_GridView);
+		my_gridView_user.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-					long arg3) {
-				//½øÈë±¾»úÓµÓĞ´«¸ĞÆ÷½çÃæ
+									long arg3) {
+				//è¿›å…¥æœ¬æœºæ‹¥æœ‰ä¼ æ„Ÿå™¨ç•Œé¢
 				Intent intent=new Intent(getActivity(),HelloSensor.class);
 				startActivity(intent);
-				
+
 			}
 		});
-    	
-    	
-    }
+
+
+	}
 
 
 
@@ -86,32 +86,32 @@ public class User_F extends Fragment implements OnClickListener {
 	@Override
 	public void onClick(View arg0) {
 		switch (arg0.getId()) {
-		case R.id.ll_user_life:
-			//½øÈë¹Î¹ÎÀÖ½çÃæ
-			Intent intent1=new Intent(getActivity(),User_life.class);
-			startActivity(intent1);
-			break;
-		case R.id.ll_user_members:
-			//½øÈë¹Î¹ÎÀÖ½çÃæ
-			Intent intent2=new Intent(getActivity(),User_life.class);
-			startActivity(intent2);
-			break;
-		case R.id.ll_user_store:
-			//½øÈë¹Î¹ÎÀÖ½çÃæ
-			Intent intent3=new Intent(getActivity(),User_life.class);
-			startActivity(intent3);
-			break;
-		case R.id.ll_user_opinion:
-			//Òâ¼û·´À¡½çÃæ
-			Intent intent4=new Intent(getActivity(),User_opinion.class);
-			startActivity(intent4);
-			break;
+			case R.id.ll_user_life:
+				//è¿›å…¥åˆ®åˆ®ä¹ç•Œé¢
+				Intent intent1=new Intent(getActivity(),User_life.class);
+				startActivity(intent1);
+				break;
+			case R.id.ll_user_members:
+				//è¿›å…¥åˆ®åˆ®ä¹ç•Œé¢
+				Intent intent2=new Intent(getActivity(),User_life.class);
+				startActivity(intent2);
+				break;
+			case R.id.ll_user_store:
+				//è¿›å…¥åˆ®åˆ®ä¹ç•Œé¢
+				Intent intent3=new Intent(getActivity(),User_life.class);
+				startActivity(intent3);
+				break;
+			case R.id.ll_user_opinion:
+				//æ„è§åé¦ˆç•Œé¢
+				Intent intent4=new Intent(getActivity(),User_opinion.class);
+				startActivity(intent4);
+				break;
 
-		default:
-			break;
+			default:
+				break;
 		}
-		
+
 	}
 
-    
+
 }

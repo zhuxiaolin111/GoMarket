@@ -29,7 +29,6 @@ import java.util.HashMap;
  *
  */
 public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCallListener {
-
 	// 界面底部的菜单按钮
 	private ImageView[] bt_menu = new ImageView[5];
 	// 界面底部的菜单按钮id
@@ -55,6 +54,8 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_fa);
+
+
 		getSaveData();
 		initView();
 	}

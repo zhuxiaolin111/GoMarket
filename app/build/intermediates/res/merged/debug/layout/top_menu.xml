@@ -25,7 +25,8 @@
               android:layout_height="match_parent"
               android:background="@drawable/search_bg"
               android:hint="@string/sousuo"
-              android:layout_weight="0.88" />
+              android:layout_weight="0.88"
+              android:id="@+id/et"/>
        <!-- <TextView
             android:id="@+id/tv_top_title"
             android:layout_width="0dp"

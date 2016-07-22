@@ -152,12 +152,12 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-xhdpi\\menu_guide_7.png"
     },
     {
-        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\menu_index_4.png",
-        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-xhdpi\\menu_index_4.png"
-    },
-    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\menu_guide_2.png",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-xhdpi\\menu_guide_2.png"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\menu_index_4.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-xhdpi\\menu_index_4.png"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\menu_viewpager_2.png",
