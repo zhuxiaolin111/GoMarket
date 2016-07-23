@@ -192,7 +192,8 @@ public class XListView extends ListView implements OnScrollListener {
 
 	private void updateHeaderHeight(float delta) {
 		mHeaderView.setVisiableHeight((int) delta + mHeaderView.getVisiableHeight());
-		if (mEnablePullRefresh && !mPullRefreshing) { // Î´´¦ÓÚË¢ÐÂ×´Ì¬£¬¸üÐÂ¼ýÍ·
+		if (mEnablePullRefresh && !mPullRefreshing) {
+			// Î´ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½Í·
 			if (mHeaderView.getVisiableHeight() > mHeaderViewHeight) {
 				mHeaderView.setState(XListViewHeader.STATE_READY);
 			} else {
@@ -213,7 +214,7 @@ public class XListView extends ListView implements OnScrollListener {
 		if (mPullRefreshing && height <= mHeaderViewHeight) {
 			return;
 		}
-		//Ä¬ÈÏµÄ³õÊ¼»¯Í·²¿¸ß¶È
+		//Ä¬ï¿½ÏµÄ³ï¿½Ê¼ï¿½ï¿½Í·ï¿½ï¿½ï¿½ß¶ï¿½
 		int finalHeight = 40; // default: scroll back to dismiss header.
 		// is refreshing, just scroll back to show all the header.
 		if (mPullRefreshing && height > mHeaderViewHeight) {
@@ -270,7 +271,7 @@ public class XListView extends ListView implements OnScrollListener {
 		case MotionEvent.ACTION_MOVE:
 			final float deltaY = ev.getRawY() - mLastY;
 			mLastY = ev.getRawY();
-			System.out.println("Êý¾Ý¼à²â£º" + getFirstVisiblePosition() + "---->" + getLastVisiblePosition());
+			System.out.println("ï¿½ï¿½ï¿½Ý¼ï¿½â£º" + getFirstVisiblePosition() + "---->" + getLastVisiblePosition());
 			if (getFirstVisiblePosition() == 0 && (mHeaderView.getVisiableHeight() > 0 || deltaY > 0)) {
 				// the first item is showing, header has shown or pull down.
 				updateHeaderHeight(deltaY / OFFSET_RADIO);

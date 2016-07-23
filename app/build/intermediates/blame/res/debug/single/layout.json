@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\babydetail_a.xml",
-        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\babydetail_a.xml"
-    },
-    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spiner_window_layout.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\spiner_window_layout.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\babydetail_a.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\babydetail_a.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_footer.xml",
@@ -68,8 +68,20 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\spiner_item_layout.xml"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shop_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\shop_layout.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\demo_layout.xml"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\zuce_layout.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\zuce_layout.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\my_layout.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tao_f.xml",
@@ -140,6 +152,10 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\top_menu_back.xml"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\deposit.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\deposit.xml"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_grid_hot_home.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_grid_hot_home.xml"
     },
@@ -150,6 +166,10 @@
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\buy_now_a.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\buy_now_a.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\login.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_header.xml",
@@ -164,12 +184,20 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_listview_detail.xml"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shop_prompt_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\shop_prompt_layout.xml"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cart_f.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\cart_f.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\address_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\address_layout.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_layout_above.xml",
@@ -182,6 +210,10 @@
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\index_layout.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\index_layout.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\zuce.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\zuce.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_menu_txt.xml",

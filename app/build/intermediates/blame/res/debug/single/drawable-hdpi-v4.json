@@ -44,6 +44,10 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\main_image_4.jpg"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_right.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\arrow_right.png"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\top_bar_right_button_bg.jpg",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\top_bar_right_button_bg.jpg"
     },
@@ -132,12 +136,24 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\menu_1_0.png"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_failure.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\icon_failure.png"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\main_image_1.jpg",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\main_image_1.jpg"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_edit.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\icon_edit.png"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a.png",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\a.png"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_left.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\arrow_left.png"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_index_4.png",
@@ -204,6 +220,10 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\icon_down.png"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_del.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\icon_del.png"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_index_8.png",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\menu_index_8.png"
     },
@@ -258,6 +278,10 @@
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\top_tab_bg.png",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\top_tab_bg.png"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_success.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\icon_success.png"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\hr.png",
@@ -382,6 +406,10 @@
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\second_2_collection.png",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\second_2_collection.png"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_upload1.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\icon_upload1.png"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_edit_ware.png",

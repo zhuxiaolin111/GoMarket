@@ -35,6 +35,7 @@ public class SpinerPopWindow<T> extends PopupWindow {
 		this.list=list;
 		init(clickListener);
 	}
+
 	
 	private void init(OnItemClickListener clickListener){
 		View view = inflater.inflate(R.layout.spiner_window_layout, null);

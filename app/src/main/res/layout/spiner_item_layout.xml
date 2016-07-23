@@ -8,9 +8,8 @@
         android:id="@+id/tv_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:text="fdsfdsfdsf"
         android:textColor="@color/content_color"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
 
 </LinearLayout>

@@ -69,7 +69,7 @@ public class Home_F extends Fragment {
 		mSpinerPopWindow = new SpinerPopWindow<String>(getActivity(), list,itemClickListener);
 		mSpinerPopWindow.setOnDismissListener(dismissListener);
 		mSpinerPopWindow1 = new SpinerPopWindow<String>(getActivity(), list,itemClickListener1);
-		mSpinerPopWindow1.setOnDismissListener(dismissListener);
+		mSpinerPopWindow1.setOnDismissListener(dismissListener1);
 		initView(view);
 		return view;
 	}
@@ -148,6 +148,12 @@ public class Home_F extends Fragment {
 			setTextImage(R.drawable.icon_down);
 		}
 	};
+	private PopupWindow.OnDismissListener dismissListener1=new PopupWindow.OnDismissListener() {
+		@Override
+		public void onDismiss() {
+			setTextImage1(R.drawable.icon_down);
+		}
+	};
 
 	/**
 	 * popupwindow显示的ListView的item点击事件
@@ -186,7 +192,7 @@ public class Home_F extends Fragment {
 				case R.id.tv_value1:
 					mSpinerPopWindow1.setWidth(tvValue1.getWidth());
 					mSpinerPopWindow1.showAsDropDown(tvValue1);
-					setTextImage(R.drawable.icon_up);
+					setTextImage1(R.drawable.icon_up);
 					break;
 			}
 		}
@@ -208,8 +214,13 @@ public class Home_F extends Fragment {
 	 */
 	private void setTextImage(int resId) {
 		Drawable drawable = getResources().getDrawable(resId);
-		drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());// 必须设置图片大小，否则不显示
-		tvValue.setCompoundDrawables(null, null, drawable, null);
-	}
+			drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());// 必须设置图片大小，否则不显示
+			tvValue.setCompoundDrawables(null, null, drawable, null);
 
+	}
+	private void setTextImage1(int resId) {
+		Drawable drawable = getResources().getDrawable(resId);
+		drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());// 必须设置图片大小，否则不显示
+		tvValue1.setCompoundDrawables(null, null, drawable, null);
+	}
 }

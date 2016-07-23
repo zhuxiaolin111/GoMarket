@@ -48,6 +48,10 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\bt_menu_3_select.xml"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_button.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\shape_button.xml"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\holder_bg.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\holder_bg.xml"
     }
