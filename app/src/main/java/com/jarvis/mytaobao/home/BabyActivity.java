@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -76,7 +75,7 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 		// 获取默认的NFC控制器
 		nfcAdapter = NfcAdapter.getDefaultAdapter(this);
 		if (nfcAdapter == null) {
-			Toast.makeText(this, "该设备不支持NFC", Toast.LENGTH_SHORT).show();
+			//Toast.makeText(this, "该设备不支持NFC", Toast.LENGTH_SHORT).show();
 		}
 		AseoZdpAseo.initType(this, AseoZdpAseo.INSERT_TYPE);
 		((ImageView) findViewById(R.id.iv_back)).setOnClickListener(this);
@@ -93,10 +92,7 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				//进入恋上猫女衣坊的网店
-				Uri uri = Uri.parse("http://yecaoly.taobao.com");
-				Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-				startActivity(intent);
+
 			}
 		});
 		initViewPager();

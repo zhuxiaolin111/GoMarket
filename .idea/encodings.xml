@@ -9,6 +9,8 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/jarvis/mytaobao/home/Home_F.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/jarvis/mytaobao/home/Main_FA.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/jarvis/mytaobao/home/WareActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/zxing/camera/FlashlightManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/zxing/decoding/DecodeThread.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

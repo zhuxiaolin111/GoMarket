@@ -37,8 +37,8 @@
 
             <ImageView
                 android:id="@+id/iv_menu_0"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/bt_menu_0_select" />
 
             <TextView
@@ -57,8 +57,8 @@
 
             <ImageView
                 android:id="@+id/iv_menu_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/bt_menu_1_select" />
 
             <TextView
@@ -77,8 +77,8 @@
 
             <ImageView
                 android:id="@+id/iv_menu_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/bt_menu_2_select" />
 
             <TextView
@@ -97,8 +97,8 @@
 
             <ImageView
                 android:id="@+id/iv_menu_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/bt_menu_3_select" />
 
             <TextView
@@ -117,8 +117,8 @@
 
             <ImageView
                 android:id="@+id/iv_menu_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/bt_menu_4_select" />
 
             <TextView

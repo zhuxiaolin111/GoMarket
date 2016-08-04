@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:background="#89ad78"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/img_goback_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.92"
+            android:text="店铺管理"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_go_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.04"
+            android:text="首页"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow android:padding="4dp">
+
+                <TextView android:text="店铺名称(中文)" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:background="@drawable/textview_border" />
+            </TableRow>
+
+            <TableRow android:padding="4dp">
+
+                <TextView android:text="店铺名称(한국어)" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:background="@drawable/textview_border" />
+            </TableRow>
+
+            <TableRow android:padding="4dp">
+
+                <TextView android:text="店铺名称(English)" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:background="@drawable/textview_border" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="4dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="6">
+
+            <TextView android:text="电话" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_columnSpan="6"
+                android:background="@drawable/textview_border" />
+
+            <TextView android:text="店铺位置" />
+
+            <TextView
+                android:id="@+id/tv_value_sheng"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_help_category_tv_bg"
+                android:drawableRight="@drawable/icon_down"
+                android:text="请选择"
+                android:textColor="@color/content_color" />
+
+            <TextView android:text="省" />
+
+            <TextView
+                android:id="@+id/tv_value_shi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_help_category_tv_bg"
+                android:drawableRight="@drawable/icon_down"
+                android:text="请选择"
+                android:textColor="@color/content_color" />
+
+            <TextView android:text="市" />
+
+            <TextView
+                android:id="@+id/tv_value_qu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_help_category_tv_bg"
+                android:drawableRight="@drawable/icon_down"
+                android:text="请选择"
+                android:textColor="@color/content_color" />
+
+            <TextView android:text="区" />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/textview_border"
+            android:hint="请输入详细地址" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="4dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="9">
+
+            <TextView android:text="营业时间" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:background="@drawable/textview_border" />
+
+            <TextView android:text="_" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:background="@drawable/textview_border" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="图片" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img3" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_columnSpan="2"
+                android:src="@drawable/icon_upload1" />
+            <TextView android:text="系统分类"/>
+
+            <TextView
+                android:id="@+id/tv_value_xitong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_help_category_tv_bg"
+                android:drawableRight="@drawable/icon_down"
+                android:text="请选择"
+                android:textColor="@color/content_color"
+                android:layout_columnSpan="3"/>
+            <TextView android:text="介绍(中文)"/>
+            <TextView android:background="@drawable/textview_border"
+               android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:hint="请输入店铺介绍"
+                android:layout_columnSpan="3"/>
+            <TextView android:text="介绍(한국어)"/>
+            <TextView android:background="@drawable/textview_border"
+                android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:hint="请输入店铺介绍"
+                android:layout_columnSpan="3"/>
+            <TextView android:text="介绍(English)"/>
+            <TextView android:background="@drawable/textview_border"
+                android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:hint="请输入店铺介绍"
+                android:layout_columnSpan="3"/>
+            <TextView android:text="公告(中文)"/>
+            <TextView android:background="@drawable/textview_border"
+                android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:hint="请输入店铺介绍"
+                android:layout_columnSpan="3"/>
+            <TextView android:text="公告(한국어)"/>
+            <TextView android:background="@drawable/textview_border"
+                android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:hint="请输入店铺介绍"
+                android:layout_columnSpan="3"/>
+            <TextView android:text="公告(English)"/>
+            <TextView android:background="@drawable/textview_border"
+                android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:hint="请输入店铺介绍"
+                android:layout_columnSpan="3"/>
+        </GridLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:weightSum="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="保存"
+
+            android:layout_weight="0.11" />
+    </LinearLayout>
+
+
+</LinearLayout>

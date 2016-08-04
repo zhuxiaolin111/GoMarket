@@ -6,11 +6,18 @@
     <item>广州</item>
     <item>深圳</item>
 </string-array>
+    <string-array name="food">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>v</item>
+    </string-array>
     <string name="jiu">酒</string>
     <string name="drink">饮料</string>
     <string name="jiucai">酒菜</string>
      <string name="fan">饭</string>
-    <string name="meat">肉</string>meat
+    <string name="meat">肉</string>
     <string name="shuangrentaocan">双人套餐</string>
     <string name="baihuo">百货/购物</string>
     <string name="diannao">电脑/笔记本</string>

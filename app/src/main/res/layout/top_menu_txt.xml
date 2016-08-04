@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="45dp"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#89ad78">
 
     <LinearLayout
         android:layout_width="match_parent"

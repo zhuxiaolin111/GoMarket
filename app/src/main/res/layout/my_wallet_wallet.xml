@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:background="#89ad78"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="我的钱包"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:paddingRight="15dp"
+            android:text="首页"
+            android:textSize="20dp" />
+    </LinearLayout>
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+
+        android:background="#f9f9f9"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/img_foot2sel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="钱包" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="余额：¥" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="0.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:padding="20dp"
+        android:weightSum="1">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.38"
+            android:background="@drawable/shape_button"
+            android:drawableLeft="@drawable/icon_drawmoney"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="提款"
+            android:textSize="16sp"></Button>
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.38"
+            android:background="@drawable/shape_button"
+            android:drawableLeft="@drawable/icon_savemoney"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="存钱"
+            android:textSize="16sp"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:weightSum="1">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.38"
+            android:background="@drawable/shape_button"
+            android:drawableLeft="@drawable/icon_dispose"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="处理结果"
+            android:textSize="16sp"></Button>
+    </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="#f9f9f9"
+      android:padding="16dp"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意事项"
+            android:textSize="15sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="我是注意事我是注意事项我是注意事项我是注意事项" />
+    </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.05"
+              android:text="我是注意事我是注意事项我是注意事项我是注意事项" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.05"
+              android:text="我是注意事我是注意事项我是注意事项我是注意事项" />
+      </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
+
+

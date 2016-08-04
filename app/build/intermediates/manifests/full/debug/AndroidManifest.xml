@@ -35,19 +35,13 @@
         android:theme="@android:style/Theme.Black.NoTitleBar" >
         <activity
             android:name="com.jarvis.mytaobao.home.Main_FA"
-            android:label="@string/app_name"
-            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.My.Index_Activity" >
-        </activity>
-        <activity android:name="com.My.Login_Activity" />
-        <activity android:name="com.My.Register_Avtivity" />
-        <activity android:name="com.My.zhongcan_Activity" />
         <activity android:name="com.jarvis.mytaobao.home.BabyActivity" />
         <activity android:name="com.jarvis.mytaobao.home.WareActivity" />
         <activity android:name="com.jarvis.mytaobao.home.ShowBigPictrue" />
@@ -55,6 +49,10 @@
         <activity android:name="com.jarvis.mytaobao.user.User_life" />
         <activity android:name="com.jarvis.mytaobao.user.User_opinion" />
         <activity android:name="com.jarvis.mytaobao.user.HelloSensor" />
+        <activity android:name="com.jarvis.mytaobao.MyActivity.Shop_Activity" />
+        <activity android:name="com.jarvis.mytaobao.user.MyEdit_A" />
+        <activity android:name="com.jarvis.mytaobao.user.ShopManager_A" />
+        <activity android:name="com.jarvis.mytaobao.user.Address_A" />
         <!-- 隐藏键盘 -->
         <!-- 全屏 -->
         <activity
@@ -63,12 +61,6 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" >
-        </activity>
-        <activity
-            android:name="com.My.Shangjia_Activity"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity android:name="com.My.TSET_Activity" >
         </activity>
     </application>
 

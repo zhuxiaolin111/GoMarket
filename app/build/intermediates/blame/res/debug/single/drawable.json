@@ -16,6 +16,10 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\yuanjiao.xml"
     },
     {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\textview_border.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\textview_border.xml"
+    },
+    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_menu_1_select.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\bt_menu_1_select.xml"
     },
@@ -50,6 +54,14 @@
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_button.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\shape_button.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_button_color.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\shape_button_color.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_button_bian.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable\\shape_button_bian.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\holder_bg.xml",

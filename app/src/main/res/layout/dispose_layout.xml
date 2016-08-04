@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:background="#89ad78"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.92"
+            android:text="百货超市"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.04"
+            android:text="首页"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="存款"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="203dp"
+        android:background="#f9f9f9"
+        android:orientation="vertical"
+
+        >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dip"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:text="取款日期"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:text="金额"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:text="处理结果"
+                    android:textSize="20dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="2015-12-15 12:00:00"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="¥100"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="处理中"
+                    android:textSize="20dp"></TextView>
+            </TableRow>
+
+            <TableRow android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="2015-12-15 12:00:00"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="¥100"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="成功"
+                    android:textSize="20dp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="2015-12-15 12:00:00"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="¥100"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="失败"
+                    android:textSize="20dp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="上一页"
+            android:layout_weight="0.08"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"></LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="下一页"
+            android:layout_weight="0.08"
+            />
+    </LinearLayout>
+
+</LinearLayout>

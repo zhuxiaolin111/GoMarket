@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@drawable/img_foot2sel" />
-    <item android:state_focused="true" android:drawable="@drawable/img_foot2sel" />
-    <item android:state_enabled="true" android:drawable="@drawable/img_foot2" />
+    <item android:layout_width="30dp" android:layout_height="30dp" android:drawable="@drawable/img_foot2sel" android:state_pressed="true" />
+    <item android:layout_width="30dp" android:layout_height="30dp" android:drawable="@drawable/img_foot2sel" android:state_focused="true" />
+    <item android:layout_width="30dp" android:layout_height="30dp" android:drawable="@drawable/img_foot2" android:state_enabled="true" />
 </selector>

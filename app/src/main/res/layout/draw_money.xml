@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:background="#89ad78"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="存款"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:paddingRight="15dp"
+            android:text="首页"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#f9f9f9"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView android:text="银行名称" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="用户名" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="账号" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="转出金额" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="¥0.00"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_weight="0.40">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="提交"
+            android:textSize="20dp"
+            android:layout_weight="0.46" />
+    </LinearLayout>
+</LinearLayout>

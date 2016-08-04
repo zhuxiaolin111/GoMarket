@@ -90,7 +90,11 @@ public class Cart_F extends Fragment implements OnClickListener {
 				} else {
 					showFragment(allBaby_F);
 				}
-				show_cart_all.setBackgroundColor(getResources().getColor(R.color.bg_Black));
+
+				bt_cart_all.setTextColor(getResources().getColor(R.color.tv_Red));
+				bt_cart_low.setTextColor(getResources().getColor(R.color.bg_Gray));
+				bt_cart_stock.setTextColor(getResources().getColor(R.color.bg_Gray));
+				show_cart_all.setBackgroundColor(getResources().getColor(R.color.tv_Red));
 				show_cart_low.setBackgroundColor(getResources().getColor(R.color.bg_Gray));
 				show_cart_stock.setBackgroundColor(getResources().getColor(R.color.bg_Gray));
 				break;
@@ -102,7 +106,10 @@ public class Cart_F extends Fragment implements OnClickListener {
 				} else {
 					showFragment(lowBaby_F);
 				}
-				show_cart_low.setBackgroundColor(getResources().getColor(R.color.bg_Black));
+				bt_cart_all.setTextColor(getResources().getColor(R.color.bg_Gray));
+				bt_cart_low.setTextColor(getResources().getColor(R.color.tv_Red));
+				bt_cart_stock.setTextColor(getResources().getColor(R.color.bg_Gray));
+				show_cart_low.setBackgroundColor(getResources().getColor(R.color.tv_Red));
 				show_cart_all.setBackgroundColor(getResources().getColor(R.color.bg_Gray));
 				show_cart_stock.setBackgroundColor(getResources().getColor(R.color.bg_Gray));
 
@@ -115,7 +122,10 @@ public class Cart_F extends Fragment implements OnClickListener {
 				} else {
 					showFragment(stockBaby_F);
 				}
-				show_cart_stock.setBackgroundColor(getResources().getColor(R.color.bg_Black));
+				bt_cart_all.setTextColor(getResources().getColor(R.color.bg_Gray));
+				bt_cart_low.setTextColor(getResources().getColor(R.color.bg_Gray));
+				bt_cart_stock.setTextColor(getResources().getColor(R.color.tv_Red));
+				show_cart_stock.setBackgroundColor(getResources().getColor(R.color.tv_Red));
 				show_cart_all.setBackgroundColor(getResources().getColor(R.color.bg_Gray));
 				show_cart_low.setBackgroundColor(getResources().getColor(R.color.bg_Gray));
 

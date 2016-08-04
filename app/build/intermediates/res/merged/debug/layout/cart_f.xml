@@ -7,14 +7,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        >
 
-        <include layout="@layout/top_menu_txt" />
+        <include layout="@layout/top_menu_txt"  />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/bg_Gray_light"
+
             android:orientation="horizontal" >
 
             <TextView
@@ -26,7 +27,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:text="全部宝贝"
-                android:textColor="@color/tv_Black" />
+                android:textColor="#ff0000" />
 
             <View
                 android:layout_width="1dp"

@@ -1,5 +1,6 @@
 package com.jarvis.mytaobao.home;
 
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.MySpinner.view.SpinerPopWindow;
+import com.jarvis.mytaobao.MyActivity.Shop_Activity;
 import com.jarvis.mytaobaotest.R;
 import com.javis.Adapter.Adapter_GridView;
 import com.javis.Adapter.Adapter_GridView_hot;
@@ -27,14 +29,19 @@ import com.javis.ab.view.AbSlidingPlayView;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
+
 /**
  * 首页
  * @author http://yecaoly.taobao.com
  */
-public class Home_F extends Fragment {
+public class Home_F extends Fragment implements View.OnClickListener{
+	private Shop_Activity shop_activity;
 	private SpinerPopWindow<String> mSpinerPopWindow,mSpinerPopWindow1;
 	private List<String> list;
 	private TextView tvValue,tvValue1;
+	private TextView goShop,goMap;
 	//顶部标题栏
 	private TextView tv_top_title;
 	//分类的九宫格
@@ -61,7 +68,12 @@ public class Home_F extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 		View view = LayoutInflater.from(getActivity()).inflate(R.layout.home_f, null);
+
 		initData();
+		goMap= (TextView) view.findViewById(R.id.goMap);
+		goShop= (TextView) view.findViewById(R.id.goShop);
+		goMap.setOnClickListener(this);
+		goShop.setOnClickListener(this);
 		tvValue1= (TextView) view.findViewById(R.id.tv_value1);
 		tvValue = (TextView) view.findViewById(R.id.tv_value);
 		tvValue.setOnClickListener(clickListener);
@@ -222,5 +234,23 @@ public class Home_F extends Fragment {
 		Drawable drawable = getResources().getDrawable(resId);
 		drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());// 必须设置图片大小，否则不显示
 		tvValue1.setCompoundDrawables(null, null, drawable, null);
+	}
+
+	/**
+	 * Called when a view has been clicked.
+	 *
+	 * @param v The view that was clicked.
+	 */
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()){
+			case R.id.goMap:
+				break;
+			case R.id.goShop:
+				Main_FA.getMainActivity().onClick(v.findViewById(R.id.goShop));
+			//	Main_FA.getMainActivity().addFragment(shop_activity);
+			//	Main_FA.getMainActivity().showFragment(shop_activity);
+				break;
+		}
 	}
 }

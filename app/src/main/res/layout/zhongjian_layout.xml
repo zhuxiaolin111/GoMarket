@@ -130,12 +130,14 @@
         android:weightSum="1">
         <TextView
             android:layout_width="wrap_content"
+            android:id="@+id/goMap"
             android:layout_height="wrap_content"
             android:text="查看地图"
             android:paddingLeft="16dp"
             android:paddingTop="5dp"
             android:layout_weight="0.33" />
         <TextView
+            android:id="@+id/goShop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="进入商铺"
