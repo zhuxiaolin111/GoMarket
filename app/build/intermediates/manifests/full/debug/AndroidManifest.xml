@@ -43,16 +43,25 @@
             </intent-filter>
         </activity>
         <activity android:name="com.jarvis.mytaobao.home.BabyActivity" />
-        <activity android:name="com.jarvis.mytaobao.home.WareActivity" />
+        <activity
+            android:name="com.jarvis.mytaobao.home.WareActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity android:name="com.jarvis.mytaobao.home.ShowBigPictrue" />
-        <activity android:name="com.jarvis.mytaobao.home.BuynowActivity" />
+        <activity
+            android:name="com.jarvis.mytaobao.home.BuynowActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity android:name="com.jarvis.mytaobao.user.User_life" />
         <activity android:name="com.jarvis.mytaobao.user.User_opinion" />
         <activity android:name="com.jarvis.mytaobao.user.HelloSensor" />
-        <activity android:name="com.jarvis.mytaobao.MyActivity.Shop_Activity" />
         <activity android:name="com.jarvis.mytaobao.user.MyEdit_A" />
         <activity android:name="com.jarvis.mytaobao.user.ShopManager_A" />
         <activity android:name="com.jarvis.mytaobao.user.Address_A" />
+        <activity android:name="com.jarvis.mytaobao.home.FuKuan_Activity" />
+        <activity android:name="com.jarvis.mytaobao.home.Payment_Activity" />
+        <activity android:name="com.jarvis.mytaobao.home.TiJiao_Activity" />
+        <activity android:name="com.jarvis.mytaobao.home.DrawMoney_Activity" />
+        <activity android:name="com.jarvis.mytaobao.home.Deposit_Activity" />
+        <activity android:name="com.jarvis.mytaobao.home.Dispose_Activity" />
         <!-- 隐藏键盘 -->
         <!-- 全屏 -->
         <activity
@@ -60,8 +69,7 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden" >
-        </activity>
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>

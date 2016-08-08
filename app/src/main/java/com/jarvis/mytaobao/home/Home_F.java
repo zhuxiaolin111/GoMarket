@@ -19,7 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.MySpinner.view.SpinerPopWindow;
-import com.jarvis.mytaobao.MyActivity.Shop_Activity;
+import com.jarvis.mytaobao.MyActivity.Shop_F;
 import com.jarvis.mytaobaotest.R;
 import com.javis.Adapter.Adapter_GridView;
 import com.javis.Adapter.Adapter_GridView_hot;
@@ -37,7 +37,7 @@ import java.util.List;
  * @author http://yecaoly.taobao.com
  */
 public class Home_F extends Fragment implements View.OnClickListener{
-	private Shop_Activity shop_activity;
+	private Shop_F shop_activity;
 	private SpinerPopWindow<String> mSpinerPopWindow,mSpinerPopWindow1;
 	private List<String> list;
 	private TextView tvValue,tvValue1;

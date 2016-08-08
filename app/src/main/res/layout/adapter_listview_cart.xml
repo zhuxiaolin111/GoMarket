@@ -2,12 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" >
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <CheckBox
             android:id="@+id/cb_choice"
@@ -23,31 +23,39 @@
             android:layout_height="80dp"
             android:layout_margin="5dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/detail_show_1"
-             />
+            android:src="@drawable/detail_show_1" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="时尚女衣  尽在恋上猫女衣坊 http//yecaoly.taobao.com"
+                android:text="时尚女衣  尽在恋上猫女衣坊"
                 android:textColor="@color/tv_Black" />
 
             <TextView
-                android:id="@+id/tv_type_color"
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="颜色和类型"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_corlor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:layout_marginTop="10dp"
-                android:text="颜色和类型"
-                android:textSize="13sp" />
+                android:layout_marginTop="4dp"
+                android:textSize="13sp"
+                android:text="颜色和类型" />
         </LinearLayout>
 
         <LinearLayout
@@ -55,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_price"

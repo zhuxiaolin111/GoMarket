@@ -1,11 +1,11 @@
 package com.jarvis.mytaobao.home;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.jarvis.mytaobaotest.R;
 import com.zdp.aseo.content.AseoZdpAseo;
@@ -41,7 +41,9 @@ public class BuynowActivity extends Activity {
 		bt_ok.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Toast.makeText(BuynowActivity.this, "暂无法支付", Toast.LENGTH_SHORT).show();
+				Intent intent=new Intent(BuynowActivity.this,FuKuan_Activity.class);
+				startActivity(intent);
+				//Toast.makeText(BuynowActivity.this, "暂无法支付", Toast.LENGTH_SHORT).show();
 			}
 		});
 

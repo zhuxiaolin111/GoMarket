@@ -1,5 +1,6 @@
 package com.jarvis.mytaobao.discover;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 
+import com.jarvis.mytaobao.home.BabyActivity;
+import com.jarvis.mytaobao.home.Main_FA;
 import com.jarvis.mytaobaotest.R;
 import com.javis.Adapter.Adapter_GridView;
 
@@ -28,6 +31,7 @@ public class Discover_F extends Fragment {
 	
 	private LinearLayout ll_ShaoYiShao;
 	private LinearLayout ll_game;
+	private LinearLayout go_shop,go_Baby_A;
 
     @Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -41,6 +45,21 @@ public class Discover_F extends Fragment {
 
 
 	private void initView(View view){
+		go_shop= (LinearLayout) view.findViewById(R.id.goShop);
+		go_shop.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Main_FA.getMainActivity().onClick(v.findViewById(R.id.goShop));
+			}
+		});
+		go_Baby_A= (LinearLayout) view.findViewById(R.id.go_BabyA);
+		go_Baby_A.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(), BabyActivity.class);
+				startActivity(intent);
+			}
+		});
 		/*ll_ShaoYiShao=(LinearLayout) view.findViewById(R.id.ll_dicover_shao);
 		ll_ShaoYiShao.setOnClickListener(new OnClickListener() {
 			public void onClick(View arg0) {

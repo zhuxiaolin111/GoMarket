@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\babydetail_a.xml",
-        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\babydetail_a.xml"
-    },
-    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spiner_window_layout.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\spiner_window_layout.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\babydetail_a.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\babydetail_a.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_footer.xml",
@@ -80,10 +80,6 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\demo_layout.xml"
     },
     {
-        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\oeder_detail1_layout.xml",
-        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\oeder_detail1_layout.xml"
-    },
-    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\zuce_layout.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\zuce_layout.xml"
     },
@@ -102,6 +98,10 @@
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_listview_tao.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_listview_tao.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shop_manager_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\shop_manager_layout.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_layout_below.xml",
@@ -128,12 +128,12 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\adapter_grid_home.xml"
     },
     {
-        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_opinion.xml",
-        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\user_opinion.xml"
-    },
-    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\local_media_fragment.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\local_media_fragment.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_opinion.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\user_opinion.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shop_m_order_layout.xml",
@@ -230,6 +230,10 @@
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\favorites_layout.xml",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\favorites_layout.xml"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\order_detail1_layout.xml",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\layout\\order_detail1_layout.xml"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",

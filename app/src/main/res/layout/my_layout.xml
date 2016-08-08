@@ -68,7 +68,7 @@
         android:background="#dbdbdb" />
 
     <LinearLayout
-        android:id="@+id/linear_go_favorites"
+        android:id="@+id/iv_menu_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.04"
@@ -96,7 +96,7 @@
         android:background="#dbdbdb" />
 
     <LinearLayout
-        android:id="@+id/liner_go_cartF"
+        android:id="@+id/iv_menu_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.04"
@@ -124,7 +124,7 @@
         android:background="#dbdbdb" />
 
     <LinearLayout
-        android:id="@+id/liner_go_myWallet"
+        android:id="@+id/iv_menu_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.04"

@@ -18,10 +18,10 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.jarvis.mytaobao.Data.Data;
 import com.jarvis.mytaobao.home.BabyActivity;
+import com.jarvis.mytaobao.home.FuKuan_Activity;
 import com.jarvis.mytaobaotest.R;
 import com.javis.Adapter.Adapter_ListView_cart;
 import com.javis.Adapter.Adapter_ListView_cart.onCheckedChanged;
@@ -218,7 +218,9 @@ public class AllBaby_F extends Fragment implements IBtnCallListener, onCheckedCh
 					System.out.println("此时的长度---->"+is_choice.length);
 				}else {
 					//执行结算操作
-					Toast.makeText(getActivity(), "暂时无法结算", Toast.LENGTH_SHORT).show();
+					Intent intent=new Intent(getActivity(), FuKuan_Activity.class);
+					startActivity(intent);
+					//Toast.makeText(getActivity(), "暂时无法结算", Toast.LENGTH_SHORT).show();
 				}
 
 				break;

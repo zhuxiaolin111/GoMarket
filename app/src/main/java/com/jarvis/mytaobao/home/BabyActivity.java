@@ -220,8 +220,10 @@ public class BabyActivity extends FragmentActivity implements OnItemClickListene
 
 		if (isClickBuy) {
 			//如果之前是点击的立即购买，那么就跳转到立即购物界面
-			Intent intent = new Intent(BabyActivity.this, BuynowActivity.class);
+			Intent intent=new Intent(BabyActivity.this,FuKuan_Activity.class);
 			startActivity(intent);
+		/*	Intent intent = new Intent(BabyActivity.this, BuynowActivity.class);
+			startActivity(intent);*/
 		}else {
 			Toast.makeText(this, "添加到购物车成功", Toast.LENGTH_SHORT).show();
 		}

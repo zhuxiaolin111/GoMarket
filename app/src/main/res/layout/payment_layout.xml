@@ -131,6 +131,7 @@
         android:layout_gravity="center">
         <Button
             android:layout_width="187dp"
+            android:id="@+id/btn_zhifu"
             android:layout_height="wrap_content"
             android:background="@drawable/shape_button"
             android:text="确认支付"/>

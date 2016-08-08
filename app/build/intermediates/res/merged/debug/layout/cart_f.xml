@@ -26,7 +26,7 @@
                 android:gravity="center"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:text="全部宝贝"
+                android:text="待支付"
                 android:textColor="#ff0000" />
 
             <View
@@ -44,7 +44,7 @@
                 android:gravity="center"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:text="降价宝贝"
+                android:text="待收货"
                 android:textColor="@color/tv_Black" />
 
             <View
@@ -62,7 +62,7 @@
                 android:gravity="center"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:text="库存紧张"
+                android:text="全部订单"
                 android:textColor="@color/tv_Black" />
         </LinearLayout>
 

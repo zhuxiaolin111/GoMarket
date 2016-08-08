@@ -1,3 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\GouMarket_Dome\app\libs\aseo2.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="07cbe16c3e33aef277b253a8e8f452bda59c58ef">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\2\aseo2_7e731d36674590a6b1a42cddb0687b60216e5136\classes.dex" />
+    </item>
+    <item
+        jar="D:\GouMarket_Dome\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="78d0351a302c3d882283c64be78e94ffc51d2264">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f56011b618a8906c107ac40a935014bebced18cc\classes.dex" />
+    </item>
+    <item
+        jar="D:\GouMarket_Dome\app\libs\butterknife-plugin.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1aca5906ee2d70b9a82625824f6b0949f4153471">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\2\butterknife-plugin_ed6f9587285f7621ceb088311d0aa104cf25d6a6\classes.dex" />
+    </item>
+    <item
+        jar="D:\GouMarket_Dome\app\libs\android-support-v7-appcompat.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="21297ae2bf22a0ce81c9b59992cf0693eec45d5b">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v7-appcompat_ebd2a9030b5594de2ad14e27413b84e2ce6d60a8\classes.dex" />
+    </item>
+    <item
+        jar="D:\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-19.1.0_7e1617cd5879aaf0a028cf3292feae6be2860f32\classes.dex" />
+    </item>
+    <item
+        jar="D:\GouMarket_Dome\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="784eec64de5f5dcff132941d2b6d566b6817f1a6">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1859dc55ff21dfea9292fc8457738d212f6490ac\classes.dex" />
+    </item>
+    <item
+        jar="D:\GouMarket_Dome\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="a43cf9e271b5bc564e880a0a4be63ab9c69c97f8">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\2\nineoldandroids-2.4.0_2880c9f446dcd995a7eb6c0550084ddbbf19d385\classes.dex" />
+    </item>
+    <item
+        jar="D:\GouMarket_Dome\app\libs\httpcore.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="42fd0eaeee98eb9e1c8cfbcef742a34b54522c4c">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpcore_06b450850b0d8fa6f85e05620ae9472c5163d2cf\classes.dex" />
+    </item>
+    <item
+        jar="D:\GouMarket_Dome\app\libs\core.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c6f3cdc572ddfd37a19f1c1fdb96cda324e8a12a">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\2\core_e4345d4b45cc849ab929896530c969644f224bc0\classes.dex" />
+    </item>
+    <item
+        jar="D:\GouMarket_Dome\app\libs\cu_volley.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="77faa9ffd189160d1e22c58fdf5eed0a9a08b816">
+        <dex dex="D:\GouMarket_Dome\app\build\intermediates\transforms\dex\debug\folders\1000\2\cu_volley_1c598f0e66c63f9910b4a622db1caddfcff290cf\classes.dex" />
+    </item>
+
+</items>

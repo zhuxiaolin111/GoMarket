@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/My/Index_Activity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/My/Register_Avtivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jarvis/http/CU_JSONResolve.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jarvis/mytaobao/cart/AllBaby_F.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/jarvis/mytaobao/home/BabyActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jarvis/mytaobao/home/Home_F.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jarvis/mytaobao/home/Main_FA.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jarvis/mytaobao/home/WareActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/zxing/camera/FlashlightManager.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/zxing/decoding/DecodeThread.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

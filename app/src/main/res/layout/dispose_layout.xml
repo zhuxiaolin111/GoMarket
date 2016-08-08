@@ -8,8 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.0"
+        android:layout_height="48dp"
         android:background="#89ad78"
         android:gravity="right"
         android:orientation="horizontal"
@@ -17,9 +16,11 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="98dp"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/arrow_left" />
+            android:src="@drawable/arrow_left"
+            android:id="@+id/img_goback_shang"
+            android:layout_weight="0.04" />
 
         <TextView
             android:layout_width="wrap_content"

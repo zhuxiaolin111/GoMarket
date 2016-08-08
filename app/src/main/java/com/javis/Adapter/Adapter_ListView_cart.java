@@ -1,8 +1,5 @@
 package com.javis.Adapter;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +11,9 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 
 import com.jarvis.mytaobaotest.R;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Adapter_ListView_cart extends BaseAdapter {
 	private Context context;
@@ -53,7 +53,8 @@ public class Adapter_ListView_cart extends BaseAdapter {
 			holderView = new HolderView();
 			currentView = LayoutInflater.from(context).inflate(R.layout.adapter_listview_cart, null);
 			holderView.tv_num = (TextView) currentView.findViewById(R.id.tv_num);
-			holderView.tv_type_color = (TextView) currentView.findViewById(R.id.tv_type_color);
+			holderView.tv_type = (TextView) currentView.findViewById(R.id.tv_type);
+			holderView.tv_corlor= (TextView) currentView.findViewById(R.id.tv_corlor);
 			holderView.cb_choice = (CheckBox) currentView.findViewById(R.id.cb_choice);
 			currentView.setTag(holderView);
 		} else {
@@ -61,8 +62,8 @@ public class Adapter_ListView_cart extends BaseAdapter {
 		}
 		if (arrayList.size() != 0) {
 			holderView.tv_num.setText("x" + arrayList.get(position).get("num"));
-			holderView.tv_type_color.setText("����:" + arrayList.get(position).get("type").toString() + "    ��ɫ:" + arrayList.get(position).get("color").toString());
-			
+			holderView.tv_type.setText("类型:" + arrayList.get(position).get("type").toString());
+			holderView.tv_corlor.setText("颜色:" + arrayList.get(position).get("color").toString());
 			holderView.cb_choice.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				@Override
 				public void onCheckedChanged(CompoundButton arg0, boolean choice) {
@@ -77,7 +78,8 @@ public class Adapter_ListView_cart extends BaseAdapter {
 
 	public class HolderView {
 
-		private TextView tv_type_color;
+		private TextView tv_type;
+		private TextView tv_corlor;
 		private TextView tv_num;
 		private CheckBox cb_choice;
 

@@ -4,16 +4,20 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.jarvis.mytaobao.Data.Data;
-import com.jarvis.mytaobao.MyActivity.Shop_Activity;
+import com.jarvis.mytaobao.MyActivity.Shop_F;
 import com.jarvis.mytaobao.cart.Cart_F;
 import com.jarvis.mytaobao.discover.Discover_F;
 import com.jarvis.mytaobao.tao.Tao_F;
@@ -30,6 +34,8 @@ import java.util.HashMap;
  * @author http://yecaoly.taobao.com
  */
 public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCallListener {
+    // 定义一个变量，来标识是否退出
+    private static boolean isExit = false;
     // 界面底部的菜单按钮
     private ImageView[] bt_menu = new ImageView[5];
     // 界面底部的菜单按钮id
@@ -61,7 +67,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
      * 我的淘宝界面
      */
     private User_F user_F;
-    private Shop_Activity shop_activity;
+    private Shop_F shop_activity;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -191,7 +197,7 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
                 break;
             case R.id.goShop:
                 if (shop_activity == null) {
-                    shop_activity = new Shop_Activity();
+                    shop_activity = new Shop_F();
                     // 判断当前界面是否隐藏，如果隐藏就进行添加显示，false表示显示，true表示当前界面隐藏
                     if (!shop_activity.isHidden()) {
                         addFragment(shop_activity);
@@ -320,4 +326,36 @@ public class Main_FA extends FragmentActivity implements OnClickListener, IBtnCa
     }
 
     private static Main_FA Main_FA;
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            exit();
+            return false;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+
+    Handler mHandler = new Handler() {
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            isExit = false;
+        }
+    };
+
+    private void exit() {
+        if (!isExit) {
+            isExit = true;
+            Toast.makeText(getApplicationContext(), "再按一次退出程序",
+                    Toast.LENGTH_SHORT).show();
+            // 利用handler延迟发送更改状态信息
+            mHandler.sendEmptyMessageDelayed(0, 2000);
+        } else {
+            finish();
+            System.exit(0);
+        }
+    }
 }

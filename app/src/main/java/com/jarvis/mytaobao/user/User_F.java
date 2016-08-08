@@ -32,23 +32,26 @@ public class User_F extends Fragment implements OnClickListener {
     private LinearLayout go_myEdit, go_favorites, go_cart, go_myWallet, go_address, go_shop_manager;
 
 
+
     @Override
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = LayoutInflater.from(getActivity()).inflate(R.layout.my_layout, null);
+
         initView(view);
         return view;
     }
 
 
     private void initView(View view) {
+
         go_myEdit = (LinearLayout) view.findViewById(R.id.linear_go_myedit);
         go_address = (LinearLayout) view.findViewById(R.id.liner_go_address);
-        go_favorites = (LinearLayout) view.findViewById(R.id.linear_go_favorites);
-        go_cart = (LinearLayout) view.findViewById(R.id.liner_go_cartF);
-        go_myWallet = (LinearLayout) view.findViewById(R.id.liner_go_myWallet);
+        go_favorites = (LinearLayout) view.findViewById(R.id.iv_menu_2);
+        go_cart = (LinearLayout) view.findViewById(R.id.iv_menu_3);
+        go_myWallet = (LinearLayout) view.findViewById(R.id.iv_menu_1);
         go_shop_manager = (LinearLayout) view.findViewById(R.id.linear_go_shop_manager);
         go_myEdit.setOnClickListener(this);
         go_favorites.setOnClickListener(this);
@@ -116,21 +119,21 @@ public class User_F extends Fragment implements OnClickListener {
                 Intent i1 = new Intent(getActivity(), MyEdit_A.class);
                 startActivity(i1);
                 break;
-            case R.id.linear_go_favorites:
+            case R.id.iv_menu_2:
                 //进入收藏夹
                 Main_FA.getMainActivity().onClick(arg0.findViewById(R.id.iv_menu_2));
 
                 break;
-            case R.id.liner_go_cartF:
+            case R.id.iv_menu_3:
                 //进入订单
                 Main_FA.getMainActivity().onClick(arg0.findViewById(R.id.iv_menu_3));
 
                 break;
-            case R.id.liner_go_myWallet:
+            case R.id.iv_menu_1:
                 //进入钱包
                 Main_FA.getMainActivity().onClick(arg0.findViewById(R.id.iv_menu_1));
-                Intent i4 = new Intent(getActivity(), User_opinion.class);
-                startActivity(i4);
+              /*  Intent i4 = new Intent(getActivity(), User_opinion.class);
+                startActivity(i4);*/
                 break;
             case R.id.liner_go_address:
                 //进入收货地址

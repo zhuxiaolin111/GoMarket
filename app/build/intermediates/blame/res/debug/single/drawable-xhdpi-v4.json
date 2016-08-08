@@ -140,12 +140,12 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-xhdpi\\abc_ic_clear_search_api_holo_light.png"
     },
     {
-        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\img_foot3sel.png",
-        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-xhdpi\\img_foot3sel.png"
-    },
-    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\user_life.png",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-xhdpi\\user_life.png"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\img_foot3sel.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-xhdpi\\img_foot3sel.png"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\menu_guide_7.png",
