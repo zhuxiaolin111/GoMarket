@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical"
-    android:weightSum="1">
-
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -41,12 +40,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.03"></LinearLayout>
+        android:layout_weight="0.00"></LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.07"
+        android:layout_weight="0.12"
 
         android:background="#f9f9f9"
         android:gravity="center">

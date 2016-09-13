@@ -192,12 +192,12 @@
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\menu_2_4.png"
     },
     {
-        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_index_1.png",
-        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\menu_index_1.png"
-    },
-    {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cafe3.jpg",
         "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\cafe3.jpg"
+    },
+    {
+        "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menu_index_1.png",
+        "source": "D:\\GouMarket_Dome\\app\\src\\main\\res\\drawable-hdpi\\menu_index_1.png"
     },
     {
         "merged": "D:\\GouMarket_Dome\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user_6.png",

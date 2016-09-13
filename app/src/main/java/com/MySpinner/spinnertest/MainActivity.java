@@ -10,7 +10,7 @@ import android.widget.PopupWindow.OnDismissListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.MySpinner.view.SpinerPopWindow;
+import com.jarvis.MyView.SpinerPopWindow;
 import com.jarvis.mytaobaotest.R;
 
 import java.util.ArrayList;

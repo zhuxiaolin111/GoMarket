@@ -59,6 +59,8 @@
         <activity android:name="com.jarvis.mytaobao.home.DrawMoney_Activity"/>
         <activity android:name="com.jarvis.mytaobao.home.Deposit_Activity"/>
         <activity android:name="com.jarvis.mytaobao.home.Dispose_Activity"/>
+        <activity android:name="com.jarvis.mytaobao.cart.Order_Detail1_A"/>
+        <activity android:name="com.jarvis.mytaobao.cart.Order_Detail2_A"/>
         <!-- 隐藏键盘 -->
         <!-- 全屏 -->
         <activity

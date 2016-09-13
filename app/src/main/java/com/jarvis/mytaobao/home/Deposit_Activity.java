@@ -3,6 +3,7 @@ package com.jarvis.mytaobao.home;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.jarvis.mytaobaotest.R;
@@ -17,7 +18,12 @@ public class Deposit_Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.deposit);
         img_goback_shang = (ImageView) findViewById(R.id.img_goback_shang);
-
+        img_goback_shang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override

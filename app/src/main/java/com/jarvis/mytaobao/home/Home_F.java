@@ -18,7 +18,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.MySpinner.view.SpinerPopWindow;
+import com.jarvis.MyView.SpinerPopWindow;
 import com.jarvis.mytaobao.MyActivity.Shop_F;
 import com.jarvis.mytaobaotest.R;
 import com.javis.Adapter.Adapter_GridView;

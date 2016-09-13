@@ -22,9 +22,9 @@ public class Cart_F extends Fragment implements OnClickListener {
 
 	private View show_cart_all, show_cart_low, show_cart_stock;
 
-	private AllBaby_F allBaby_F;
-	private LowBaby_F lowBaby_F;
-	private StockBaby_F stockBaby_F;
+	private Order_zhifu_F allBaby_F;
+	private Order_shouhuo_F lowBaby_F;
+	private Order_all_F stockBaby_F;
 	private boolean isDel=true;
 
 	@Override
@@ -51,7 +51,7 @@ public class Cart_F extends Fragment implements OnClickListener {
 		bt_cart_stock.setOnClickListener(this);
 		bt_cart_edit.setOnClickListener(this);
 
-		allBaby_F = new AllBaby_F();
+		allBaby_F = new Order_zhifu_F();
 		addFragment(allBaby_F);
 		showFragment(allBaby_F);
 
@@ -64,7 +64,7 @@ public class Cart_F extends Fragment implements OnClickListener {
 				if (allBaby_F!=null&&isDel) {
 					removeFragment(allBaby_F);
 					allBaby_F=null;
-					allBaby_F=new AllBaby_F("删除");
+					allBaby_F=new Order_zhifu_F("删除");
 					addFragment(allBaby_F);
 					showFragment(allBaby_F);
 					isDel=false;
@@ -74,7 +74,7 @@ public class Cart_F extends Fragment implements OnClickListener {
 				}else if (!isDel&&allBaby_F!=null) {
 					removeFragment(allBaby_F);
 					allBaby_F=null;
-					allBaby_F=new AllBaby_F();
+					allBaby_F=new Order_zhifu_F();
 					addFragment(allBaby_F);
 					showFragment(allBaby_F);
 					isDel=true;
@@ -84,7 +84,7 @@ public class Cart_F extends Fragment implements OnClickListener {
 				break;
 			case R.id.bt_cart_all:
 				if (allBaby_F == null) {
-					allBaby_F = new AllBaby_F();
+					allBaby_F = new Order_zhifu_F();
 					addFragment(allBaby_F);
 					showFragment(allBaby_F);
 				} else {
@@ -100,7 +100,7 @@ public class Cart_F extends Fragment implements OnClickListener {
 				break;
 			case R.id.bt_cart_low:
 				if (lowBaby_F == null) {
-					lowBaby_F = new LowBaby_F();
+					lowBaby_F = new Order_shouhuo_F();
 					addFragment(lowBaby_F);
 					showFragment(lowBaby_F);
 				} else {
@@ -116,7 +116,7 @@ public class Cart_F extends Fragment implements OnClickListener {
 				break;
 			case R.id.bt_cart_stock:
 				if (stockBaby_F == null) {
-					stockBaby_F = new StockBaby_F();
+					stockBaby_F = new Order_all_F();
 					addFragment(stockBaby_F);
 					showFragment(stockBaby_F);
 				} else {
